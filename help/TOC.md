@@ -8,10 +8,10 @@ feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation 
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: c64f1519438addb4081469afaed811fbf03ac88e
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 7%
+source-wordcount: '213'
+ht-degree: 3%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 7%
    + [Uso de la API de servicios de Adobe PDF para archivos del PDF de OCR](pdfservices/ocr.md)
 + API de generación de documentos {#docgen}
    + [Información general](docgen/overview-docgen.md)
+   + [Automatizar la generación de documentos](docgen/automate-doc-gen.md)
    + Creación de plantillas {#docgentemplates}
       + [Visión General del Etiquetador de Generación de Documentos de Adobe](docgen/taggeroverview.md)
       + [Adición de etiquetas de texto](docgen/taggeraddtexttags.md)
