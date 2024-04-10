@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-9247
 thumbnail: KT-9247.jpg
 exl-id: db340959-e7dc-4e46-939d-3b8c29749ebd
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: e35377fb467aac8581a5f81d2efb74fb442a6dc5
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,11 @@ Desbloquea la estructura y los elementos de contenido de cualquier PDF con un se
 <table style="table-layout:fixed">
 <tr>
  <td>
+   <a href="automate-content-extraction.md">
+      <img alt="Automatiza la extracción de contenido" src="assets/automate-content-extraction.png" />
+   </a>
+  </td>
+  <td>
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html">
       <img alt="Analizar PDF: tan fácil como trabajar con datos JSON con la API PDF Extract" src="assets/ParsingPDF_1280.png" />
    </a>
@@ -33,11 +38,6 @@ Desbloquea la estructura y los elementos de contenido de cualquier PDF con un se
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>Analizar PDF: tan fácil como trabajar con datos JSON con la API PDF Extract</strong></a>
     </div>
     <em>Obtenga más información sobre cómo el servicio Extract de PDF en la API de servicios de Adobe PDF puede facilitar el análisis de PDF tanto como el análisis de JSON</em>
-    <br>
-  </td>
-  <td>
-    <img alt="Separador" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
     <br>
   </td>
   <td>
