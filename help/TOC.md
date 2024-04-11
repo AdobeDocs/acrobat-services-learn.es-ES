@@ -8,9 +8,9 @@ feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation 
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: e35377fb467aac8581a5f81d2efb74fb442a6dc5
+source-git-commit: 073dc25717c22ef238bc81338223945b9fee2ef7
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '226'
 ht-degree: 3%
 
 ---
@@ -38,6 +38,9 @@ ht-degree: 3%
       + [Adición de tablas y etiquetas de lista](docgen/taggertables.md)
       + [Definición de etiquetas de cálculo numérico](docgen/taggercalculations.md)
       + [Configuración del contenido condicional](docgen/taggerconditional.md)
++ API de etiquetas automáticas de accesibilidad de PDF {#pdfaccessibility}
+   + [Información general](pdfaccessibility/overview-accessibility.md)
+   + [Etiquetado automático de documentos para su accesibilidad](pdfaccessibility/automatically-add-tags.md)
 + API de PDF Extract {#pdfextract}
    + [Información general](pdfextract/overview-extract.md)
    + [Automatiza la extracción de contenido](pdfextract/automate-content-extraction.md)
