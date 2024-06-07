@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 558bd677d3b357a98488ada9dda1054bb21b81af
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Todas estas muestras están disponibles en la [Ejemplos de GitHub](https://githu
 
 Siguiente, en [!DNL Spring Boot], puede obtener un archivo mediante la ruta String o el objeto Stream en el que se carga el archivo. Todas las operaciones que realice deben inicializarse y debe establecerse una ruta de acceso al archivo de entrada. Para este tutorial, puede utilizar los informes de PDF disponibles públicamente de [Blackrock](https://www.blackrock.com/us/individual/products/investment-funds). Puede utilizar cualquier otra fuente, incluidos sus propios informes.
 
-Empieza por capturar el [FileRef](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/io/FileRef.html) del archivo. Para simplificar, céntrese en los archivos por ruta de cadena. A continuación, se crea una operación para convertir un archivo de la ruta de acceso de PDF a Excel:
+Empiece capturando el objeto FileRef del archivo. Para simplificar, céntrese en los archivos por ruta de cadena. A continuación, se crea una operación para convertir un archivo de la ruta de acceso de PDF a Excel:
 
 ```
 ExecutionContext executionContext = ExecutionContext.create(credentials);
@@ -143,7 +143,7 @@ try {
 
 Este código genera un documento de PDF a partir del informe en formato Excel.
 
-Antes de entregar este PDF a sus clientes, puede protegerlo con una contraseña. Crear otra operación que gestione esta protección por usted, [ProtectPDFOperation](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/ProtectPDFOperation.html)y, a continuación, utilice [ProtectPDFOptions](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/options/protectpdf/package-summary.html) para agregar la contraseña al documento.
+Antes de entregar este PDF a sus clientes, puede protegerlo con una contraseña. Cree otra operación que controle esta protección, ProtectPDFOperation, y luego utilice ProtectPDFOptions para agregar la contraseña al documento.
 
 ```
 ProtectPDFOptions options = ProtectPDFOptions.passwordProtectOptionsBuilder()
