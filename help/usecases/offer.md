@@ -10,20 +10,20 @@ thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 2%
+source-wordcount: '1714'
+ht-degree: 0%
 
 ---
 
 # Administrar cartas de oferta de empleados
 
-![Banner de caso de uso Hero](assets/UseCaseOfferHero.jpg)
+![Banner de héroe de caso de uso](assets/UseCaseOfferHero.jpg)
 
-Las cartas de oferta de los empleados son una de las primeras experiencias que tienen los empleados con tu organización. Como resultado, desea asegurarse de que las cartas de oferta sean de la marca, pero no desea tener que crear una carta en el procesador de textos desde cero cada vez. [!DNL Adobe Acrobat Services] Las API ofrecen una forma rápida, fácil y eficaz de gestionar las partes clave de [generación y entrega de cartas de oferta a los nuevos empleados](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html).
+Las cartas de oferta de los empleados son una de las primeras experiencias que tienen los empleados con tu organización. Como resultado, desea asegurarse de que las cartas de oferta sean de la marca, pero no desea tener que crear una carta en el procesador de textos desde cero cada vez. Las API de [!DNL Adobe Acrobat Services] ofrecen una forma rápida, fácil y eficaz de gestionar las partes clave de [generar y entregar cartas de oferta a los nuevos empleados](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html).
 
 ## Lo que puedes aprender
 
-Este tutorial práctico le guiará en la configuración de un proyecto de Node Express que muestra un formulario web para que un usuario lo rellene con los detalles de los empleados. Estos detalles utilizan [!DNL Acrobat Services] a través de la web para generar una carta de oferta como PDF que se pueda enviar a un cliente para que la firme mediante la API de Adobe Sign.
+Este tutorial práctico le guiará en la configuración de un proyecto de Node Express que muestra un formulario web para que un usuario lo rellene con los detalles de los empleados. Estos detalles usan [!DNL Acrobat Services] en la web para generar una carta de oferta como PDF que se puede entregar a un cliente para que la firme mediante la API de Adobe Sign.
 
 ## API y recursos relevantes
 
@@ -33,31 +33,31 @@ Este tutorial práctico le guiará en la configuración de un proyecto de Node E
 
 * [API de Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
 
-* [Complemento Word del etiquetador de generación de documentos](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin)
+* [Complemento de Word etiquetador de generación de documentos](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin)
 
 * [Ejemplo de proyecto](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html)
 
 ## Introducción
 
-[Node.js](https://nodejs.org/) es la plataforma de programación. Viene con un enorme conjunto de bibliotecas, como el servidor web Express. [Descargar Node.js](https://nodejs.org/en/download/) y siga los pasos para instalar este gran entorno de desarrollo de código abierto.
+[Node.js](https://nodejs.org/) es la plataforma de programación. Viene con un enorme conjunto de bibliotecas, como el servidor web Express. [Descargue Node.js](https://nodejs.org/en/download/) y siga los pasos para instalar este excelente entorno de desarrollo de código abierto.
 
-Para utilizar la API de generación de documentos de Adobe en Node.js, vaya al [API de generación de documentos](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) para acceder a su cuenta o registrarse para obtener una nueva. Tu cuenta es [gratis durante seis meses y luego de pago por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) por solo 0,05 USD por transacción de documento, para que puedas probarlo sin riesgos y solo pagarlo a medida que crezca tu empresa.
+Para usar la API de generación de documentos de Adobe en Node.js, ve al sitio [API de generación de documentos](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) para acceder a tu cuenta o regístrate para obtener una nueva. Tu cuenta es [gratuita durante seis meses y luego se paga sobre la marcha](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) por solo 0,05 USD por transacción de documento, de modo que puedes probarla sin riesgos y solo pagar a medida que crezca tu empresa.
 
-Después de iniciar sesión en el [Adobe Developer Console](https://console.adobe.io/), haga clic en **[!UICONTROL Crear nuevo proyecto]**. El proyecto se denomina &quot;Proyecto 1&quot; de forma predeterminada. Haga clic en **[!UICONTROL Editar proyecto]** y cambie el nombre a &quot;Generador de cartas de oferta&quot;. En el centro de la pantalla hay una **[!UICONTROL Empezar Con El Nuevo Proyecto]** sección. Para activar la seguridad en el proyecto, siga estos pasos:
+Después de iniciar sesión en [Adobe Developer Console](https://console.adobe.io/), haz clic en **[!UICONTROL Crear nuevo proyecto]**. El proyecto se denomina &quot;Proyecto 1&quot; de forma predeterminada. Haga clic en el botón **[!UICONTROL Editar proyecto]** y cambie el nombre a &quot;Ofrecer generador de cartas&quot;. En el centro de la pantalla hay una sección **[!UICONTROL Empezar con tu nuevo proyecto]**. Para activar la seguridad en el proyecto, siga estos pasos:
 
-Haga clic en **Añadir API**. Verá una serie de API entre las que elegir. En la **[!UICONTROL Filtrar por producto]** , seleccione **[!UICONTROL Document Cloud]**, haga clic en **[!UICONTROL Siguiente]**.
+Haga clic en **Agregar API**. Verá una serie de API entre las que elegir. En la sección **[!UICONTROL Filtrar por producto]**, selecciona **[!UICONTROL Document Cloud]** y luego haz clic en **[!UICONTROL Siguiente]**.
 
-Ahora, genere credenciales para acceder a la API. Las credenciales tienen el formato de un token web JSON ([JWT](https://jwt.io/)): un estándar abierto para una comunicación segura. Si está familiarizado con JWT y ya ha generado claves, puede cargar su clave pública aquí. Como alternativa, seleccione **Opción 1** para que Adobe genere las claves automáticamente.
+Ahora, genere credenciales para acceder a la API. Las credenciales tienen la forma de un token web JSON ([JWT](https://jwt.io/)): un estándar abierto para la comunicación segura. Si está familiarizado con JWT y ya ha generado claves, puede cargar su clave pública aquí. También puede seleccionar **Option 1** para que Adobe genere las claves automáticamente.
 
 ![Captura de pantalla de generación de credenciales](assets/offer_1.png)
 
-Haga clic en **[!UICONTROL Generar par de claves]** botón. Se obtiene un archivo config.zip para descargar. Descomprima el archivo de almacenamiento. Contiene dos archivos: certificate_pub.crt y private.key. Asegúrese de que esta última se mantenga segura, ya que contiene sus credenciales privadas y puede utilizarse para generar documentos falsos si está fuera de su control.
+Haga clic en el botón **[!UICONTROL Generar par de claves]**. Se obtiene un archivo config.zip para descargar. Descomprima el archivo de almacenamiento. Contiene dos archivos: certificate_pub.crt y private.key. Asegúrese de que esta última se mantenga segura, ya que contiene sus credenciales privadas y puede utilizarse para generar documentos falsos si está fuera de su control.
 
-Haga clic en **[!UICONTROL Siguiente]**. No, habilita el acceso a la API de generación de PDF. En la **[!UICONTROL Seleccionar perfiles de producto]** pantalla, comprobar **[!UICONTROL Desarrollador de servicios de PDF empresarial]** y haga clic en el **[!UICONTROL Guardar API configurada]** botón. Ahora ya puede empezar a utilizar la API.
+Haga clic en **[!UICONTROL Siguiente]**. No, habilita el acceso a la API de generación de PDF. En la pantalla **[!UICONTROL Seleccionar perfiles de producto]**, compruebe **[!UICONTROL Enterprise PDF Services Developer]** y haga clic en el botón **[!UICONTROL Guardar API configurada]**. Ahora ya puede empezar a utilizar la API.
 
 ## Configuración del proyecto
 
-Configure un proyecto Node para ejecutar el código. En este ejemplo se utiliza [Visual Studio Code](https://code.visualstudio.com/) (VS Code) como editor. Haga una carpeta llamada &quot;letter-generator&quot; y ábrala en VS Code. Desde el **[!UICONTROL Archivo]** menú, seleccionar **[!UICONTROL Terminal]** \> **[!UICONTROL Nuevo terminal]** para abrir un shell en esta carpeta. Compruebe que Node está instalado y en su ruta introduciendo lo siguiente:
+Configure un proyecto Node para ejecutar el código. En este ejemplo se utiliza [Visual Studio Code](https://code.visualstudio.com/) (VS Code) como editor. Haga una carpeta llamada &quot;letter-generator&quot; y ábrala en VS Code. En el menú **[!UICONTROL Archivo]**, seleccione **[!UICONTROL Terminal]** \> **[!UICONTROL Nuevo terminal]** para abrir un shell en esta carpeta. Compruebe que Node está instalado y en su ruta introduciendo lo siguiente:
 
 ```
 node -v
@@ -73,9 +73,10 @@ En primer lugar, inicialice el proyecto mediante el Administrador de paquetes de
 npm init
 ```
 
-Se le harán algunas preguntas sobre su proyecto Node. Puede omitir la mayoría de estas preguntas, pero asegúrese de que el nombre del proyecto sea &quot;generador de letras&quot; y que el punto de entrada sea **index.js**. Seleccionar **Sí** para completar la inicialización del proyecto.
+Se le harán algunas preguntas sobre su proyecto Node. Puede omitir la mayoría de estas preguntas, pero asegúrese de que el nombre del proyecto sea &quot;generador de letras&quot; y el punto de entrada sea **index.js**. Seleccione **Sí** para completar la inicialización del proyecto.
 
-Ahora tiene un archivo package.json. Node utiliza este archivo para organizar el proyecto. Antes de crear index.js, debe agregar bibliotecas de Adobes con el siguiente comando:
+Ahora tiene un archivo package.json. Node utiliza este archivo para organizar el proyecto. Antes de crear index.js, debe agregar bibliotecas de Adobes con lo siguiente
+comando:
 
 ```
 npm install --save @adobe/documentservices-pdftools-node-sdk
@@ -115,7 +116,7 @@ console.log(`Candidate offer letter app listening on port ${port}!`)
 });
 ```
 
-Observe que la ruta de obtención devuelve un **index.html** archivo. Vamos a crear un archivo de HTML con ese nombre y el siguiente formato simple. Puede añadir estilos CSS y otros elementos de diseño más adelante como considere oportuno. Este formulario toma los detalles básicos del candidato para generar una carta de bienvenida:
+Observe que la ruta de obtención devuelve un archivo **index.html**. Vamos a crear un archivo de HTML con ese nombre y el siguiente formato simple. Puede añadir estilos CSS y otros elementos de diseño más adelante como considere oportuno. Este formulario toma los detalles básicos del candidato para generar una carta de bienvenida:
 
 ```
 <!DOCTYPE html>
@@ -159,9 +160,9 @@ Ejecute el servidor web con el siguiente comando:
 node app.js
 ```
 
-Debería ver el mensaje &quot;Candidate offer letter app listener on port 8000&quot;. Si abre el navegador para <http://localhost:8000/>, el formulario debe tener el aspecto siguiente:
+Debería ver el mensaje &quot;Candidate offer letter app listener on port 8000&quot;. Si abre el explorador en <http://localhost:8000/>, el formulario debería tener el aspecto siguiente:
 
-![Captura de pantalla de formulario web](assets/offer_2.png)
+![Captura de pantalla del formulario web](assets/offer_2.png)
 
 Observe que el formulario se envía a sí mismo. Si rellena los datos y hace clic en **Generar carta,** debería ver la siguiente información en la consola:
 
@@ -238,7 +239,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Hay mucho código que descomprimir allí. Vamos a tomar la parte principal primero: la `documentMergeOperation`. En esta sección se toman los datos JSON y se combinan con una plantilla de documento de Word. Puede utilizar la [ejemplo en el sitio de Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) como referencia, pero vamos a hacer tu propio ejemplo simple. Abra Word y cree un nuevo documento en blanco. Puedes personalizarlo todo lo que quieras, pero al menos tienes algo como esto:
+Hay mucho código que descomprimir allí. Tomemos la parte principal primero: `documentMergeOperation`. En esta sección se toman los datos JSON y se combinan con una plantilla de documento de Word. Puedes usar el ejemplo [en el sitio de Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) como referencia, pero vamos a crear tu propio ejemplo simple. Abra Word y cree un nuevo documento en blanco. Puedes personalizarlo todo lo que quieras, pero al menos tienes algo como esto:
 
 Estimado/a X:
 
@@ -246,23 +247,23 @@ Nos complace ofrecerle un puesto por $X al año. La fecha de inicio será X.
 
 Bienvenida
 
-Guarde el documento como &quot;OfferLetter-Template.docx&quot; en una carpeta denominada &quot;resources&quot; en la raíz del proyecto. Observe las tres X del documento. Esas X son marcadores de posición temporales para su información JSON. Aunque podría utilizar una sintaxis especial para reemplazar estos marcadores de posición, Adobe proporciona un complemento de Word que simplifica esta tarea. Para instalar el complemento, vaya al Adobe [Complemento Word del etiquetador de generación de documentos](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) sitio.
+Guarde el documento como &quot;OfferLetter-Template.docx&quot; en una carpeta denominada &quot;resources&quot; en la raíz del proyecto. Observe las tres X del documento. Esas X son marcadores de posición temporales para su información JSON. Aunque podría utilizar una sintaxis especial para reemplazar estos marcadores de posición, Adobe proporciona un complemento de Word que simplifica esta tarea. Para instalar el complemento, vaya al sitio de Adobe [Document Generation Tagger Word Add-in](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin).
 
-En su plantilla de carta de oferta, haga clic en el botón **Generación de documentos** botón. Se abre un panel lateral. Haga clic en **Empezar**. Se le proporciona un área de texto para pegar en los datos JSON de ejemplo. Copie el fragmento de &quot;offer-data&quot; de JSON desde arriba en el área de texto. Debería tener el siguiente aspecto:
+En OfferLetter-Template, haga clic en el nuevo botón **Generación de documentos**. Se abre un panel lateral. Haga clic en **Introducción**. Se le proporciona un área de texto para pegar en los datos JSON de ejemplo. Copie el fragmento de &quot;offer-data&quot; de JSON desde arriba en el área de texto. Debería tener el siguiente aspecto:
 
 ![Captura de pantalla de carta y código](assets/offer_3.png)
 
-Haga clic en **Generar etiquetas** botón. Se obtiene un menú desplegable de etiquetas para insertar en los puntos apropiados del documento. Resalte la primera X del documento y seleccione **[!UICONTROL nombre]**. Haga clic en **[!UICONTROL Insertar texto]** y &quot;Estimado X&quot; se cambia a &quot;Estimado ```{{`offer_letter`.firstname}}```,&quot;. Esta etiqueta tiene el formato correcto para `documentMergeOperation`. Continúe y agregue las tres etiquetas restantes en el Xs apropiado. No olvide guardar OfferLetter-template.docx. Debería tener este aspecto:
+Haga clic en el botón **Generar etiquetas**. Se obtiene un menú desplegable de etiquetas para insertar en los puntos apropiados del documento. Resalta la primera X del documento y selecciona **[!UICONTROL firstname]**. Haga clic en **[!UICONTROL Insertar texto]** y &quot;Estimado/a X&quot; cambiará a &quot;Estimado/a ```{{`offer_letter`.firstname}}```&quot;. Esta etiqueta tiene el formato correcto para `documentMergeOperation`. Continúe y agregue las tres etiquetas restantes en el Xs apropiado. No olvide guardar OfferLetter-template.docx. Debería tener este aspecto:
 
 Estimado/a ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```:
 
-Estamos encantados de ofrecerle un puesto por $ ```{{`offer_letter`.salary}}``` un año. La fecha de inicio será la siguiente ```{{`offer_letter`.startdate}}```.
+Estamos encantados de ofrecerle un puesto por $ ```{{`offer_letter`.salary}}``` al año. La fecha de inicio será ```{{`offer_letter`.startdate}}```.
 
 Bienvenida
 
 Ahora la plantilla de Word tiene un marcado que coincide con el formato JSON. Por ejemplo, ```{{`offer_letter`.`firstname`}}``` al principio del documento de Word se reemplaza por el valor de la sección &quot;firstname&quot; de los datos JSON.
 
-Volver a tu `generateLetter` función. Para proteger la llamada REST, cree un nuevo archivo llamado pdftools-api-credentials.json en la raíz del proyecto. Pegue los siguientes datos JSON y ajústelos con los detalles de la sección Cuenta de servicio (JWT) de su [Developer Console](https://console.adobe.io/).
+Vuelva a la función `generateLetter`. Para proteger la llamada REST, cree un nuevo archivo llamado pdftools-api-credentials.json en la raíz del proyecto. Pegue los siguientes datos JSON y ajústelos con los detalles de la sección Cuenta de servicio (JWT) de su [Consola de desarrollador](https://console.adobe.io/).
 
 ```
 {
@@ -278,19 +279,20 @@ Volver a tu `generateLetter` función. Para proteger la llamada REST, cree un nu
 }
 ```
 
-* El ID de cliente, el secreto de cliente y el ID de organización se pueden copiar directamente desde el **[!UICONTROL Detalles de credencial]** de la consola.
+* El ID de cliente, el secreto de cliente y el ID de organización se pueden copiar directamente desde la sección **[!UICONTROL Detalles de credenciales]** de la consola.
 
-* El ID de cuenta es el **ID de cuenta técnica**.
+* El Id. de cuenta es el **Id. de cuenta técnica**.
 
-* Copie el archivo private.key generado anteriormente en el proyecto e introduzca su nombre en la sección private_key_file del archivo pdftools-api-credentials.json . Si lo desea, puede poner una ruta al archivo de clave privada aquí. Recuerde mantenerlo seguro ya que puede ser mal utilizado una vez fuera de su control.
+* Copie el archivo private.key generado anteriormente en el proyecto y escriba su nombre en la sección private_key_file del
+archivo pdftools-api-credentials.json. Si lo desea, puede poner una ruta al archivo de clave privada aquí. Recuerde mantenerlo seguro ya que puede ser mal utilizado una vez fuera de su control.
 
-Para generar un PDF con los datos JSON rellenados, vuelva a su **[!UICONTROL Introducir detalles del candidato]** formulario web y publicar algunos datos. Lleva un poco de tiempo ya que el documento debe descargarse desde Adobe, pero deberías tener un archivo llamado OfferLetter.pdf en una nueva carpeta llamada output.
+Para generar un PDF con los datos JSON rellenados, vuelve al formulario web **[!UICONTROL Introducir detalles del candidato]** y publica algunos datos. Lleva un poco de tiempo ya que el documento debe descargarse desde Adobe, pero deberías tener un archivo llamado OfferLetter.pdf en una nueva carpeta llamada output.
 
 ## Pasos siguientes
 
-¡Eso es todo! Esto es solo el comienzo. Si estudia la sección Avanzado de la ficha Generación de documentos del complemento de Word, observará que no todos los marcadores de posición proceden de los datos JSON asociados. También puede añadir etiquetas de firma. Estas etiquetas le permiten tomar el documento resultante y cargarlo en [Adobe Sign](https://acrobat.adobe.com/ca/en/sign.html) para la entrega y la firma al nuevo empleado. Consulte Introducción a la API de Adobe Sign para obtener información sobre cómo hacerlo. Este proceso es similar porque está utilizando llamadas REST protegidas con un token JWT.
+¡Eso es todo! Esto es solo el comienzo. Si estudia la sección Avanzado de la ficha Generación de documentos del complemento de Word, observará que no todos los marcadores de posición proceden de los datos JSON asociados. También puede añadir etiquetas de firma. Estas etiquetas te permiten llevar el documento resultante y cargarlo en [Adobe Sign](https://acrobat.adobe.com/ca/en/sign.html) para su entrega y firma al nuevo empleado. Consulte Introducción a la API de Adobe Sign para obtener información sobre cómo hacerlo. Este proceso es similar porque está utilizando llamadas REST protegidas con un token JWT.
 
-El ejemplo de documento único proporcionado anteriormente se puede utilizar como base para una solicitud cuando una organización debe [mejora de la contratación estacional](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html) de empleados en varias ubicaciones. Como se ha demostrado, el flujo principal consiste en tomar los datos de los candidatos a través de una aplicación en línea. Los datos se utilizan para rellenar los campos de una carta de oferta y enviarla para su firma electrónica.
+El ejemplo de un solo documento proporcionado anteriormente se puede usar como base para una solicitud cuando una organización debe [aumentar la contratación estacional](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html) de empleados en varias ubicaciones. Como se ha demostrado, el flujo principal consiste en tomar los datos de los candidatos a través de una aplicación en línea. Los datos se utilizan para rellenar los campos de una carta de oferta y enviarla para su firma electrónica.
 
-[!DNL Adobe Acrobat Services] es gratuito durante seis meses, y [de pago por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a solo 0,05 USD por transacción de documento, para que puedas probarlo y escalar el flujo de trabajo de cartas de oferta a medida que crece tu empresa. Para [introducción](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-crear sus propias plantillas, [registra tu cuenta de desarrollador](https://www.adobe.io/).
+[!DNL Adobe Acrobat Services] es de uso gratuito durante seis meses y, luego, [paga sobre la marcha](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a solo 0,05 $ por transacción de documento, para que puedas probarlo y escalar el flujo de trabajo de cartas de oferta a medida que crece tu empresa. Para [comenzar](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+para crear tus propias plantillas, [registra tu cuenta de desarrollador](https://www.adobe.io/).

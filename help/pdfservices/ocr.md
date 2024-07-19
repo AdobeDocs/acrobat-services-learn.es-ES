@@ -10,8 +10,8 @@ thumbnail: KT-6677.jpg
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 4%
+source-wordcount: '567'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +53,7 @@ Al pasar opciones con la operación de OCR, incluida una configuración regional
 
    Por ejemplo, C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples>.
 
-1. Ejecute el siguiente comando::
+1. Ejecute el siguiente comando:
 
    `mvn -f pom.xml exec:java -Dexec.mainClass=com.adobe.platform.operation.samples.ocrpdf.OcrPDF`
 
@@ -69,7 +69,7 @@ El PDF se creará en el directorio src/main/resources.
 
 1. Vuelva a cambiar los directorios en el directorio OcrPDF.
 
-1. Ejecute el siguiente comando::
+1. Ejecute el siguiente comando:
 
    `dotnet run OcrPDF.csproj`
 
@@ -83,7 +83,7 @@ El PDF se creará en el mismo directorio.
 
    Por ejemplo, C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
 
-1. Ejecute el siguiente comando::
+1. Ejecute el siguiente comando:
 
    `node src/ocr/ocr-pdf.js`
 
@@ -99,10 +99,10 @@ A partir de aquí, puede reemplazar los archivos de entrada y salida ubicados en
 
 ## Recursos y pasos siguientes
 
-* Para obtener ayuda y asistencia adicionales, visite el Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) foro de la comunidad
+* Para obtener ayuda y asistencia adicionales, visita el foro de la comunidad de [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) de Adobe
 
-* API de servicios de PDF [Documentación](https://www.adobe.com/go/pdftoolsapi_doc)
+* [Documentación](https://www.adobe.com/go/pdftoolsapi_doc) de la API de servicios de PDF
 
-* [FAQ](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) para preguntas de API de servicios de PDF
+* [Preguntas frecuentes](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) para preguntas de la API de servicios del PDF
 
-* [Contacte con nosotros](https://www.adobe.com/go/pdftoolsapi_requestform) para preguntas sobre licencias y precios
+* [Ponte en contacto con nosotros](https://www.adobe.com/go/pdftoolsapi_requestform) si tienes preguntas sobre licencias y precios

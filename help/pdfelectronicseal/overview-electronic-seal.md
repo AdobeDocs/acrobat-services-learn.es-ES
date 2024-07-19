@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Tutorials de la API Adobe PDF Electronic Seal
 
-La API Adobe PDF Electronic Seal aplica un sello electrónico a los documentos a escala utilizando un certificado emitido por determinados proveedores de servicios de confianza (TSP) en [Lista de confianza autorizada por el Adobe (AATL)](https://helpx.adobe.com/es/acrobat/kb/approved-trust-list1.html). El sello electrónico ayuda a verificar la identidad y la integridad de los documentos. Se puede utilizar para sellar electrónicamente documentos a escala y se incluye con la API de servicios de PDF.
+La API Adobe PDF Electronic Seal aplica un sello electrónico a los documentos a escala mediante un certificado emitido por determinados proveedores de servicios de confianza (TSP) de la [Lista de confianza autorizada por el Adobe (AATL)](https://helpx.adobe.com/es/acrobat/kb/approved-trust-list1.html). El sello electrónico ayuda a verificar la identidad y la integridad de los documentos. Se puede utilizar para sellar electrónicamente documentos a escala y se incluye con la API de servicios de PDF.
 
 <table style="table-layout:fixed">
 <tr>

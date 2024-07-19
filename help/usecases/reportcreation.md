@@ -10,20 +10,20 @@ thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 1%
+source-wordcount: '1292'
+ht-degree: 0%
 
 ---
 
 # Creación y edición de informes
 
-![Banner de caso de uso Hero](assets/UseCaseReportHero.jpg)
+![Banner de héroe de caso de uso](assets/UseCaseReportHero.jpg)
 
-Las finanzas, la educación, el marketing y otros sectores utilizan a los PDF para compartir datos con sus clientes y partes interesadas. Los PDF facilitan el uso compartido de documentos sofisticados, con tablas, gráficos y contenido interactivo, en un formato que todos puedan ver. [!DNL Adobe Acrobat Services] Las API ayudan a estas empresas a generar informes de PDF que se pueden compartir desde Microsoft Word, Microsoft Excel, gráficos y otros formatos de documento diversos.
+Las finanzas, la educación, el marketing y otros sectores utilizan a los PDF para compartir datos con sus clientes y partes interesadas. Los PDF facilitan el uso compartido de documentos sofisticados, con tablas, gráficos y contenido interactivo, en un formato que todos puedan ver. Las API de [!DNL Adobe Acrobat Services] ayudan a estas empresas a generar informes de PDF que se pueden compartir desde Microsoft Word, Microsoft Excel, gráficos y otros formatos de documento diversos.
 
-Decid vosotros [dirigir una empresa de seguimiento de redes sociales](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). Tus clientes inician sesión en una parte de tu sitio protegida con contraseña para ver el análisis de sus campañas. A menudo, quieren compartir estas estadísticas con sus ejecutivos, accionistas, donantes u otras partes interesadas. Los documentos descargables de PDF son una excelente forma de que tus clientes compartan números, gráficas y mucho más.
+Digamos que [diriges una empresa de seguimiento de redes sociales](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). Tus clientes inician sesión en una parte de tu sitio protegida con contraseña para ver el análisis de sus campañas. A menudo, quieren compartir estas estadísticas con sus ejecutivos, accionistas, donantes u otras partes interesadas. Los documentos descargables de PDF son una excelente forma de que tus clientes compartan números, gráficas y mucho más.
 
-Mediante la incorporación [API de servicios de PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) en tu sitio web, puedes generar informes de PDF sobre la marcha para cada cliente. Puedes crear PDF y luego combinarlos en un único y práctico informe para que tus clientes lo descarguen y lo envíen a sus responsables de departamento.
+Al incorporar [API de servicios de PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) en tu sitio web, puedes generar informes de PDF sobre la marcha para cada cliente. Puedes crear PDF y luego combinarlos en un único y práctico informe para que tus clientes lo descarguen y lo envíen a sus responsables de departamento.
 
 ## Lo que puedes aprender
 
@@ -45,7 +45,7 @@ Aquí tiene una aplicación web básica de Express.js que tiene un área de info
 
 ![Captura de pantalla de cómo obtener informes personalizados](assets/report_1.png)
 
-Puede descargar este proyecto desde la [Repositorio de GitHub](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools).
+Puede descargar este proyecto desde el [repositorio GitHub](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools).
 
 Ahora, vamos a explorar cómo publicar los informes.
 
@@ -53,9 +53,9 @@ Ahora, vamos a explorar cómo publicar los informes.
 
 Para que resulte más sencillo, utiliza únicamente el proceso y la carga basados en el sistema de archivos que se encuentran aquí. En Express.js, puede utilizar el módulo fs para mostrar todos los archivos disponibles en un directorio.
 
-En la misma página, permita que el administrador cargue archivos de informes en el servidor para que los clientes los vean. Estos archivos pueden estar en muchos formatos diferentes, como Microsoft Word, Microsoft Excel, HTML y [otros formatos de datos]https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf), incluidos los archivos de gráficos. La página de administración tiene el siguiente aspecto:
+En la misma página, permita que el administrador cargue archivos de informes en el servidor para que los clientes los vean. Estos archivos pueden tener muchos formatos diferentes, como Microsoft Word, Microsoft Excel, HTML y [otros formatos de datos]https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf), incluidos los archivos de gráficos. La página de administración tiene el siguiente aspecto:
 
-![Captura de pantalla de capacidad de administración](assets/report_2.png)
+![Captura de pantalla de la capacidad de administración](assets/report_2.png)
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Utilice el SDK de Servicios de PDF para crear los informes de PDF a partir de lo
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-Antes de comenzar, debe tener credenciales de API, [libre de Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Utiliza tus [!DNL Acrobat Services] cuenta [gratis durante seis meses y luego de pago por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) por solo \$0,05 por transacción de documento.
+Antes de comenzar, debe tener credenciales de API, [libre de Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Usa tu cuenta de [!DNL Acrobat Services] [gratis durante seis meses y luego paga a tu ritmo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) por solo \$0,05 por transacción de documento.
 
 Descargue el archivo de almacenamiento y extraiga el archivo JSON para las credenciales y la clave privada. En el proyecto de ejemplo, coloque el archivo en el directorio src.
 
@@ -131,7 +131,7 @@ console.log('Exception encountered while executing operation', err);
 
 En el código anterior, puede leer las credenciales y crear el contexto de ejecución. PDF Services SDK requiere el contexto de ejecución para autenticar las solicitudes.
 
-A continuación, ejecute la operación Crear PDF, que convierte los documentos sin procesar al formato de PDF. Por último, utilice el `outputPdf` para copiar el informe del PDF. En el ejemplo de código, encontrará este código en el archivo src/helpers/pdf.js. Más adelante en este tutorial, importará el módulo PDF y llamará a este método.
+A continuación, ejecute la operación Crear PDF, que convierte los documentos sin procesar al formato de PDF. Por último, utilice el parámetro `outputPdf` para copiar el informe del PDF. En el ejemplo de código, encontrará este código en el archivo src/helpers/pdf.js. Más adelante en este tutorial, importará el módulo PDF y llamará a este método.
 
 Como se ha demostrado en la sección anterior, los clientes pueden ir a la página siguiente para seleccionar los informes que desean convertir en PDF:
 
@@ -155,7 +155,7 @@ res.status(500).render("crash", { error: error });
 
 Este código crea un informe y comparte la URL de descarga con el cliente. Esta es la página web de salida:
 
-![Captura de pantalla de la pantalla de descarga del cliente](assets/report_5.png)
+![Captura de pantalla de la pantalla de descarga de clientes](assets/report_5.png)
 
 Y aquí está el PDF de salida:
 
@@ -209,7 +209,7 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-Este código genera un informe compilado para varios documentos de entrada. La única función añadida es la `combinePdf` que toma una lista de nombres de ruta de acceso de archivo de PDF y devuelve un único PDF de resultados.
+Este código genera un informe compilado para varios documentos de entrada. La única función agregada es el método `combinePdf` que toma una lista de nombres de ruta de acceso de archivo de PDF y devuelve un único PDF de resultados.
 
 Ahora, los clientes del panel de redes sociales pueden seleccionar informes relevantes de su cuenta y descargarlos como un PDF útil. Este panel les permite mostrar a la administración y a otras partes interesadas el éxito de sus campañas con datos, tablas y gráficos en un formato universalmente fácil de abrir.
 
@@ -217,6 +217,6 @@ Ahora, los clientes del panel de redes sociales pueden seleccionar informes rele
 
 Este tutorial práctico le enseñó a utilizar la API de servicios de PDF para ayudar a los clientes a descargar informes relevantes como PDF fáciles de compartir. Ha creado una aplicación Node.js para mostrar la potencia de la API de servicios de PDF para los servicios de lectura y creación de informes de PDF. En la aplicación se mostraba cómo tus clientes podían descargar un único documento de informe o combinar y fusionar varios documentos en un único informe de PDF.
 
-Esta aplicación impulsada por Adobe ayuda a su [clientes del panel de redes sociales](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) obtenga y comparta los informes que necesiten, sin preocuparse de si todos los destinatarios tienen instalado Microsoft Office u otro software en su dispositivo. Puede utilizar las mismas técnicas en su propia aplicación para ayudar a los usuarios a ver, combinar y descargar documentos. O bien, consulta las muchas otras API de Adobe para añadir firmas y realizar su seguimiento, y mucho más.
+Esta aplicación basada en Adobe ayuda a tus clientes de [social media dashboard](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) a obtener y compartir los informes que necesitan, sin preocuparse si todos los destinatarios tienen Microsoft Office u otro software instalado en su dispositivo. Puede utilizar las mismas técnicas en su propia aplicación para ayudar a los usuarios a ver, combinar y descargar documentos. O bien, consulta las muchas otras API de Adobe para añadir firmas y realizar su seguimiento, y mucho más.
 
-Para empezar, solicita tu [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) y, a continuación, crea experiencias de creación de informes atractivas para tus empleados y clientes. Disfruta de tu cuenta gratis durante seis meses [de pago por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a medida que se amplían tus esfuerzos de marketing, solo \$0,05 por transacción de documento.
+Para empezar, solicita tu cuenta gratuita de [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) y, a continuación, crea experiencias de creación de informes atractivas para tus empleados y clientes. Disfruta de tu cuenta gratis durante seis meses y, a continuación, [paga sobre la marcha](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a medida que se amplían tus esfuerzos de marketing, a solo \$0,05 por transacción de documento.

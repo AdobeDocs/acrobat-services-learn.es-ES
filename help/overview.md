@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Adobe Acrobat Services] TUTORIALS API"
-description: Página Resumen de [!DNL Adobe Acrobat Services]
+title: "[!DNL Adobe Acrobat Services] Tutorials de API"
+description: Página de información general de  [!DNL Adobe Acrobat Services]
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API, PDF Electronic Seal API, PDF Extract API, PDF Accessibility Auto-Tag API
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Acrobat Services] Tutoriales de API
+# Tutoriales de API de [!DNL Adobe Acrobat Services]
 
 [!DNL Adobe Acrobat Services] tiene seis API principales:
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 * [!DNL Adobe PDF Extract API]
 * [!DNL Adobe PDF Accessibility Auto-Tag API]
 
-Estas dos últimas API y sus SDK se incluyen en [!DNL Adobe PDF Services API] como parte de una oferta de pago. [!DNL PDF Embed API] es una oferta gratuita. Estas API automatizan la generación, manipulación y transformación del contenido de los documentos mediante un conjunto de servicios web modernos basados en la nube. Te ayudan a ofrecer experiencias más sencillas, rápidas y de marca para que controles la interacción del usuario con tus documentos, optimices los flujos de trabajo de los PDF y fomentes el uso y la retención. Estos tutoriales te ayudan a ponerte al día y a ofrecer experiencias de marca más sencillas, rápidas y con el [!DNL Adobe Acrobat Services] API.
+Las dos últimas API y sus SDK se incluyen en [!DNL Adobe PDF Services API] como parte de una oferta de pago. [!DNL PDF Embed API] es una oferta gratuita. Estas API automatizan la generación, manipulación y transformación del contenido de los documentos mediante un conjunto de servicios web modernos basados en la nube. Te ayudan a ofrecer experiencias más sencillas, rápidas y de marca para que controles la interacción del usuario con tus documentos, optimices los flujos de trabajo de los PDF y fomentes el uso y la retención. Estos tutoriales te ayudan a ponerte al día ofreciendo experiencias de marca más sencillas, rápidas y con las API de [!DNL Adobe Acrobat Services].
 
 <table style="table-layout:fixed">
 <tr>

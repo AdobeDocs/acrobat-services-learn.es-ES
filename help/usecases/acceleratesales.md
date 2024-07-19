@@ -1,6 +1,6 @@
 ---
 title: Agiliza tu proceso de ventas
-description: Aprende a acelerar las ventas integrando experiencias con documentos con [!DNL Adobe Acrobat Services]
+description: Aprende a acelerar las ventas integrando experiencias de documentos con  [!DNL Adobe Acrobat Services]
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -10,41 +10,41 @@ thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
 
 # Agiliza tu proceso de ventas
 
-![Banner de caso de uso Hero](assets/UseCaseAccelerateSalesHero.jpg)
+![Banner de héroe de caso de uso](assets/UseCaseAccelerateSalesHero.jpg)
 
-Desde informes técnicos hasta contratos y acuerdos, se necesitan numerosos documentos durante el proceso de compra. En este tutorial, aprende cómo [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/) Puedes integrar experiencias con documentos a lo largo de este recorrido para ayudar a acelerar las ventas.
+Desde informes técnicos hasta contratos y acuerdos, se necesitan numerosos documentos durante el proceso de compra. En este tutorial, descubre cómo [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/) puede integrar experiencias de documentos durante este recorrido para ayudar a acelerar las ventas.
 
 ## Generar acuerdos y pedidos de ventas a partir de datos
 
 Los acuerdos de venta, los contratos y otros documentos pueden variar mucho según criterios específicos. Por ejemplo, un acuerdo de venta solo puede incluir determinados términos basados en criterios únicos, como estar en un país o estado específico, o incluir determinados productos como parte del acuerdo. La creación manual de estos documentos o el mantenimiento de muchas variaciones de plantillas diferentes pueden aumentar considerablemente los costes legales asociados a la revisión manual de los cambios.
 
-[API de generación de documentos de Adobe](https://developer.adobe.com/document-services/apis/doc-generation/) permite tomar datos de CRM u otro sistema de datos para generar dinámicamente documentos de ventas basados en esos datos.
+La [API de generación de documentos de Adobe](https://developer.adobe.com/document-services/apis/doc-generation/) te permite tomar datos de tu CRM u otro sistema de datos para generar dinámicamente documentos de ventas basados en esos datos.
 
 ## Obtener credenciales
 
 Empiece registrándose para obtener las credenciales gratuitas de los servicios de Adobe PDF:
 
-1. Navegar [aquí](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) para registrar sus credenciales.
+1. Navega [aquí](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) para registrar tus credenciales.
 1. Inicie sesión con su Adobe ID.
 1. Defina el nombre de la credencial (p. ej., Demostración de acuerdos de venta).
 
-   ![Captura de pantalla de configuración del nombre de su credencial](assets/accsales_1.png)
+   ![Captura de pantalla de configuración del nombre de credencial](assets/accsales_1.png)
 
 1. Elija un idioma para descargar el código de ejemplo (por ejemplo, Node.js).
-1. Marque para aceptar **[!UICONTROL términos de desarrollador]**.
-1. Seleccionar **[!UICONTROL Crear credenciales]**.
+1. Marque esta opción para aceptar **[!UICONTROL términos de desarrollador]**.
+1. Seleccione **[!UICONTROL Crear credenciales]**.
 Se descarga un archivo en el equipo con un archivo ZIP que contiene los archivos de ejemplo pdfservices-api-credentials.json y private.key para la autenticación.
 
-   ![Captura de pantalla de credenciales](assets/accsales_2.png)
+   ![Captura de pantalla de las credenciales](assets/accsales_2.png)
 
-1. Seleccionar **[!UICONTROL Obtener complemento de Microsoft Word]** o vaya a [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) para instalar.
+1. Selecciona **[!UICONTROL Obtener complemento de Microsoft Word]** o ve a [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) para instalarlo.
 
    >[!NOTE]
    >
@@ -110,27 +110,27 @@ Si extrae datos de un sistema de datos específico, debe generarlos como datos J
 
 ## Añadir etiquetas básicas al documento
 
-Este escenario utiliza un documento de pedido de venta, que se puede descargar [aquí](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
+Este escenario usa un documento de pedido de ventas, que se puede descargar [aquí](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
 
-![Captura de pantalla del documento de pedido de venta de muestra](assets/accsales_3.png)
+![Captura de pantalla del documento de pedido de ventas de muestra](assets/accsales_3.png)
 
-1. Abra el *SalesOrder.docx* documento de muestra en Microsoft Word.
-1. Si el plugin de generación de documentos está instalado, seleccione **[!UICONTROL Generación de documentos]** en la cinta de opciones. Si no ve Generación de documentos en la cinta, siga estas instrucciones.
-1. Seleccionar **[!UICONTROL Introducción]**.
-1. Copie los datos de ejemplo de JSON escritos anteriormente en el *Datos JSON* campo.
+1. Abra el documento de ejemplo *SalesOrder.docx* en Microsoft Word.
+1. Si el complemento Document Generation está instalado, seleccione **[!UICONTROL Document Generation]** en la cinta de opciones. Si no ve Generación de documentos en la cinta, siga estas instrucciones.
+1. Seleccione **[!UICONTROL Introducción]**.
+1. Copie los datos de ejemplo de JSON escritos anteriormente en el campo *Datos JSON*.
 
    ![Captura de pantalla de copia de datos JSON](assets/accsales_4.png)
 
 A continuación, vaya al panel Etiquetador de generación de documentos para colocar etiquetas en el documento.
 
 1. Seleccione el texto que desea reemplazar (p. ej., *NOMBRE DE EMPRESA*).
-1. En la *Etiquetador de generación de documentos* , busque &quot;name&quot;.
+1. En el *Etiquetador de generación de documentos*, busque &quot;name&quot;.
 1. En la lista de etiquetas, seleccione nombre en empresa.
-1. Seleccionar **[!UICONTROL Insertar texto]**.
+1. Seleccione **[!UICONTROL Insertar texto]**.
 
-   ![Captura de pantalla de insertar etiqueta](assets/accsales_5.png)
+   ![Captura de pantalla de inserción de etiqueta](assets/accsales_5.png)
 
-   Este proceso coloca una etiqueta denominada {{company.name}} porque la etiqueta está debajo de la ruta en el JSON.
+   Este proceso coloca una etiqueta denominada {{company.name}} porque la etiqueta se encuentra bajo la ruta de acceso en el JSON.
 
    ```
    {
@@ -149,32 +149,32 @@ Repita estas acciones para algunas de las etiquetas adicionales del documento, c
 
 Directamente en Microsoft Word, puede obtener una vista previa del documento generado en función de los datos JSON de ejemplo.
 
-1. En la *Etiquetador de generación de documentos* panel, seleccionar **[!UICONTROL Generar documento]**. La primera vez que se le solicite iniciar sesión con su Adobe ID. Seleccionar **[!UICONTROL Iniciar sesión]** y complete las indicaciones para iniciar sesión con sus credenciales.
+1. En el panel *Etiquetador de generación de documentos*, seleccione **[!UICONTROL Generar documento]**. La primera vez que se le solicite iniciar sesión con su Adobe ID. Seleccione **[!UICONTROL Iniciar sesión]** y complete las indicaciones para iniciar sesión con sus credenciales.
 
-   ![Captura de pantalla de cómo previsualizar el documento generado](assets/accsales_6.png)
+   ![Captura de pantalla de cómo obtener una vista previa del documento generado](assets/accsales_6.png)
 
-1. Seleccionar **[!UICONTROL Ver documento]**.
+1. Seleccione **[!UICONTROL Ver documento]**.
 
    ![Captura de pantalla del botón Ver documento](assets/accsales_7.png)
 
 1. Se abre una ventana del navegador que le permite obtener una vista previa de los resultados del documento.
 
-   ![Captura de pantalla del documento en la ventana del navegador](assets/accsales_8.png)
+   ![Captura de pantalla del documento en la ventana del explorador](assets/accsales_8.png)
 
 Puede ver las etiquetas del documento que se reemplazaron por los datos de los datos de ejemplo originales.
 
-![Captura de pantalla de etiquetas sustituidas por datos](assets/accsales_9.png)
+![Captura de pantalla de etiquetas reemplazadas por datos](assets/accsales_9.png)
 
 ## Agregar una tabla a una plantilla
 
 En el siguiente escenario, agregue una lista de productos a una tabla del documento.
 
 1. Inserte el cursor donde debe colocarse la tabla.
-1. En la *Etiquetador de generación de documentos* panel, seleccionar **[!UICONTROL Avanzado]**.
-1. Expandir **[!UICONTROL Tablas y listas]**.
-1. En la *Registros de tabla* , seleccione *referencesOrder*, que es una matriz que enumera todos los elementos de producto.
-1. En el campo Seleccionar registros de columna, escriba para incluir *descripción* y *totalPaymentDue.price* campo.
-1. Seleccionar **[!UICONTROL Insertar tabla]**.
+1. En el panel *Etiquetador de generación de documentos*, seleccione **[!UICONTROL Avanzado]**.
+1. Expanda **[!UICONTROL Tablas y listas]**.
+1. En el campo *Registros de tabla*, seleccione *referencesOrder*, que es una matriz que muestra todos los elementos de producto.
+1. En el campo Seleccionar registros de columna, escriba para incluir los campos *description* y *totalPaymentDue.price*.
+1. Seleccione **[!UICONTROL Insertar tabla]**.
 
    ![Captura de pantalla de inserción de tabla](assets/accsales_10.png)
 
@@ -184,13 +184,13 @@ Edite la tabla para realizar ajustes de estilos, tamaños y otros parámetros co
 
 Los cálculos numéricos permiten calcular sumas y otros cálculos basados en una colección de datos, como una matriz. En este escenario, agregue un campo para calcular el subtotal.
 
-1. Seleccione la *$0,00* junto al título del subtotal.
-1. En la *[!UICONTROL Etiquetador de generación de documentos]* panel, expandir **[!UICONTROL Cálculos numéricos]**.
-1. Debajo *[!UICONTROL Seleccionar tipo de cálculo]*, elija **[!UICONTROL Agregación]**.
-1. Debajo *[!UICONTROL Seleccionar tipo]*, elija **[!UICONTROL Suma]**.
-1. Debajo *[!UICONTROL Seleccionar registros]*, elija **[!UICONTROL ReferencesOrder]**.
+1. Seleccione *$0.00* junto al título del subtotal.
+1. En el *[!UICONTROL Etiquetador de generación de documentos]*, expanda **[!UICONTROL Cálculos numéricos]**.
+1. En *[!UICONTROL Seleccionar tipo de cálculo]*, elija **[!UICONTROL Agregación]**.
+1. En *[!UICONTROL Seleccionar tipo]*, elija **[!UICONTROL Suma]**.
+1. En *[!UICONTROL Seleccionar registros]*, elija **[!UICONTROL ReferencesOrder]**.
 1. En *[!UICONTROL Seleccionar elemento para realizar la agregación]**, elija **[!UICONTROL totalPaymentsDue.price]**.
-1. Seleccionar **[!UICONTROL Insertar cálculo]**.
+1. Seleccione **[!UICONTROL Insertar cálculo]**.
 
 Este proceso inserta una etiqueta de cálculo que proporciona la suma de los valores. Se pueden realizar cálculos más avanzados utilizando cálculos JSONata. Por ejemplo:
 
@@ -210,14 +210,14 @@ Las secciones condicionales permiten incluir solo una oración o un párrafo cua
 1. En el documento, busque la sección denominada *DECLARACIONES DE PRIVACIDAD DE CALIFORNIA*.
 1. Seleccione la sección con el cursor.
 
-   ![Captura de pantalla de selección](assets/accsales_11.png)
+   ![Captura de pantalla de la selección](assets/accsales_11.png)
 
-1. En la *[!UICONTROL Etiquetador de generación de documentos]*, seleccione **[!UICONTROL Avanzado]**.
-1. Expandir **[!UICONTROL Contenido condicional]**.
-1. En la *[!UICONTROL Seleccionar registros]* campo, buscar y seleccionar **[!UICONTROL customer.address.state]**.
-1. En la *[!UICONTROL Seleccionar operador]* , seleccione **=**.
-1. En la *[!UICONTROL Campo Valor]*, tipo *CA*.
-1. Seleccionar **[!UICONTROL Insertar condición]**.
+1. En el *[!UICONTROL Etiquetador de generación de documentos]*, seleccione **[!UICONTROL Avanzado]**.
+1. Expandir **[!UICONTROL contenido condicional]**.
+1. En el campo *[!UICONTROL Seleccionar registros]*, busca y selecciona **[!UICONTROL customer.address.state]**.
+1. En el campo *[!UICONTROL Seleccionar operador]*, seleccione **=**.
+1. En el *[!UICONTROL campo Valor]*, escriba *CA*.
+1. Seleccione **[!UICONTROL Insertar condición]**.
 
 La sección California solo aparece en el documento generado si customer.address.state = CA.
 
@@ -230,25 +230,25 @@ La API de generación de documentos permite insertar imágenes dinámicamente a 
 Las imágenes se pueden pasar por una dirección URL en los datos o contenido base64. Este ejemplo utiliza una dirección URL.
 
 1. Coloque el cursor donde desee incluir una imagen.
-1. En la *[!UICONTROL Etiquetador de generación de documentos]* panel, seleccionar **[!UICONTROL Avanzado]**.
-1. Expandir **[!UICONTROL Imágenes]**.
-1. En la *[!UICONTROL Seleccionar etiquetas]* , elija **[!UICONTROL logotipo]**.
-1. En la *[!UICONTROL Texto alternativo opcional]* , proporcione una descripción (es decir, un logotipo). Este proceso inserta un marcador de posición de imagen que tiene el siguiente aspecto:
+1. En el panel *[!UICONTROL Etiquetador de generación de documentos]*, seleccione **[!UICONTROL Avanzado]**.
+1. Expanda **[!UICONTROL Imágenes]**.
+1. En el campo *[!UICONTROL Seleccionar etiquetas]*, elige **[!UICONTROL logotipo]**.
+1. En el campo *[!UICONTROL Texto alternativo opcional]*, escriba una descripción (es decir, un logotipo). Este proceso inserta un marcador de posición de imagen que tiene el siguiente aspecto:
 
-   ![Captura de pantalla de imagen de marcador](assets/accsales_12.png)
+   ![Captura de pantalla de la imagen del marcador](assets/accsales_12.png)
 
 Sin embargo, desea definir la imagen dinámicamente en una imagen que ya está en el diseño, lo que puede hacer de la siguiente manera:
 
 1. Haga clic con el botón derecho en la imagen del marcador de posición insertada.
 
-   ![Captura de pantalla de imagen de marcador](assets/accsales_13.png)
+   ![Captura de pantalla de la imagen del marcador](assets/accsales_13.png)
 
-1. Seleccionar **[!UICONTROL Editar texto alternativo]**.
+1. Seleccione **[!UICONTROL Editar texto alternativo]**.
 1. En el panel, copie el texto que tenga este aspecto:
    `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
 1. Selecciona otra imagen del documento que quieras que sea dinámica.
 
-   ![Captura de pantalla de la nueva imagen del documento](assets/accsales_14.png)
+   ![Captura de pantalla de la nueva imagen en el documento](assets/accsales_14.png)
 
 1. Haga clic con el botón derecho en la imagen y seleccione **[!UICONTROL Editar texto alternativo]**.
 1. Pegue el valor en el panel.
@@ -261,20 +261,20 @@ Adobe Acrobat Sign le permite capturar firmas electrónicas en sus documentos. A
 
 1. Desplácese hasta donde se requiera una firma en el documento de muestra.
 1. Inserte el cursor donde se necesite la firma.
-1. En la *[!UICONTROL Etiquetador de generación de documentos de Adobe]* panel, seleccionar **[!UICONTROL Adobe Sign]**.
-1. En la *[!UICONTROL Especificar el número de destinatarios]* , defina el número de destinatarios (en este ejemplo es uno).
-1. En la *[!UICONTROL Destinatarios]* , seleccione **[!UICONTROL Signer-1]**.
-1. En la *[!UICONTROL Campo]* escriba, seleccione **[!UICONTROL Firma]**.
-1. Seleccionar **[!UICONTROL Insertar etiqueta de texto de Adobe Sign]**.
+1. En el *[!UICONTROL Etiquetador de generación de documentos de Adobe]*, seleccione **[!UICONTROL Adobe Sign]**.
+1. En el campo *[!UICONTROL Especificar número de destinatario]*, establezca el número de destinatarios (en este ejemplo es uno).
+1. En el campo *[!UICONTROL Destinatarios]*, seleccione **[!UICONTROL Firmante-1]**.
+1. En el tipo *[!UICONTROL Campo]*, seleccione **[!UICONTROL Firma]**.
+1. Seleccione **[!UICONTROL Insertar etiqueta de texto de Adobe Sign]**.
 
 Se inserta una etiqueta en el documento.
 
 ![Captura de pantalla de la etiqueta de firma en el documento](assets/accsales_15.png)
 
 Acrobat Sign proporciona otros tipos de campos que puede colocar, como los campos de fecha.
-1. En la *Campo* escriba, seleccione **[!UICONTROL Fecha]**.
+1. En el tipo *Campo*, seleccione **[!UICONTROL Fecha]**.
 1. Mueva el cursor por encima de la ubicación Fecha en el documento.
-1. Seleccionar **[!UICONTROL Insertar etiqueta de texto de Adobe Sign]**.
+1. Seleccione **[!UICONTROL Insertar etiqueta de texto de Adobe Sign]**.
 
 ![Captura de pantalla de la etiqueta de fecha en el documento](assets/accsales_16.png)
 
@@ -336,8 +336,8 @@ documentMergeOperation.execute(executionContext)
 });
 ```
 
-1. Reemplazar `<INSERT JSON FILE>` con el nombre del archivo JSON en /resources.
-1. Reemplazar `<INSERT DOCX>` con el nombre del archivo DOCX.
+1. Reemplace `<INSERT JSON FILE>` por el nombre del archivo JSON en /resources.
+1. Reemplace `<INSERT DOCX>` por el nombre del archivo DOCX.
 1. Para ejecutar, utilice Terminal para ejecutar el nodo generate-salesOrder.js.
 
 El archivo de salida debe estar en la carpeta /output con el documento generado correctamente.
@@ -364,13 +364,14 @@ Para obtener más información sobre algunas de las otras acciones disponibles, 
 
 ¿Te interesa saber más? Echa un vistazo a algunas formas adicionales de usar [!DNL Adobe Acrobat Services]:
 
-* Más información sobre [documentación](https://developer.adobe.com/document-services/docs/overview/)
+* Más información en [documentación](https://developer.adobe.com/document-services/docs/overview/)
 * Ver más tutoriales sobre Adobe Experience League
 * Utilice las secuencias de comandos de ejemplo de la carpeta /src para ver cómo puede aprovechar PDF
-* Seguir [Blog de tecnología de Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) para conocer los últimos consejos y trucos
-* Suscribirse a [Clips de papel (transmisión en directo mensual)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) para obtener más información sobre la automatización con [!DNL Adobe Acrobat Services]. ======
-* Más información sobre [documentación](https://developer.adobe.com/document-services/docs/overview/)
+* Sigue el [Blog de tecnología de Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) para obtener los últimos consejos y trucos
+* Suscríbete a [Paper Clips (la transmisión en directo mensual)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) para obtener información sobre la automatización con [!DNL Adobe Acrobat Services].
+======
+* Más información en [documentación](https://developer.adobe.com/document-services/docs/overview/)
 * Ver más tutoriales sobre Adobe Experience League
 * Utilice las secuencias de comandos de ejemplo de la carpeta /src para ver cómo puede aprovechar PDF
-* Seguir [Blog de tecnología de Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) para conocer los últimos consejos y trucos
-* Suscribirse a [Clips de papel (transmisión en directo mensual)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) para obtener más información sobre la automatización con [!DNL Adobe Acrobat Services]
+* Sigue el [Blog de tecnología de Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) para obtener los últimos consejos y trucos
+* Suscríbete a [Paper Clips (la transmisión en directo mensual)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) para obtener información sobre la automatización con [!DNL Adobe Acrobat Services]

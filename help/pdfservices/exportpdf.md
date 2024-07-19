@@ -10,8 +10,8 @@ thumbnail: KT-6674.jpg
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 5%
+source-wordcount: '478'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +51,7 @@ Utilice los tutoriales de introducción que se indican a continuación para crea
 
    Por ejemplo, C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples
 
-1. Ejecute el siguiente comando::
+1. Ejecute el siguiente comando:
 
    `mvn -f pom.xml exec:java -Dexec.mainClass=com.adobe.platform.operation.samples.exportpdf.ExportPDFToDOCX`
 
@@ -67,7 +67,7 @@ El PDF se creará en el directorio src/main/resources.
 
 1. Vuelva a cambiar los directorios en el directorio ExportPDFtoDocx .
 
-1. Ejecute el siguiente comando::
+1. Ejecute el siguiente comando:
 
    `dotnet run ExportPDFToDocx.csproj`
 
@@ -81,7 +81,7 @@ El PDF se creará en el mismo directorio.
 
    Por ejemplo, C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
 
-1. Ejecute el siguiente comando::
+1. Ejecute el siguiente comando:
 
    `node src/ocr/ocr-pdf.js`
 
@@ -101,10 +101,10 @@ A otro formato.
 
 ## Recursos y pasos siguientes
 
-* Para obtener más ayuda y asistencia, visite la [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) foro de la comunidad
+* Para obtener ayuda y asistencia adicionales, visita el foro de la comunidad de [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)
 
-* API de servicios de PDF [Documentación](https://www.adobe.com/go/pdftoolsapi_doc)
+* [Documentación](https://www.adobe.com/go/pdftoolsapi_doc) de la API de servicios de PDF
 
-* [FAQ](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) para preguntas de API de servicios de PDF
+* [Preguntas frecuentes](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) para preguntas de la API de servicios del PDF
 
-* [Contacte con nosotros](https://www.adobe.com/go/pdftoolsapi_requestform) para preguntas sobre licencias y precios
+* [Ponte en contacto con nosotros](https://www.adobe.com/go/pdftoolsapi_requestform) si tienes preguntas sobre licencias y precios

@@ -10,7 +10,7 @@ thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ En la API de servicios de PDF, hay varios servicios disponibles para crear y man
 * Combinar páginas de PDF o documentos de PDF en un único PDF
 * Comprime los PDF para reducir el tamaño del uso compartido a través de correo electrónico o en línea
 * Alinea para optimizar un PDF para una visualización rápida en la web
-* Organizar páginas de PDF con servicios de inserción, sustitución, reordenación, eliminación y rotación
+* Organizar páginas de PDF con servicios de inserción, reemplazo, reordenación, eliminación y rotación
 
 Los desarrolladores pueden empezar en solo unos minutos con los archivos de muestra listos para ejecutar que se proporcionan para acceder a todos los servicios web disponibles. Así es como empezar.
 
 ## Obtener credenciales y descargar archivos de muestra
 
-El primer paso es obtener una credencial (clave de API) para desbloquear el uso. [Suscríbase a la prueba gratuita aquí](https://www.adobe.com/go/dcsdks_credentials) y haz clic en &#39;Comenzar&#39; para crear tus nuevas credenciales.
+El primer paso es obtener una credencial (clave de API) para desbloquear el uso. [Regístrate para obtener la prueba gratis aquí](https://www.adobe.com/go/dcsdks_credentials) y haz clic en &quot;Empezar&quot; para crear tus nuevas credenciales.
 
 ![Clave de API](assets/apikey.png)
 
@@ -60,7 +60,7 @@ Si elige la opción para &quot;Crear ejemplo de código personalizado&quot;, no 
 
 Si no ha elegido la opción Crear ejemplo de código personalizado, deberá copiar el ID de cliente (clave de API) de la consola de Adobe.io:
 
-![Ejemplo Code](assets/codesample.png)
+![Ejemplo de código](assets/codesample.png)
 
 Descomprima el contenido de PDFToolsSDK-Node.jsSamples.zip.
 
@@ -96,21 +96,21 @@ C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>node src/createpdf/creat
 
 Ejemplo de salida:
 
-![Ejemplo de salida](assets/exampleoutput.png)
+![Salida de ejemplo](assets/exampleoutput.png)
 
 El PDF se creará en la ubicación designada en la salida, que de forma predeterminada es el directorio pdfServicesSdkResult.
 
 ## Recursos y pasos siguientes
 
-* Para obtener ayuda y asistencia adicionales, visite el Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) foro de la comunidad
+* Para obtener ayuda y asistencia adicionales, visita el foro de la comunidad de [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) de Adobe
 
-API de servicios de PDF [Documentación](https://www.adobe.com/go/pdftoolsapi_doc)
+[Documentación](https://www.adobe.com/go/pdftoolsapi_doc) de la API de servicios de PDF
 
-* [FAQ](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) para preguntas de API de servicios de PDF
+* [Preguntas frecuentes](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) para preguntas de la API de servicios del PDF
 
-* [Contacte con nosotros](https://www.adobe.com/go/pdftoolsapi_requestform) para preguntas sobre licencias y precios
+* [Ponte en contacto con nosotros](https://www.adobe.com/go/pdftoolsapi_requestform) si tienes preguntas sobre licencias y precios
 
 * Artículos relacionados:
   [La nueva API de servicios de PDF ofrece aún más funciones para los flujos de trabajo de documentos](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [Versión de julio de [!DNL Adobe Acrobat Services]: Servicios de incrustación y PDF para PDF](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [Versión de julio de [!DNL Adobe Acrobat Services]: Servicios de incrustación y PDF de PDF](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

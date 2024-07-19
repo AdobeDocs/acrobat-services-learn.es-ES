@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Adobe Acrobat Services]"
 breadcrumb-title: "[!DNL Acrobat Services]"
-user-guide-description: Más información sobre [!DNL Adobe Acrobat Services]
+user-guide-description: Más información sobre  [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API, PDF Accessibility Auto-Tag API, PDF Electronic Seal API, PDF Extract API
@@ -16,7 +16,7 @@ ht-degree: 3%
 ---
 
 
-# [!DNL Adobe Acrobat Services] TUTORIALS de API {#tutorials}
+# [!DNL Adobe Acrobat Services] Tutorials de API {#tutorials}
 
 + [Información general](overview.md)
 + API de servicios de PDF {#pdfservices}
@@ -31,7 +31,7 @@ ht-degree: 3%
 + API de generación de documentos {#docgen}
    + [Información general](docgen/overview-docgen.md)
    + [Automatiza la generación de documentos](docgen/automate-doc-gen.md)
-   + Creación de plantillas {#docgentemplates}
+   + Creando plantillas {#docgentemplates}
       + [Visión General del Etiquetador de Generación de Documentos de Adobe](docgen/taggeroverview.md)
       + [Adición de etiquetas de texto](docgen/taggeraddtexttags.md)
       + [Adición de etiquetas de imagen](docgen/taggeraddimagetags.md)
@@ -41,10 +41,10 @@ ht-degree: 3%
 + API de etiquetas automáticas de accesibilidad de PDF {#pdfaccessibility}
    + [Información general](pdfaccessibility/overview-accessibility.md)
    + [Etiquetado automático de documentos para su accesibilidad](pdfaccessibility/automatically-add-tags.md)
-+ API de PDF Extract {#pdfextract}
++ API de extracción de PDF {#pdfextract}
    + [Información general](pdfextract/overview-extract.md)
    + [Automatiza la extracción de contenido](pdfextract/automate-content-extraction.md)
-+ API de sello electrónico de PDF {#eseal}
++ API de sello electrónico del PDF {#eseal}
    + [Información general](pdfelectronicseal/overview-electronic-seal.md)
    + [Aplicar automáticamente el sello electrónico](pdfelectronicseal/automatically-apply-electronic-seal.md)
 + API de incrustación de PDF {#pdfembed}
@@ -53,7 +53,7 @@ ht-degree: 3%
 + API de Acrobat Sign {#acrobatsign}
    + [Información general](acrobatsign/overview-sign.md)
    + [Introducción a la API de Adobe Sign](acrobatsign/signapi.md)
-   + OEM/Partner integrado {#oem}
+   + OEM/asociado incrustado {#oem}
       + [Registrarse para obtener una cuenta de desarrollador](acrobatsign/sign-up-developer-account.md)
       + [Crear la aplicación](acrobatsign/creating-your-application.md)
       + [Creación de un vínculo incrustado](acrobatsign/creating-an-embed-link.md)

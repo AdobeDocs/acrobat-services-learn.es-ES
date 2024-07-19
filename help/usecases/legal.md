@@ -10,24 +10,24 @@ thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '2006'
-ht-degree: 1%
+source-wordcount: '1890'
+ht-degree: 0%
 
 ---
 
 # Gestión de contratos legales
 
-![Banner de caso de uso Hero](assets/UseCaseLegalHero.jpg)
+![Banner de héroe de caso de uso](assets/UseCaseLegalHero.jpg)
 
-La digitalización conlleva desafíos Hoy en día, la mayoría de las organizaciones tienen muchos tipos de [contratos legales](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) que deben crear, editar, aprobar y que han firmado distintas partes. Estos contratos legales a menudo requieren una personalización y una construcción de marca únicas. Las organizaciones también pueden tener que guardarlos en un formato protegido una vez firmados para mantenerlos seguros. Para ello, necesitan una solución sólida de generación y gestión de documentos.
+La digitalización conlleva desafíos Hoy en día, la mayoría de las organizaciones tienen muchos tipos de [contratos legales](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) que deben crear, editar, aprobar y que han firmado diferentes partes. Estos contratos legales a menudo requieren una personalización y una construcción de marca únicas. Las organizaciones también pueden tener que guardarlos en un formato protegido una vez firmados para mantenerlos seguros. Para ello, necesitan una solución sólida de generación y gestión de documentos.
 
 Muchas soluciones ofrecen cierta generación de documentos, pero no pueden personalizar las entradas de datos y la lógica condicional, como cláusulas que se aplican únicamente a escenarios específicos. La actualización manual de las plantillas legales de una empresa es difícil y propensa a errores a medida que estos documentos se amplían. La necesidad de automatizar estos procesos es considerable.
 
 ## Lo que puedes aprender
 
-En este tutorial práctico, explora las funciones de [[!DNL Adobe Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) en la generación de campos de entrada personalizados en los documentos. Además, explora cómo convertir fácilmente estos documentos generados a un formato de documento portátil (PDF) protegido para evitar la manipulación de datos.
+En este tutorial práctico, explora las funciones de las [[!DNL Adobe Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) en la generación de campos de entrada personalizados en los documentos. Además, explora cómo convertir fácilmente estos documentos generados a un formato de documento portátil (PDF) protegido para evitar la manipulación de datos.
 
-Este tutorial incluye un poco de programación a la hora de explorar la conversión de contratos en PDF. Para seguir adelante con eficacia, [Microsoft Word](https://www.microsoft.com/en-us/download/office.aspx) y [Node.js](https://nodejs.org/) debe estar instalado en el equipo. Conocimientos básicos de Node.js y [Sintaxis ES6](https://www.w3schools.com/js/js_es6.asp) también se recomienda.
+Este tutorial incluye un poco de programación a la hora de explorar la conversión de contratos en PDF. Para seguir los pasos de manera eficaz, [Microsoft Word](https://www.microsoft.com/en-us/download/office.aspx) y [Node.js](https://nodejs.org/) deben estar instalados en tu equipo. También se recomienda una comprensión básica de Node.js y la [sintaxis ES6](https://www.w3schools.com/js/js_es6.asp).
 
 ## API y recursos relevantes
 
@@ -41,15 +41,15 @@ Este tutorial incluye un poco de programación a la hora de explorar la conversi
 
 ## Creación de un documento de plantilla
 
-Puede crear documentos legales utilizando la aplicación Microsoft Word o descargando la [plantillas de Word de muestra](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade). Aun así, no es fácil personalizar las entradas y firmar digitalmente estos documentos sin utilizar algunas herramientas auxiliares como [Complemento Etiquetador de generación de documentos de Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) para Microsoft Word.
+Puede crear documentos legales con la aplicación Microsoft Word o descargando las [plantillas de Word de ejemplo](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) de Adobe. Aun así, no es fácil personalizar las entradas y firmar digitalmente estos documentos sin usar algunas herramientas auxiliares como [Adobe Document Generation Tagger add-in](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) para Microsoft Word.
 
 El etiquetador de generación de documentos es un complemento de Microsoft Word, creado para que la personalización de documentos sea perfecta mediante etiquetas. Permite la creación de campos dinámicos en plantillas de documento que se rellenan dinámicamente mediante datos JSON.
 
-![Captura de pantalla de cómo añadir Adobe Document Generation Tagger en Word](assets/legal_1.png)
+![Captura de pantalla de cómo agregar el etiquetador de generación de documentos de Adobe en Word](assets/legal_1.png)
 
 Para ilustrar el uso del etiquetador de generación de documentos, instale este complemento y, a continuación, cree un modelo de datos JSON, que se utiliza en el etiquetado de un documento de contrato legal simple.
 
-Instalar el etiquetador de generación de documentos en Word haciendo clic en el icono **Insertar** y, en el grupo Complementos, haga clic en **Mis complementos**. En el menú Complementos de Office, busque &quot;Generación de documentos de Adobe&quot; y haga clic en **Añadir** y sigue el proceso. Puede ver estos pasos en la captura de pantalla anterior.
+Instale el etiquetador de generación de documentos en Word haciendo clic en la ficha **Insertar** y, a continuación, en el grupo Complementos, haga clic en **Mis complementos**. En el menú Complementos de Office, busca &quot;Generación de documentos de Adobe&quot; y, a continuación, haz clic en **Agregar** y sigue el proceso. Puede ver estos pasos en la captura de pantalla anterior.
 
 Después de instalar el etiquetador de generación de documentos para el complemento de Word, cree un modelo de datos JSON simple para etiquetar el documento legal.
 
@@ -71,31 +71,31 @@ Para continuar, abra cualquier editor de su elección, cree un archivo llamado A
 }
 ```
 
-Después de guardar este documento JSON, impórtelo al complemento etiquetador de generación de documentos. Importe el documento haciendo clic en **Generación de documentos** en el grupo de Adobes de la parte superior derecha de la pantalla de Word, como se muestra en la captura de pantalla a continuación.
+Después de guardar este documento JSON, impórtelo al complemento etiquetador de generación de documentos. Importa el documento haciendo clic en **Generación de documentos** en el grupo de Adobes de la parte superior derecha de la pantalla de Word, como se muestra en la captura de pantalla a continuación.
 
 ![Captura de pantalla del complemento etiquetador de generación de documentos de Adobe en Word](assets/legal_2.png)
 
-Esto muestra un vídeo para guiarte. Puede verlo o ir directamente al campo de etiquetado haciendo clic en **Introducción**. Después de hacer clic **Introducción**, aparece un formulario de carga. Haga clic en **Cargar archivo JSON** y seleccione el archivo JSON que acaba de crear. Cuando haya finalizado la importación, haga clic en **Generar etiqueta** para generar las etiquetas.
+Esto muestra un vídeo para guiarte. Puedes verlo o ir directamente al campo de etiquetado haciendo clic en **Introducción**. Después de hacer clic en **Introducción**, aparece un formulario de carga. Haz clic en **Cargar archivo JSON** y selecciona el archivo JSON que acabas de crear. Cuando se complete la importación, haga clic en **Generar etiqueta** para generar las etiquetas.
 
-Después de importar y generar etiquetas, puede agregarlas al documento. Para añadirlas, coloque el cursor en el punto exacto en el que desea que aparezca la etiqueta. A continuación, seleccione una etiqueta de la API de generación de documentos y haga clic en **Insertar texto**. La captura de pantalla siguiente describe este procedimiento.
+Después de importar y generar etiquetas, puede agregarlas al documento. Para añadirlas, coloque el cursor en el punto exacto en el que desea que aparezca la etiqueta. A continuación, selecciona una etiqueta de la API de generación de documentos y haz clic en **Insertar texto**. La captura de pantalla siguiente describe este procedimiento.
 
 ![Captura de pantalla de adición de etiquetas al documento](assets/legal_3.png)
 
-Además de las etiquetas básicas creadas con el modelo de datos JSON importado, también puede utilizar funciones avanzadas para obtener más opciones, como imágenes, lógica condicional, cálculos, elementos repetidos y frases condicionales. Puede acceder a estas funciones haciendo clic en **Avanzado** en el panel Etiquetador de generación de documentos. Puede ver esto en la captura de pantalla a continuación.
+Además de las etiquetas básicas creadas con el modelo de datos JSON importado, también puede utilizar funciones avanzadas para obtener más opciones, como imágenes, lógica condicional, cálculos, elementos repetidos y frases condicionales. Puedes acceder a estas funciones haciendo clic en **Avanzado** en el panel Etiquetador de generación de documentos. Puede ver esto en la captura de pantalla a continuación.
 
 ![Captura de pantalla de la pestaña Avanzado del etiquetador de generación de documentos de Adobe](assets/legal_4.png)
 
 Estas funciones avanzadas no son diferentes de las etiquetas básicas. Para incluir lógica condicional, seleccione la parte del documento que desea rellenar. A continuación, configure la regla que determina la inserción de la etiqueta.
 
-Para ilustrar mejor, por ejemplo, el acuerdo, hay una sección que desea incluir, solo de forma condicional. En el campo Seleccionar tipo de contenido, seleccione **Sección.** En el campo Seleccionar registros, elija la opción que determina si se muestra la sección condicional. Seleccione el operador condicional que desee y establezca el valor para el que vaya a realizar la prueba en el campo Valor. A continuación, haga clic **Insertar condición.** La captura de pantalla siguiente ilustra este proceso.
+Para ilustrar mejor, por ejemplo, el acuerdo, hay una sección que desea incluir, solo de forma condicional. En el campo Seleccionar tipo de contenido, seleccione **Sección.** En el campo Seleccionar registros, elija la opción que determina si se muestra la sección condicional. Seleccione el operador condicional que desee y establezca el valor para el que vaya a realizar la prueba en el campo Valor. A continuación, haga clic en **Insertar condición.** La captura de pantalla siguiente ilustra este proceso.
 
 ![Captura de pantalla de inserción de contenido condicional](assets/legal_5.png)
 
-Para los cálculos, seleccione Aritmética o Agregación y, a continuación, incluya el primer registro, el operador y el segundo registro que desee utilizar en función de las etiquetas de plantilla disponibles. A continuación, haga clic **Insertar cálculo**.
+Para los cálculos, seleccione Aritmética o Agregación y, a continuación, incluya el primer registro, el operador y el segundo registro que desee utilizar en función de las etiquetas de plantilla disponibles. A continuación, haga clic en **Insertar cálculo**.
 
-Además, los contratos legales a menudo requieren firmas de las partes involucradas. Puede insertar una firma electrónica utilizando las etiquetas de texto de Adobe Sign que se encuentran justo debajo de la sección &quot;Cálculos numéricos&quot;. Para incluir la firma electrónica, debe especificar el número de destinatarios y seleccionar **Firmante** y el tipo de campo de las listas desplegables, según corresponda. Una vez hecho esto, haga clic en **Insertar etiqueta de texto de Adobe Sign** para finalizar el proceso.
+Además, los contratos legales a menudo requieren firmas de las partes involucradas. Puede insertar una firma electrónica utilizando las etiquetas de texto de Adobe Sign que se encuentran justo debajo de la sección &quot;Cálculos numéricos&quot;. Para incluir la firma electrónica, debe especificar el número de destinatarios, seleccionar **Firmante** y el tipo de campo de las listas desplegables, según corresponda. Una vez hecho esto, haz clic en **Insertar etiqueta de texto de Adobe Sign** para finalizar el proceso.
 
-Para garantizar la integridad de los datos, guarde los documentos legales en un formato protegido. Con [!DNL Acrobat Services] API, puede transformar rápidamente documentos en formato de PDF. Puede crear una aplicación sencilla Express Node.js, integrar la API de generación de documentos en ella y utilizar esta aplicación sencilla para convertir el documento etiquetado de Word al formato de PDF.
+Para garantizar la integridad de los datos, guarde los documentos legales en un formato protegido. Con las API de [!DNL Acrobat Services], puedes transformar rápidamente documentos en formato de PDF. Puede crear una aplicación sencilla Express Node.js, integrar la API de generación de documentos en ella y utilizar esta aplicación sencilla para convertir el documento etiquetado de Word al formato de PDF.
 
 ## Configuración del proyecto
 
@@ -103,7 +103,7 @@ En primer lugar, configure la estructura de carpetas para la aplicación Node.js
 
 ### Estructura de directorios
 
-Cree una carpeta denominada AdobeLegalContractAPI y ábrala en el editor que desee. Cree una aplicación Node.js básica con el ```npm init``` mediante la siguiente estructura de carpetas:
+Cree una carpeta denominada AdobeLegalContractAPI y ábrala en el editor que desee. Cree una aplicación Node.js básica con el comando ```npm init``` mediante la estructura de carpetas siguiente:
 
 ```
 ###Directory Structure
@@ -175,11 +175,11 @@ Después de instalar los paquetes, asegúrese de que el contenido del archivo pa
 
 En estos fragmentos de código, instaló las dependencias de la aplicación, incluido el motor de plantillas de Handlebars para la vista.
 
-El objetivo principal de este tutorial es utilizar [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/) para convertir documentos a PDF. Por lo tanto, no hay un proceso paso a paso de cómo generar esta aplicación Node.js. Sin embargo, puede recuperar el código de aplicación Node.js completo en funcionamiento en [GitHub](https://github.com/agavitalis/adobe_legal_contracts.git).
+El objetivo principal de este tutorial es usar [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/) para convertir documentos en PDF. Por lo tanto, no hay un proceso paso a paso de cómo generar esta aplicación Node.js. Sin embargo, puede recuperar el código completo de la aplicación Node.js en funcionamiento en [GitHub](https://github.com/agavitalis/adobe_legal_contracts.git).
 
-## Integración [!DNL Adobe Acrobat Services] API en una aplicación Node.js
+## Integrar [!DNL Adobe Acrobat Services] API en una aplicación Node.js
 
-[!DNL Adobe Acrobat Services] Las API son servicios fiables basados en la nube y diseñados para la manipulación perfecta de documentos. Ofrece tres API:
+Las API de [!DNL Adobe Acrobat Services] son servicios confiables basados en la nube diseñados para la manipulación perfecta de documentos. Ofrece tres API:
 
 * API de servicios de Adobe PDF
 
@@ -187,25 +187,25 @@ El objetivo principal de este tutorial es utilizar [[!DNL Acrobat Services] API]
 
 * API de generación de documentos de Adobe
 
-Necesita credenciales para utilizar [!DNL Acrobat Services] API (distintas de las credenciales de API de incrustación de PDF). Si no tiene credenciales válidas, [registrar](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) y complete el flujo de trabajo como se muestra en la captura de pantalla a continuación. Disfruta de una [prueba gratis de seis meses y pago en función de las necesidades](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), solo $0.05 por transacción de documento.
+Necesita credenciales para usar [!DNL Acrobat Services] API (diferentes de las credenciales de API de incrustación de PDF). Si no tiene credenciales válidas, [registre](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) y complete el flujo de trabajo como se muestra en la captura de pantalla siguiente. Disfruta de una [prueba gratis de seis meses y luego paga por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), por solo $0.05 por transacción de documento.
 
-![Captura de pantalla de creación de nuevas credenciales](assets/legal_6.png)
+![Captura de pantalla de la creación de nuevas credenciales](assets/legal_6.png)
 
-Una vez completado el proceso de registro, se descarga automáticamente un ejemplo de código en su equipo para ayudarle a comenzar. Puede extraer este ejemplo de código y seguirlo. No olvide copiar los archivos pdftools-api-credentials.json y private.key del ejemplo de código extraído al directorio raíz del proyecto Node.js. Las credenciales son necesarias para poder acceder a [!DNL Acrobat Services] Terminales de API. También puede descargar ejemplos de SDK con sus credenciales personalizadas para no tener que actualizar la clave en el código de ejemplo.
+Una vez completado el proceso de registro, se descarga automáticamente un ejemplo de código en su equipo para ayudarle a comenzar. Puede extraer este ejemplo de código y seguirlo. No olvide copiar los archivos pdftools-api-credentials.json y private.key del ejemplo de código extraído al directorio raíz del proyecto Node.js. Las credenciales son necesarias para poder acceder a [!DNL Acrobat Services] puntos finales de API. También puede descargar ejemplos de SDK con sus credenciales personalizadas para no tener que actualizar la clave en el código de ejemplo.
 
-Ahora, instale el SDK del nodo de servicios de Adobe PDF ejecutando el ```npm install \--save @adobe/documentservices-pdftools-node-sdk``` mediante el terminal del directorio raíz de la aplicación. Si se instala correctamente, puede utilizar [!DNL Acrobat Services] API para manipular documentos en la aplicación.
+A continuación, instale Adobe PDF Services Node SDK ejecutando el comando ```npm install \--save @adobe/documentservices-pdftools-node-sdk``` mediante el terminal del directorio raíz de la aplicación. Cuando se instala correctamente, puede utilizar las API de [!DNL Acrobat Services] para manipular los documentos en la aplicación.
 
 ## Creación de un documento de PDF
 
-[!DNL Acrobat Services] Las API permiten crear PDF a partir de documentos de Microsoft Office (Word, Excel y PowerPoint) y otros [formatos de archivo compatibles](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) como .txt, .rtf, .bmp, .jpeg, gif, .tiff y .png. Puedes convertir fácilmente contratos legales de cualquier otro formato de archivo a PDF mediante las API de servicios de Acrobat.
+Las API [!DNL Acrobat Services] admiten la creación de PDF de documentos de Microsoft Office (Word, Excel y PowerPoint) y otros [formatos de archivo compatibles](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) como .txt, .rtf, .bmp, .jpeg, gif, .tiff y .png. Puedes convertir fácilmente contratos legales de cualquier otro formato de archivo a PDF mediante las API de servicios de Acrobat.
 
 La API de generación de documentos de Adobe permite convertir a un archivo o PDF de Word. Por ejemplo, puede utilizar una plantilla de Word para generar un contrato, incluida la modificación para marcar el texto editado. Luego, conviértalo en un PDF y usa la API de servicios de PDF para proteger el documento con una contraseña, enviarlo para que se firme y mucho más.
 
-Para implementar la creación de documentos de PDF a partir de los formatos de archivo compatibles disponibles, existe un formulario para cargar un documento para transformarlo mediante [!DNL Acrobat Services].
+Para implementar la creación de documentos de PDF a partir de los formatos de archivo admitidos disponibles, existe un formulario para cargar un documento para transformarlo mediante [!DNL Acrobat Services].
 
-El formulario de carga diseñado aparece en la captura de pantalla que aparece a continuación y puede acceder a los archivos de HTML y CSS en [GitHub](https://github.com/agavitalis/adobe_legal_contracts.git).
+El formulario de carga diseñado aparece en la captura de pantalla que aparece a continuación, y puede acceder al HTML y a los archivos CSS en [GitHub](https://github.com/agavitalis/adobe_legal_contracts.git).
 
-![Captura de pantalla de carga de formulario](assets/legal_7.png)
+![Captura de pantalla de la carga del formulario](assets/legal_7.png)
 
 Ahora, agregue los siguientes fragmentos de código al archivo /createPDFController.js de controladores. Este código recupera el documento cargado y lo transforma en PDF. [!DNL Acrobat Services] guarda el archivo cargado original y el archivo transformado en diferentes carpetas.
 
@@ -276,7 +276,7 @@ console.log('Exception encountered while executing operation', err);
 module.exports = { createPDF, createPDFPost };
 ```
 
-El fragmento de código anterior requería el modelo de documento y [!DNL Acrobat Services] SDK de nodo que instaló anteriormente. Hay dos funciones:
+El fragmento de código anterior requería el modelo de documento y el SDK de nodo [!DNL Acrobat Services] que instaló anteriormente. Hay dos funciones:
 
 * createPDF muestra el formulario de carga de documento.
 
@@ -284,7 +284,7 @@ El fragmento de código anterior requería el modelo de documento y [!DNL Acroba
 
 Las funciones guardan los documentos de PDF transformados en el directorio de vistas/salida, donde puede descargarlos en su PC.
 
-También puede obtener una vista previa del archivo de PDF transformado mediante la API gratuita PDF Embed. Mediante la API de incrustación de PDF, puede generar credenciales de Adobe [aquí](https://www.adobe.com/go/dcsdks_credentials) (diferente de su [!DNL Acrobat Services] y registrar los dominios permitidos para acceder a la API. Siga el proceso y genere las credenciales de la API embed de PDF para su aplicación. También puede ver la demostración [aquí](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf), desde el que puede generar fácilmente códigos para comenzar rápidamente.
+También puede obtener una vista previa del archivo de PDF transformado mediante la API gratuita PDF Embed. Mediante la API de incrustación de PDF, puede generar las credenciales de Adobe [aquí](https://www.adobe.com/go/dcsdks_credentials) (diferentes de sus [!DNL Acrobat Services] credenciales) y registrar los dominios permitidos para acceder a la API. Siga el proceso y genere las credenciales de la API embed de PDF para su aplicación. También puedes echar un vistazo a la demostración [aquí](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf), desde la que puedes generar fácilmente códigos para ponerte en marcha rápidamente.
 
 De vuelta a la aplicación, cree los archivos list.hbs y preview.hbs en la carpeta view de la aplicación y pegue el fragmento de código siguiente en los archivos list.hbs y preview.hbs, respectivamente.
 
@@ -415,16 +415,17 @@ res.download(document.url);
 module.exports = {listFiles, previewPDF, downloadPDF };
 ```
 
-En el archivo de controlador anterior, hay tres funciones: listFiles, previewPDF y downloadPDF. La función listFiles enumera todos los archivos de PDF generados hasta el momento mediante [!DNL Acrobat Services] API. La función previewPDF permite previsualizar los archivos del PDF mediante la API PDF Embed, mientras que la función downloadPDF permite descargar el archivo del PDF generado en el equipo. La captura de pantalla siguiente muestra una muestra de la vista previa del PDF mediante la API de PDF Embed.
+En el archivo de controlador anterior, hay tres funciones: listFiles, previewPDF y downloadPDF. La función listFiles enumera todos los archivos de PDF generados hasta ahora mediante las API [!DNL Acrobat Services]. La función previewPDF permite previsualizar los archivos del PDF mediante la API PDF Embed, mientras que la función downloadPDF permite descargar el archivo del PDF generado en el equipo. La captura de pantalla siguiente muestra una muestra de la vista previa del PDF mediante la API de PDF Embed.
 
-![Captura de pantalla de la previsualización del PDF](assets/legal_8.png)
+![Captura de pantalla de la vista previa del PDF](assets/legal_8.png)
 
 ## Resumen
 
-En este tutorial práctico, etiquetó un documento con el complemento Word de Microsoft Document Generation Tagger. A continuación, integrada [!DNL Acrobat Services] Las API en una aplicación Node.js y convertía un documento etiquetado a un formato de PDF descargable, aunque también podía haber creado el contrato legal directamente al PDF. Por último, ha utilizado la API Adobe PDF Embed para obtener una vista previa del PDF generado para su verificación y firma.
+En este tutorial práctico, etiquetó un documento con el complemento Word de Microsoft Document Generation Tagger. Luego, integró [!DNL Acrobat Services] API en una aplicación Node.js y
+ha convertido un documento etiquetado a un formato de PDF descargable, aunque también podría haber creado el contrato legal directamente a PDF. Por último, ha utilizado la API Adobe PDF Embed para obtener una vista previa del PDF generado para su verificación y firma.
 
-La aplicación completada hace que sea mucho más fácil etiquetar [plantillas de contrato legal](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) con campos dinámicos, conviértalos a PDF, previsualícelos y fírmelos con [!DNL Acrobat Services] API. En lugar de perder tiempo creando un contrato único, tu equipo puede enviar automáticamente el contrato correcto a cada cliente y luego dedicar más tiempo al crecimiento de tu negocio.
+La aplicación finalizada facilita mucho la tarea de etiquetar [plantillas de contratos legales](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) con campos dinámicos, convertirlas en PDF, obtener una vista previa de ellas y firmarlas mediante las API [!DNL Acrobat Services]. En lugar de perder tiempo creando un contrato único, tu equipo puede enviar automáticamente el contrato correcto a cada cliente y luego dedicar más tiempo al crecimiento de tu negocio.
 
-Las organizaciones utilizan [!DNL Adobe Acrobat Services] API por su integridad y facilidad de uso. Lo mejor de todo es que puedes disfrutar de un [prueba gratis de seis meses y pago en función de las necesidades](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html). Sólo pagas por lo que usas. Además, la API PDF Embed siempre es gratuita.
+Las organizaciones utilizan las API [!DNL Adobe Acrobat Services] por su integridad y facilidad de uso. Lo mejor de todo es que puedes disfrutar de una [prueba gratis de seis meses y luego pagar por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html). Sólo pagas por lo que usas. Además, la API PDF Embed siempre es gratuita.
 
-¿Todo listo para aumentar la productividad mejorando el flujo de documentos? [Introducción](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) hoy.
+¿Todo listo para aumentar la productividad mejorando el flujo de documentos? [Empezar](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) hoy.

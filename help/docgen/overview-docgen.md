@@ -61,9 +61,9 @@ La API de generación de documentos acepta una plantilla de documento (con etiqu
       <img alt="Visión General del Etiquetador de Generación de Documentos de Adobe" src="assets/Taggeroverview_thumb.png" />
    </a>
     <div>
-   <a href="taggeroverview.md"><strong>Visión General del Etiquetador de Generación de Documentos de Adobe</strong></a>
+   <a href="taggeroverview.md"><strong>Información general del etiquetador de generación de documentos de Adobe</strong></a>
     </div>
-    <em>Obtenga una descripción general del etiquetador de generación de documentos de Adobe diseñado para su uso con la API de generación de documentos de Adobe</em>
+    <em>Obtener una descripción general del etiquetador de generación de documentos de Adobe diseñado para su uso con la API de generación de documentos de Adobe</em>
     <br>
   </td>
   <td>
@@ -71,7 +71,7 @@ La API de generación de documentos acepta una plantilla de documento (con etiqu
       <img alt="Adición de etiquetas de texto" src="assets/Taggertexttags_thumb.png" />
    </a>
     <div>
-   <a href="taggeraddtexttags.md"><strong>Adición de etiquetas de texto</strong></a>
+   <a href="taggeraddtexttags.md"><strong>Agregando etiquetas de texto</strong></a>
     </div>
     <em>Aprenda a agregar etiquetas de texto a plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para su uso con la API de generación de documentos de Adobe</em>
     <br>
@@ -81,7 +81,7 @@ La API de generación de documentos acepta una plantilla de documento (con etiqu
       <img alt="Adición de etiquetas de imagen" src="assets/Taggerimagetags_thumb.png" />
    </a>
     <div>
-   <a href="taggeraddimagetags.md"><strong>Adición de etiquetas de imagen</strong></a>
+   <a href="taggeraddimagetags.md"><strong>Agregando etiquetas de imagen</strong></a>
     </div>
     <em>Aprenda a agregar etiquetas de imagen a las plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para insertar dinámicamente imágenes en los documentos mediante la API de generación de documentos de Adobe</em>
     <br>
@@ -91,9 +91,9 @@ La API de generación de documentos acepta una plantilla de documento (con etiqu
       <img alt="Adición de tablas y etiquetas de lista" src="assets/Taggertables_thumb.png" />
    </a>
     <div>
-   <a href="taggertables.md"><strong>Adición de tablas y etiquetas de lista</strong></a>
+   <a href="taggertables.md"><strong>Agregando tablas y etiquetas de lista</strong></a>
     </div>
-    <em>Aprenda a agregar tablas y etiquetas de lista a plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para agregar dinámicamente filas de tabla o de lista basadas en datos mediante la API de generación de documentos de Adobe</em>
+    <em>Aprenda a agregar tablas y etiquetas de lista a plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para agregar dinámicamente filas de tabla o lista basadas en datos mediante la API de generación de documentos de Adobe</em>
     <br>
   </td>
 </tr>
@@ -103,7 +103,7 @@ La API de generación de documentos acepta una plantilla de documento (con etiqu
       <img alt="Definición de etiquetas de cálculo numérico" src="assets/Taggercalculations_thumb.png" />
    </a>
     <div>
-   <a href="taggercalculations.md"><strong>Definición de etiquetas de cálculo numérico</strong></a>
+   <a href="taggercalculations.md"><strong>Establecer etiquetas de cálculo numérico</strong></a>
     </div>
     <em>Aprenda a establecer etiquetas de cálculo numérico en las plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para calcular agregaciones o aritmética de valores de datos mediante la API de generación de documentos de Adobe</em>
     <br>
@@ -113,9 +113,9 @@ La API de generación de documentos acepta una plantilla de documento (con etiqu
       <img alt="Configuración del contenido condicional" src="assets/Taggerconditional_thumb.png" />
    </a>
     <div>
-   <a href="taggerconditional.md"><strong>Configuración del contenido condicional</strong></a>
+   <a href="taggerconditional.md"><strong>Estableciendo contenido condicional</strong></a>
     </div>
-    <em>Aprenda a definir secciones en plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para incluir o excluir dinámicamente secciones de un documento basadas en datos mediante la API de generación de documentos de Adobe</em>
+    <em>Obtenga información sobre cómo establecer secciones en plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para incluir o excluir dinámicamente secciones de un documento basadas en datos mediante la API de generación de documentos de Adobe</em>
     <br>
   </td>
   <td>

@@ -72,9 +72,9 @@ Obtenga información sobre cómo empezar a incrustar la versión OEM de Acrobat 
       <img alt="Crear la aplicación" src="assets/Creatingyourapplication_1280.png" />
    </a>
     <div>
-   <a href="creating-your-application.md"><strong>Crear la aplicación</strong></a>
+   <a href="creating-your-application.md"><strong>Creando la aplicación</strong></a>
     </div>
-    <em>Aprenda a crear una aplicación en Acrobat Sign</em>
+    <em>Obtener información sobre cómo crear una aplicación en Acrobat Sign</em>
     <br>
   </td>
    <td>
@@ -82,9 +82,9 @@ Obtenga información sobre cómo empezar a incrustar la versión OEM de Acrobat 
       <img alt="Creación de un vínculo incrustado" src="assets/Creatinganembedlink_1280.png" />
    </a>
     <div>
-   <a href="creating-an-embed-link.md"><strong>Creación de un vínculo incrustado</strong></a>
+   <a href="creating-an-embed-link.md"><strong>Creando un vínculo incrustado</strong></a>
     </div>
-    <em>Aprenda a crear un vínculo incrustado para OAuth, que es el método por el que la aplicación obtiene permisos para los usuarios</em>
+    <em>Obtenga información sobre cómo crear un vínculo incrustado para OAuth, que es el método por el que la aplicación obtiene permisos para los usuarios</em>
     <br>
   </td>
   <td>
@@ -92,9 +92,9 @@ Obtenga información sobre cómo empezar a incrustar la versión OEM de Acrobat 
       <img alt="Generación de un token de acceso" src="assets/Generatingyouraccesstoken_1280.png" />
    </a>
     <div>
-   <a href="generating-an-access-token.md"><strong>Generación de un token de acceso</strong></a>
+   <a href="generating-an-access-token.md"><strong>Generando un token de acceso</strong></a>
     </div>
-    <em>Obtenga información sobre cómo generar un token de acceso que se puede utilizar con la API de Acrobat Sign</em>
+    <em>Obtenga información sobre cómo generar un token de acceso que se puede usar con la API de Acrobat Sign</em>
     <br>
   </td>
 </tr>
@@ -104,9 +104,9 @@ Obtenga información sobre cómo empezar a incrustar la versión OEM de Acrobat 
       <img alt="Creación de un documento transitorio" src="assets/Creatingatransientdocument_1280.png" />
    </a>
     <div>
-   <a href="creating-a-transient-document.md"><strong>Creación de un documento transitorio</strong></a>
+   <a href="creating-a-transient-document.md"><strong>Creando un documento transitorio</strong></a>
     </div>
-    <em>Aprenda a crear un documento transitorio que se pueda utilizar con la API de Acrobat Sign</em>
+    <em>Aprende a crear un documento transitorio que se pueda usar con la API de Acrobat Sign</em>
     <br>
   </td>
   <td>

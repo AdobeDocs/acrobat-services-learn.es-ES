@@ -10,26 +10,26 @@ thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
 
 # Registro de trabajos
 
-![Banner de caso de uso Hero](assets/UseCaseJobHero.jpg)
+![Banner de héroe de caso de uso](assets/UseCaseJobHero.jpg)
 
 Al operar un sitio web con varios usuarios, es crucial diseñar una experiencia que garantice una experiencia fluida para todos.
 
-Imagine el siguiente escenario: usted tiene un sitio web que permite a los empleadores [cargar registros de trabajos](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html). Para quienes buscan trabajo, es conveniente ver fácilmente todos los documentos relacionados con una publicación en un formato coherente. Sin embargo, es conveniente que los empleadores adjunten información en cualquier formato de archivo que tengan. Para ofrecer comodidad a ambos tipos de usuarios, puede convertir automáticamente todos los documentos cargados en PDF e incorporarlos en línea en la publicación.
+Imagine el siguiente escenario: tiene un sitio web que permite a los empleadores [cargar publicaciones de trabajos](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html). Para quienes buscan trabajo, es conveniente ver fácilmente todos los documentos relacionados con una publicación en un formato coherente. Sin embargo, es conveniente que los empleadores adjunten información en cualquier formato de archivo que tengan. Para ofrecer comodidad a ambos tipos de usuarios, puede convertir automáticamente todos los documentos cargados en PDF e incorporarlos en línea en la publicación.
 
 ## Lo que puedes aprender
 
-Este tutorial práctico recorre un ejemplo de Node.js que utiliza [!DNL Adobe Acrobat Services] y sus [Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) para agregar estas capacidades a un sitio de publicación de trabajos. Esto crea un sitio web que es más fácil de usar y más atractivo para los empleadores y los solicitantes de empleo por igual. Aquí está el [completo](https://github.com/contentlab-io/adobe_job_posting) [código del proyecto](https://github.com/contentlab-io/adobe_job_posting), en caso de que quieras seguir mientras lees.
+Este tutorial práctico recorre un ejemplo de Node.js que utiliza [!DNL Adobe Acrobat Services] y su [SDK de Node.js](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) para agregar estas capacidades a un sitio de publicación de trabajos. Esto crea un sitio web que es más fácil de usar y más atractivo para los empleadores y los solicitantes de empleo por igual. Aquí está el [código de proyecto](https://github.com/contentlab-io/adobe_job_posting) ](https://github.com/contentlab-io/adobe_job_posting)completo[, en caso de que quieras seguir tu lectura.
 
-Para comenzar, configure una aplicación web sencilla basada en Express Node.js. [Express](https://expressjs.com/) es un marco de trabajo de aplicaciones web minimalista que ofrece funciones como el enrutamiento y las plantillas. El código de la aplicación está disponible en [GitHub](https://github.com/contentlab-io/adobe_job_posting). Además, instale el [Base de datos PostgreSQL](https://www.postgresql.org/) y configurarlo para almacenar el PDF.
+Para comenzar, configure una aplicación web sencilla basada en Express Node.js. [Express](https://expressjs.com/) es un marco de trabajo de aplicaciones web minimalista que ofrece características como enrutamiento y plantillas. El código de la aplicación está disponible en [GitHub](https://github.com/contentlab-io/adobe_job_posting). Además, instale la [base de datos PostgreSQL](https://www.postgresql.org/) y configúrela para almacenar el PDF.
 
-## Pertinente [!DNL Acrobat Services] API
+## API [!DNL Acrobat Services] relevantes
 
 * [API de incrustación de PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
@@ -37,9 +37,9 @@ Para comenzar, configure una aplicación web sencilla basada en Express Node.js.
 
 ## Creación de credenciales de API de Adobe
 
-En primer lugar, debe [crear credenciales](https://www.adobe.com/go/dcsdks_credentials) para la API Adobe PDF Embed (gratuita) y la API Adobe PDF Services (gratuita durante seis meses) [de pago por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) por solo \$0,05 por transacción de documento). Al crear credenciales para la API de servicios de PDF, seleccione la opción &quot;Crear ejemplo de código personalizado&quot;. Guarde el archivo ZIP y extraiga pdftools-api-credentials.json y private.key en el directorio raíz del proyecto Node.js Express.
+En primer lugar, debe [crear credenciales](https://www.adobe.com/go/dcsdks_credentials) para la API Adobe PDF Embed (gratuita) y la API Adobe PDF Services (gratuita durante seis meses y, a continuación, [pagar sobre la marcha](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) por solo \$0,05 por transacción de documento). Al crear credenciales para la API de servicios de PDF, seleccione la opción &quot;Crear ejemplo de código personalizado&quot;. Guarde el archivo ZIP y extraiga pdftools-api-credentials.json y private.key en el directorio raíz del proyecto Node.js Express.
 
-También necesita una clave de API para la API embed disponible gratuitamente. Desde [Proyectos](https://console.adobe.io/projects), vaya al proyecto que ha creado. A continuación, haga clic en **Agregar al proyecto** y seleccione **API**. Por último, haga clic en **API de incrustación de PDF**.
+También necesita una clave de API para la API embed disponible gratuitamente. En [Proyectos](https://console.adobe.io/projects), vaya al proyecto que creó. Luego, haz clic en **Agregar al proyecto** y selecciona **API**. Por último, haga clic en **API de incrustación de PDF**.
 
 Especifique el dominio para la API de incrustación de PDF. La clave de API debe ser pública (búsquela en el código ejecutado por el navegador). Al especificar un dominio, se garantiza que otra persona de un dominio diferente no pueda utilizar la clave de API.
 
@@ -84,7 +84,7 @@ router.post('/upload', async function (req, res, next) {
 
 La función es asíncrona, por lo que puede utilizar la palabra clave await en la función, lo que resulta útil cuando se llama a los métodos que realizan llamadas a la API.
 
-![Captura de pantalla del sitio web de publicación de trabajo](assets/jobs_1.png)
+![Captura de pantalla del sitio web de publicación de trabajos](assets/jobs_1.png)
 
 ## Uso de la API de servicios de PDF
 
@@ -95,7 +95,7 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   const { Readable } = require('stream');
 ```
 
-Justo debajo de las importaciones, puede cargar las credenciales de la API y crear una [contenido de ejecución](https://www.javascripttutorial.net/javascript-execution-context/). Dado que puede reutilizar un contexto de ejecución para diferentes operaciones, tiene sentido hacerlo una sola vez.
+Justo debajo de las importaciones, puede cargar credenciales de API y crear un [contenido de ejecución](https://www.javascripttutorial.net/javascript-execution-context/). Dado que puede reutilizar un contexto de ejecución para diferentes operaciones, tiene sentido hacerlo una sola vez.
 
 ```
   const credentials = PDFToolsSdk.Credentials
@@ -106,7 +106,7 @@ Justo debajo de las importaciones, puede cargar las credenciales de la API y cre
   const executionContext = PDFToolsSdk.ExecutionContext.create(credentials);
 ```
 
-A continuación, vuelva a escribir código en el controlador de solicitudes en el comentario de la `router.post` Bloque. Para empezar, convierta el documento a PDF.
+Ahora, vuelva a escribir código en el controlador de solicitudes en el comentario del bloque `router.post`. Para empezar, convierta el documento a PDF.
 
 ```
   const createPdfOperation = PDFToolsSdk.CreatePDF.Operation.createNew();
@@ -128,7 +128,7 @@ El código guarda el PDF devuelto en un archivo y envía una simple respuesta de
 
 ## Conversión de imágenes en texto y compresión del PDF
 
-A continuación, utilice el reconocimiento óptico de caracteres (OCR) para convertir imágenes en texto y comprimir el resultado. Para ello, utilice las operaciones OCR y CompressPDF similares a la operación CreatePDF. Añada lo siguiente al archivo de rutas, en `router.post`:
+A continuación, utilice el reconocimiento óptico de caracteres (OCR) para convertir imágenes en texto y comprimir el resultado. Para ello, utilice las operaciones OCR y CompressPDF similares a la operación CreatePDF. Agregue lo siguiente al archivo de rutas, en `router.post`:
 
 ```
   const name = req.body.name;
@@ -200,7 +200,7 @@ Para almacenar el PDF en la tabla de la base de datos, modifique la función de 
   result.writeToStream(writableStream);
 ```
 
-Para escribir el contenido, cree un objeto WritableStreamBuffer. Con el evento finish, es hora de ejecutar la consulta SQL. El paquete node-postgres convierte automáticamente el parámetro Buffer al formato BYTEA. La consulta redirige al usuario a /job/{id}, un punto final creado más tarde.
+Para escribir el contenido, cree un objeto WritableStreamBuffer. Con el evento finish, es hora de ejecutar la consulta SQL. El paquete node-postgres convierte automáticamente el parámetro Buffer al formato BYTEA. La consulta redirige al usuario a /job/{id}, un extremo creado posteriormente.
 
 Para la API de incrustación de PDF, también necesita un extremo que devuelva solo el contenido del PDF:
 
@@ -221,7 +221,7 @@ Para la API de incrustación de PDF, también necesita un extremo que devuelva s
 
 ## Incorporación del PDF
 
-A continuación, cree la carpeta /job/{id} extremo, que procesa una plantilla que contiene el nombre del registro de trabajo solicitado y un PDF incrustado.
+Ahora, cree el extremo /job/{id}, que representa una plantilla que contiene el nombre del registro de trabajo solicitado y un PDF incrustado.
 
 ```
 router.get('/job/:id', async function(req, res, next) {
@@ -270,16 +270,16 @@ Ahora, puede probar todo el proceso de cargar un documento, redirigirlo a la pá
 
 ![Captura de pantalla de la prueba de un documento de PDF cargado](assets/jobs_2.png)
 
-Para ver una incrustación en línea en acción, echa un vistazo a esto [demostración en directo](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/IN_LINE/Bodea%20Brochure.pdf).
+Para ver una incrustación en línea en acción, echa un vistazo a esta [demostración en vivo](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/IN_LINE/Bodea%20Brochure.pdf).
 
 ## Pasos siguientes
 
-Este tutorial práctico le enseñó a utilizar Node.js con [!DNL Acrobat Services] para convertir un [registro de trabajo](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) en varios formatos a un PDF. A continuación, el PDF resultante se incrusta en una página web. Ahora puedes añadir la misma función a tu sitio web, lo que facilita a los empleadores cargar descripciones de trabajos, folletos y mucho más para que los solicitantes de empleo los encuentren. Estas capacidades ayudan a todos a obtener la información necesaria para encontrar el trabajo de sus sueños.
+Este tutorial práctico te enseñó a usar Node.js con [!DNL Acrobat Services] para convertir a un PDF una [publicación de trabajo](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) cargada en varios formatos. A continuación, el PDF resultante se incrusta en una página web. Ahora puedes añadir la misma función a tu sitio web, lo que facilita a los empleadores cargar descripciones de trabajos, folletos y mucho más para que los solicitantes de empleo los encuentren. Estas capacidades ayudan a todos a obtener la información necesaria para encontrar el trabajo de sus sueños.
 
-[!DNL Acrobat Services] le ayuda a añadir funciones clave de gestión de documentos a su sitio web o aplicación. Si desea profundizar en lo que estas API pueden hacer, consulte la siguiente documentación de inicio rápido:
+[!DNL Acrobat Services] te ayuda a añadir funciones clave de control de documentos a tu sitio web o aplicación. Si desea profundizar en lo que estas API pueden hacer, consulte la siguiente documentación de inicio rápido:
 
 * [API de incrustación de PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-Para empezar a añadir funciones de gestión de documentos fáciles de usar a su sitio web, [regístrate para obtener una prueba gratis](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). La API Adobe PDF Embed siempre es gratuita y la API Adobe PDF Services es gratuita durante seis meses; en ese caso, solo cuesta \$0,05 por cada transacción del documento para que puedas [de pago por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a medida que crece tu negocio.
+Para empezar a añadir funciones de manejo de documentos fáciles de usar a tu sitio web, [regístrate para obtener una prueba gratis](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). La API Adobe PDF Embed siempre es gratuita y la API Adobe PDF Services es gratuita durante seis meses. Después, cuesta solo \$0,05 por transacción de documento para que puedas [pagar sobre la marcha](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a medida que crece tu empresa.

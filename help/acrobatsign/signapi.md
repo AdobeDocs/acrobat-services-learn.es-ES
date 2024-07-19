@@ -10,24 +10,24 @@ thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
 source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 2%
+source-wordcount: '1906'
+ht-degree: 0%
 
 ---
 
 # Introducción a la API de Adobe Sign
 
-[API de Acrobat Sign](https://www.adobe.io/apis/documentcloud/sign.html) es una excelente forma de mejorar la forma de administrar los acuerdos firmados. Los desarrolladores pueden integrar fácilmente sus sistemas con la API de Sign, que proporciona una forma fiable y sencilla de cargar documentos, enviarlos para su firma, enviar recordatorios y recopilar firmas electrónicas.
+La [API de Acrobat Sign](https://www.adobe.io/apis/documentcloud/sign.html) es una forma excelente de mejorar la forma en que administras los acuerdos firmados. Los desarrolladores pueden integrar fácilmente sus sistemas con la API de Sign, que proporciona una forma fiable y sencilla de cargar documentos, enviarlos para su firma, enviar recordatorios y recopilar firmas electrónicas.
 
 ## Lo que puedes aprender
 
-Este tutorial práctico explica cómo los desarrolladores pueden utilizar la API de Sign para mejorar las aplicaciones y los flujos de trabajo creados con [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] incluye [API de servicios de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [API Adobe PDF Embed](https://www.adobe.io/apis/documentcloud/viesdk) (gratuito), y [API de generación de documentos de Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
+Este tutorial práctico explica cómo los desarrolladores pueden usar la API de Sign para mejorar las aplicaciones y los flujos de trabajo creados con [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] incluye [API de servicios de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [API Adobe PDF Embed](https://www.adobe.io/apis/documentcloud/viesdk) (gratuita) y [API de generación de documentos de Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
 
-Más concretamente, aprende a incluir la API de Acrobat Sign en tu aplicación para recopilar firmas y otra información, como la información de los empleados en un formulario de seguro. Se utilizan pasos genéricos con solicitudes y respuestas HTTP simplificadas. Puede implementar estas solicitudes en su idioma preferido. Puede crear un PDF utilizando una combinación de [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/), cárguelo en la API de Sign como [transitorio](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) y solicitar firmas de usuario final mediante el acuerdo o [widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) flujo de trabajo.
+Más concretamente, aprende a incluir la API de Acrobat Sign en tu aplicación para recopilar firmas y otra información, como la información de los empleados en un formulario de seguro. Se utilizan pasos genéricos con solicitudes y respuestas HTTP simplificadas. Puede implementar estas solicitudes en su idioma preferido. Puedes crear un PDF utilizando una combinación de [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/), cargarlo en la API de Sign como un documento [transitorio](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) y solicitar firmas de usuario final mediante el acuerdo o el flujo de trabajo de [widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md).
 
 ## Creación de un documento de PDF
 
-Empiece creando una plantilla de Microsoft Word y guardándola como PDF. O bien, puede automatizar la canalización mediante la API de generación de documentos para cargar una plantilla creada en Word y, a continuación, generar un documento de PDF. La API de generación de documentos forma parte de [!DNL Acrobat Services], [gratis durante seis meses y luego de pago por solo o $0.05 por transacción de documento](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
+Empiece creando una plantilla de Microsoft Word y guardándola como PDF. O bien, puede automatizar la canalización mediante la API de generación de documentos para cargar una plantilla creada en Word y, a continuación, generar un documento de PDF. La API de generación de documentos forma parte de [!DNL Acrobat Services], [es gratuita durante seis meses y luego se paga sobre la marcha por solo o 0,05 $ por transacción de documento](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
 
 En este ejemplo, la plantilla es solo un documento sencillo con algunos campos de firmante que rellenar. Asigne un nombre a los campos ahora y, a continuación, inserte los campos reales en este tutorial.
 
@@ -35,7 +35,7 @@ En este ejemplo, la plantilla es solo un documento sencillo con algunos campos d
 
 ## Descubrimiento del punto de acceso de API válido
 
-Antes de trabajar con la API de Sign, [crear una cuenta de desarrollador gratuita](https://acrobat.adobe.com/ca/en/sign/developer-form.html) para acceder a la API, pruebe el intercambio y la ejecución de documentos, y pruebe la función de correo electrónico.
+Antes de trabajar con la API de Sign, [crea una cuenta de desarrollador gratuita](https://acrobat.adobe.com/ca/en/sign/developer-form.html) para acceder a la API, prueba el intercambio y la ejecución de documentos, y prueba la función de correo electrónico.
 
 Adobe distribuye la API de Acrobat Sign por todo el mundo en muchas unidades de implementación llamadas &quot;fragmentos&quot;. Cada recurso compartido sirve a una cuenta de cliente, como NA1, NA2, NA3, EU1, JP1, AU1, IN1 y otros. Los nombres compartidos corresponden a ubicaciones geográficas. Estos fragmentos componen el URI base (puntos de acceso) de los puntos finales de la API.
 
@@ -65,7 +65,7 @@ En el ejemplo anterior, hay una respuesta con el valor como punto de acceso.
 
 Adobe Sign le permite crear diferentes flujos que preparan documentos para las firmas o la recopilación de datos. Independientemente del flujo de la aplicación, primero debe cargar un documento, que solo estará disponible durante siete días. Las llamadas de API posteriores deben hacer referencia a este documento temporal.
 
-El documento se carga mediante una solicitud del POST al `/transientDocuments` punto final. La solicitud de varias partes consta del nombre del archivo, una secuencia de archivos y el tipo MIME (medios) del archivo de documento. La respuesta del extremo contiene un ID que identifica el documento.
+El documento se carga mediante una solicitud de POST en el extremo `/transientDocuments`. La solicitud de varias partes consta del nombre del archivo, una secuencia de archivos y el tipo MIME (medios) del archivo de documento. La respuesta del extremo contiene un ID que identifica el documento.
 
 Además, la aplicación puede especificar una URL de devolución de llamada para que Acrobat Sign realice un ping, lo que notifica a la aplicación cuando se complete el proceso de firma.
 
@@ -91,7 +91,7 @@ Además, la aplicación puede especificar una URL de devolución de llamada para
 
 Los formularios web (antes conocidos como widgets de firma) son documentos alojados que cualquier persona con acceso puede firmar. Algunos ejemplos de formularios web son las hojas de registro, las renuncias y otros documentos a los que muchas personas acceden y firman en línea.
 
-Para crear un nuevo formulario web utilizando la API de Sign, primero debe cargar un documento transitorio. La solicitud del POST al `/widgets` El extremo utiliza el `transientDocumentId` .
+Para crear un nuevo formulario web utilizando la API de Sign, primero debe cargar un documento transitorio. La solicitud del POST al extremo `/widgets` usa el elemento `transientDocumentId` devuelto.
 
 En este ejemplo, el formulario web es `ACTIVE`, pero puede crearlo en uno de los tres estados diferentes:
 
@@ -101,7 +101,7 @@ En este ejemplo, el formulario web es `ACTIVE`, pero puede crearlo en uno de los
 
 * ACTIVO: para alojar inmediatamente el formulario web.
 
-También debe definirse la información sobre los participantes del formulario. La `memberInfos` contiene datos sobre los participantes, como el correo electrónico. Actualmente, este conjunto no admite más de un miembro. Sin embargo, como el correo electrónico del firmante del formulario web no se conoce en el momento de la creación del formulario web, el correo electrónico debe dejarse vacío, como en el ejemplo siguiente. La `role` define la función asumida por los miembros en el `memberInfos` (por ejemplo, el FIRMANTE y EL APROBADOR).
+También debe definirse la información sobre los participantes del formulario. La propiedad `memberInfos` contiene datos sobre los participantes, como el correo electrónico. Actualmente, este conjunto no admite más de un miembro. Sin embargo, como el correo electrónico del firmante del formulario web no se conoce en el momento de la creación del formulario web, el correo electrónico debe dejarse vacío, como en el ejemplo siguiente. La propiedad `role` define la función asumida por los miembros en `memberInfos` (como SIGNER y APPROVER).
 
 ```
   POST /api/rest/v6/widgets HTTP/1.1
@@ -135,13 +135,13 @@ También debe definirse la información sobre los participantes del formulario. 
   }
 ```
 
-Puede crear un formulario web como `DRAFT` o `AUTHORING`, luego cambie su estado a medida que el formulario pase por la canalización de la aplicación. Para cambiar el estado de un formulario web, consulte la [PUT /widgets/{widgetId}/state](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) punto final.
+Puede crear un formulario web como `DRAFT` o `AUTHORING` y, a continuación, cambiar su estado a medida que el formulario pasa por la canalización de la aplicación. Para cambiar el estado de un formulario web, consulte el extremo [PUT /widgets/{widgetId}/state](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState).
 
 ## Leer la URL de alojamiento del formulario web
 
 El siguiente paso es descubrir la dirección URL que aloja el formulario web. El extremo /widgets recupera una lista de datos de formulario web, incluida la dirección URL alojada del formulario web que reenvía a los usuarios, para recopilar firmas y otros datos de formulario.
 
-Este extremo devuelve una lista para que pueda encontrar el formulario específico por su identificador en el `userWidgetList` antes de obtener la dirección URL que aloja el formulario web:
+Este extremo devuelve una lista para que pueda encontrar el formulario específico por su id. en `userWidgetList` antes de obtener la dirección URL que aloja el formulario web:
 
 ```
   GET /api/rest/v6/widgets HTTP/1.1
@@ -188,11 +188,11 @@ Este formulario es un documento de PDF que los usuarios deben rellenar. Sin emba
 
 El documento anterior no muestra los campos, aún. Se añaden al definir qué campos recopilan la información del firmante, así como su tamaño y posición.
 
-Ahora, vaya al [Formularios web](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) en la página &quot;Sus acuerdos&quot; y busque el formulario que ha creado.
+Ahora, ve a la pestaña [Formularios web](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) en la página &quot;Tus acuerdos&quot; y busca el formulario que has creado.
 
-![Captura de pantalla de la pestaña Gestionar de Acrobat Sign](assets/GSASAPI_2.png)
+![Captura de pantalla de la pestaña Administrar de Acrobat Sign](assets/GSASAPI_2.png)
 
-![Captura de pantalla de la pestaña Gestionar Acrobat Sign con formularios web seleccionados](assets/GSASAPI_3.png)
+![Captura de pantalla de la pestaña Administrar de Acrobat Sign con formularios web seleccionados](assets/GSASAPI_3.png)
 
 Haga clic en **Editar** para abrir la página de edición del documento. Los campos predefinidos disponibles se encuentran en el panel derecho.
 
@@ -200,17 +200,17 @@ Haga clic en **Editar** para abrir la página de edición del documento. Los cam
 
 El editor le permite arrastrar y soltar campos de texto y firma. Después de agregar todos los campos necesarios, puede cambiar el tamaño y alinearlos para pulir el formulario. Por último, haga clic en **Guardar** para crear el formulario.
 
-![Captura de pantalla del entorno de creación de formularios de Acrobat Sign con campos de formulario añadidos](assets/GSASAPI_5.png)
+![Captura de pantalla del entorno de creación de formularios de Acrobat Sign con campos de formulario agregados](assets/GSASAPI_5.png)
 
 ## Enviar un formulario web para firmar
 
 Después de finalizar el formulario web, debe enviarlo para que los usuarios puedan rellenarlo y firmarlo. Una vez guardado el formulario, puede ver y copiar la dirección URL y el código incrustado.
 
-**Copiar URL de formulario web**: utilice esta dirección URL para enviar a los usuarios a una versión alojada de este acuerdo para su revisión y firma. Por ejemplo:
+**Copiar URL de formulario web**: usa esta dirección URL para enviar a los usuarios a una versión alojada de este acuerdo para que la revisen y la firmen. Por ejemplo:
 
 [https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3...babw\*](https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCndYscuKcDMPiVfQlpaGPb-5D7ebE9NUTQ6x6jK7PIs8HCtTzr3HOx8U6D5qqbabw*)
 
-**Copiar código incrustado de formulario web**: añada el acuerdo a su sitio web copiando este código y pegándolo en su HTML.
+**Copiar código incrustado del formulario web**: añade el acuerdo a tu sitio web copiando este código y pegándolo en tu HTML.
 
 Por ejemplo:
 
@@ -230,7 +230,7 @@ Cuando los usuarios obtienen acceso a la versión alojada del formulario, revisa
 
 El usuario rellena los campos y firma el formulario.
 
-![Captura de pantalla del usuario que selecciona el campo Firma](assets/GSASAPI_8.png)
+![Captura de pantalla del usuario que selecciona el campo de firma](assets/GSASAPI_8.png)
 
 A continuación, el usuario firma el documento con una firma previamente almacenada o con una nueva.
 
@@ -238,9 +238,9 @@ A continuación, el usuario firma el documento con una firma previamente almacen
 
 ![Captura de pantalla de la firma](assets/GSASAPI_10.png)
 
-Cuando el usuario hace clic **Aplicar**, Adobe les indica que abran su correo electrónico y confirmen la firma. La firma permanece pendiente hasta que llegue la confirmación.
+Cuando el usuario hace clic en **Aplicar**, Adobe le indica que abra su correo electrónico y confirme la firma. La firma permanece pendiente hasta que llegue la confirmación.
 
-![Captura de pantalla de Just one more step](assets/GSASAPI_11.png)
+![Captura de pantalla de solo un paso más](assets/GSASAPI_11.png)
 
 Esta autenticación añade autenticación de múltiples factores y refuerza la seguridad del proceso de firma.
 
@@ -250,7 +250,7 @@ Esta autenticación añade autenticación de múltiples factores y refuerza la s
 
 ## Lectura de formularios web completados
 
-Ahora es el momento de obtener los datos del formulario que los usuarios rellenaron. La `/widgets/{widgetId}/formData` endpoint recupera los datos introducidos por el usuario en un formulario interactivo cuando firmó el formulario.
+Ahora es el momento de obtener los datos del formulario que los usuarios rellenaron. El extremo `/widgets/{widgetId}/formData` recupera los datos introducidos por el usuario en un formulario interactivo cuando firmó el formulario.
 
 ```
 GET /api/rest/v6/widgets/{widgetId}/formData HTTP/1.1
@@ -276,7 +276,7 @@ Como alternativa a los formularios web, puede crear acuerdos. En las siguientes 
 
 Enviar un documento a los destinatarios especificados para que lo firmen o aprueben crea un acuerdo. Puede realizar un seguimiento del estado y la finalización de un acuerdo mediante las API.
 
-Puede crear un acuerdo mediante una [documento transitorio](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [documento de biblioteca](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md), o URL. En este ejemplo, el acuerdo se basa en la `transientDocumentId`, al igual que el formulario web creado anteriormente.
+Puede crear un acuerdo usando un [documento transitorio](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [documento de biblioteca](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o una URL. En este ejemplo, el acuerdo se basa en `transientDocumentId`, al igual que el formulario web creado anteriormente.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -317,7 +317,7 @@ En este ejemplo, el acuerdo se crea como IN_PROCESS, pero puede crearlo en uno d
 
 * IN_PROCESS: para enviar inmediatamente el acuerdo
 
-Para cambiar el estado de un acuerdo, utilice el `PUT /agreements/{agreementId}/state` punto final para realizar una de las transiciones de estado permitidas a continuación:
+Para cambiar el estado de un acuerdo, utilice el extremo `PUT /agreements/{agreementId}/state` para realizar una de las transiciones de estado permitidas a continuación:
 
 * BORRADOR a CREACIÓN
 
@@ -325,7 +325,7 @@ Para cambiar el estado de un acuerdo, utilice el `PUT /agreements/{agreementId}/
 
 * IN_PROCESS a CANCELLED
 
-La `participantSetsInfo` la propiedad anterior proporciona correos electrónicos de las personas que se espera que participen en el acuerdo y qué acción realizan (firmar, aprobar, reconocer, etc.). En el ejemplo anterior, solo hay un participante: el firmante. Las firmas escritas están limitadas a cuatro por documento.
+La propiedad `participantSetsInfo` anterior proporciona mensajes de correo electrónico de las personas que se espera que participen en el acuerdo y la acción que realizan (firmar, aprobar, reconocer, etc.). En el ejemplo anterior, solo hay un participante: el firmante. Las firmas escritas están limitadas a cuatro por documento.
 
 A diferencia de los formularios web, cuando se crea un acuerdo, Adobe lo envía automáticamente para que se firme. El punto final devuelve el identificador único del acuerdo.
 
@@ -340,7 +340,7 @@ A diferencia de los formularios web, cuando se crea un acuerdo, Adobe lo envía 
 
 ## Recuperar información sobre los miembros del acuerdo
 
-Una vez que haya creado un acuerdo, puede utilizar la `/agreements/{agreementId}/members` punto final para recuperar información sobre los miembros del acuerdo. Por ejemplo, puede comprobar si un participante ha firmado el acuerdo.
+Una vez creado un acuerdo, puede utilizar el extremo `/agreements/{agreementId}/members` para recuperar información sobre los miembros del acuerdo. Por ejemplo, puede comprobar si un participante ha firmado el acuerdo.
 
 ```
 GET /api/rest/v6/agreements/{agreementId}/members HTTP/1.1
@@ -383,9 +383,9 @@ El cuerpo de respuesta de JSON resultante contiene información sobre los partic
 
 En función de las reglas de negocio, un plazo puede impedir a los participantes firmar el acuerdo después de una fecha específica. Si el acuerdo tiene una fecha de caducidad, puede recordárselo a los participantes cuando se acerque.
 
-Según la información de los miembros del acuerdo que recibió después de la llamada al `/agreements/{agreementId}/members` punto final en la última sección, puede enviar recordatorios por correo electrónico a todos los participantes que aún no hayan firmado el acuerdo.
+Según la información de los miembros del acuerdo que recibió después de la llamada al extremo `/agreements/{agreementId}/members` en la última sección, puede enviar recordatorios por correo electrónico a todos los participantes que aún no hayan firmado el acuerdo.
 
-Una solicitud del POST al `/agreements/{agreementId}/reminders` punto final crea un recordatorio para los participantes especificados de un acuerdo identificado por el `agreementId` parámetro.
+Una solicitud del POST al extremo `/agreements/{agreementId}/reminders` crea un recordatorio para los participantes especificados de un acuerdo identificado por el parámetro `agreementId`.
 
 ```
 POST /agreements/{agreementId}/reminders HTTP/1.1
@@ -417,7 +417,7 @@ Una vez que publique el recordatorio, los usuarios recibirán un correo electró
 
 ## Lectura de acuerdos completados
 
-Al igual que en los formularios web, puede leer los detalles de los acuerdos que han firmado los destinatarios. La `/agreements/{agreementId}/formData` El extremo recupera los datos introducidos por el usuario cuando firmó el formulario web.
+Al igual que en los formularios web, puede leer los detalles de los acuerdos que han firmado los destinatarios. El extremo `/agreements/{agreementId}/formData` recupera los datos introducidos por el usuario cuando firmó el formulario web.
 
 ```
 GET /api/rest/v6/agreements/{agreementId}/formData HTTP/1.1
@@ -434,10 +434,10 @@ Company Name","CBJCHBCAABAA5Z84zy69q_Ilpuy5DzUAahVfcNZillDt"
 
 La API de Acrobat Sign permite administrar documentos, formularios web y acuerdos. Los flujos de trabajo simplificados pero completos creados mediante formularios web y acuerdos se realizan de forma genérica que permite a los desarrolladores implementarlos utilizando cualquier lenguaje.
 
-Para obtener una descripción general de cómo funciona la API de Sign, puede encontrar ejemplos en la [Guía del desarrollador de uso de API](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md). Esta documentación contiene artículos cortos sobre muchos de los pasos seguidos a lo largo del artículo y otros temas relacionados.
+Para obtener una descripción general de cómo funciona la API de Sign, puede encontrar ejemplos en [API Usage Developer Guide](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md). Esta documentación contiene artículos cortos sobre muchos de los pasos seguidos a lo largo del artículo y otros temas relacionados.
 
-La API de Acrobat Sign está disponible en varios niveles de [planes de firma electrónica para un solo usuario y varios usuarios](https://acrobat.adobe.com/es/es/sign/pricing/plans.html), para que puedas elegir el modelo de precios que mejor se adapte a tus necesidades. Ahora que ya sabes lo fácil que es incorporar la API de Sign en tus aplicaciones, es posible que te interesen otras funciones como [Acrobat Sign Webhooks](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md), un modelo de programación basado en inserción. En lugar de requerir que la aplicación realice comprobaciones frecuentes en los eventos de Acrobat Sign, los webhooks le permiten registrar una dirección URL HTTP para la que la API de Sign ejecuta una solicitud de devolución de llamada del POST cada vez que se produce un evento. Los webhooks permiten una programación sólida al proporcionar a la aplicación actualizaciones instantáneas y en tiempo real.
+La API de Acrobat Sign está disponible en varios niveles de [planes de firma electrónica para un solo usuario y varios usuarios](https://acrobat.adobe.com/es/es/sign/pricing/plans.html), de modo que puedes elegir el modelo de precios que mejor se adapte a tus necesidades. Ahora que ya sabes lo fácil que es incorporar la API de Sign en tus aplicaciones, puede que te interesen otras funciones como [Acrobat Sign Webhooks](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md), un modelo de programación basado en inserción. En lugar de requerir que la aplicación realice comprobaciones frecuentes en los eventos de Acrobat Sign, los webhooks le permiten registrar una dirección URL HTTP para la que la API de Sign ejecuta una solicitud de devolución de llamada del POST cada vez que se produce un evento. Los webhooks permiten una programación sólida al proporcionar a la aplicación actualizaciones instantáneas y en tiempo real.
 
-Echa un vistazo al [precios de pago por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), para cuando finalice tu prueba gratis de seis meses de la API de servicios de Adobe PDF, y la API gratuita Adobe PDF Embed.
+Consulta el [precio de pago por uso](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), para ver cuándo termina tu versión de prueba de seis meses de la API de servicios de Adobe PDF, y la API incrustada de Adobe PDF gratuita.
 
-Para añadir funciones interesantes a tu aplicación, como la creación automática de documentos y la firma de documentos, empieza con [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html).
+Para añadir funciones interesantes como la creación automática de documentos y la firma de documentos a tu aplicación, empieza con [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html).

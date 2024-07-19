@@ -35,9 +35,9 @@ Desbloquea la estructura y los elementos de contenido de cualquier PDF con un se
       <img alt="Analizar PDF: tan fácil como trabajar con datos JSON con la API PDF Extract" src="assets/ParsingPDF_1280.png" />
    </a>
     <div>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>Analizar PDF: tan fácil como trabajar con datos JSON con la API PDF Extract</strong></a>
+   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>PDF de análisis: Tan fácil como trabajar con datos JSON con la API PDF Extract</strong></a>
     </div>
-    <em>Obtenga más información sobre cómo el servicio Extract de PDF en la API de servicios de Adobe PDF puede facilitar el análisis de PDF tanto como el análisis de JSON</em>
+    <em>Obtenga información sobre cómo el servicio Extract de PDF en la API de servicios de Adobe PDF puede facilitar el análisis de PDF tanto como analizar JSON</em>
     <br>
   </td>
   <td>
