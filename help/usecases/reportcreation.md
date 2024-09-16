@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Ahora, vamos a explorar cómo publicar los informes.
 
 Para que resulte más sencillo, utiliza únicamente el proceso y la carga basados en el sistema de archivos que se encuentran aquí. En Express.js, puede utilizar el módulo fs para mostrar todos los archivos disponibles en un directorio.
 
-En la misma página, permita que el administrador cargue archivos de informes en el servidor para que los clientes los vean. Estos archivos pueden tener muchos formatos diferentes, como Microsoft Word, Microsoft Excel, HTML y [otros formatos de datos]https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf), incluidos los archivos de gráficos. La página de administración tiene el siguiente aspecto:
+En la misma página, permita que el administrador cargue archivos de informes en el servidor para que los clientes los vean. Estos archivos pueden tener muchos formatos diferentes, como Microsoft Word, Microsoft Excel, HTML y [otros formatos de datos](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf), incluidos los archivos de gráficos. La página de administración tiene el siguiente aspecto:
 
 ![Captura de pantalla de la capacidad de administración](assets/report_2.png)
 
