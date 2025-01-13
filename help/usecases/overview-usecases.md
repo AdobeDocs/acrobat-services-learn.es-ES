@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Adobe Acrobat Services] casos prácticos de API"
+title: '[!DNL Adobe Acrobat Services] casos de uso de API'
 description: Página de información general de  [!DNL Adobe Acrobat Services] casos prácticos de API
 feature: Use Cases
 role: Developer
@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8115
 thumbnail: KT-8115.jpg
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -23,232 +23,321 @@ Descubre cómo las API de [!DNL Adobe Acrobat Services] pueden cambiar tu empres
 
 ### API de [!DNL Acrobat Services]
 
-<table style="table-layout:fixed">
-<tr>
-  <td>
-    <a href="automatelegalworkflows.md">
-      <img alt="Automatiza los flujos de trabajo legales" src="assets/automatelegal_thumb.png" />
-    </a>
-    <div>
-    <a href="automatelegalworkflows.md"><strong>Automatizar flujos de trabajo legales</strong></a>
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Automate legal workflows">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" title="Automatiza los flujos de trabajo legales" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_11d45ac52221eb0279a687861908ee87f8b9071fd.png?width=400&format=webply&optimize=medium" alt="Automatiza los flujos de trabajo legales"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" target="_self" rel="referrer" title="Automatiza los flujos de trabajo legales">Automatizar flujos de trabajo legales</a>
+                    </p>
+                    <p class="is-size-6">Descubre cómo automatizar los flujos de trabajo legales con contenido condicional</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Descubre cómo automatizar los flujos de trabajo legales con contenido condicional</em>
-    <br>
-  </td>
-  <td>
-      <a href="employeeonboarding.md">
-        <img alt="Modernización de la incorporación de empleados" src="assets/employee_thumb.png" />
-      </a>
-      <div>
-      <a href="employeeonboarding.md"><strong>Modernización de la incorporación de empleados</strong></a>
-      </div>
-      <em>Descubre cómo modernizar la incorporación de empleados</em>
-      <br>
-  </td>
-  <td>
-      <a href="acceleratesales.md">
-        <img alt="Agiliza tu proceso de ventas" src="assets/accsales_thumb.png" />
-      </a>
-      <div>
-      <a href="acceleratesales.md"><strong>Acelera tu proceso de ventas</strong></a>
-      </div>
-      <em>Aprende a acelerar las ventas integrando experiencias con documentos</em>
-      <br>
-    </td>
-    <td>
-      <a href="sales.md">
-        <img alt="Gestión de propuestas de ventas y contratos" src="assets/sales_thumb.png" />
-      </a>
-      <div>
-      <a href="sales.md"><strong>Administrar propuestas de ventas y contratos</strong></a>
-      </div>
-      <em>Aprende a crear un flujo de trabajo eficiente para automatizar y simplificar las propuestas de ventas</em>
-      <br>
-    </td>
-</tr>
-<tr>
-  <td>
-    <a href="nda.md">
-      <img alt="Creación de un acuerdo de confidencialidad" src="assets/nda_thumb.png" />
-    </a>
-    <div>
-    <a href="nda.md"><strong>Creando un acuerdo de confidencialidad</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernizing employee onboarding">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" title="Modernización de la incorporación de empleados" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_132a84764b759671006b4508a187b91ce708b060a.png?width=400&format=webply&optimize=medium" alt="Modernización de la incorporación de empleados"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" target="_self" rel="referrer" title="Modernización de la incorporación de empleados">Modernización de la incorporación de empleados</a>
+                    </p>
+                    <p class="is-size-6">Aprende a modernizar la incorporación de empleados</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Aprende a crear un PDF de acuerdo de confidencialidad dinámico para colaborar</em>
-    <br>
-  </td>
-  <td>
-    <a href="legal.md">
-      <img alt="Gestión de contratos legales" src="assets/legal_thumb.png" />
-    </a>
-    <div>
-    <a href="legal.md"><strong>Administración de contratos legales</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Accelerate your sales process">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" title="Agiliza tu proceso de ventas" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_1ce553da02229c4a25bcf679ca8eb2b165e0b9019.png?width=400&format=webply&optimize=medium" alt="Agiliza tu proceso de ventas"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" target="_self" rel="referrer" title="Agiliza tu proceso de ventas">Acelera tu proceso de ventas</a>
+                    </p>
+                    <p class="is-size-6">Descubre cómo acelerar las ventas integrando experiencias con documentos</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Aprende a generar y proteger documentos legales automáticamente con datos personalizados</em>
-    <br>
-  </td>
-  <td>
-    <a href="offer.md">
-      <img alt="Administrar cartas de oferta de empleados" src="assets/offer_thumb.png" />
-    </a>
-    <div>
-    <a href="offer.md"><strong>Administrar cartas de oferta de empleados</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Managing sales proposals and contracts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/sales" title="Gestión de propuestas de ventas y contratos" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_179ae58be6f2a7a0fba8e0a76bd9f5099619f61b0.png?width=400&format=webply&optimize=medium" alt="Gestión de propuestas de ventas y contratos"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/sales" target="_self" rel="referrer" title="Gestión de propuestas de ventas y contratos">Administrar propuestas de ventas y contratos</a>
+                    </p>
+                    <p class="is-size-6">Aprende a crear un flujo de trabajo eficiente para automatizar y simplificar las propuestas de ventas</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/sales" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Aprende a generar una carta de oferta que se pueda entregar a un nuevo empleado para que la firme</em>
-    <br>
-  </td>
-  <td>
-    <a href="searching.md">
-      <img alt="Búsqueda e indexación" src="assets/searching_thumb.png" />
-    </a>
-    <div>
-    <a href="searching.md"><strong>Buscando e indizando</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Creating an NDA">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/nda" title="Creación de un acuerdo de confidencialidad" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_12b38eafbf76bee920fa3ab873d392432cdcae963.png?width=400&format=webply&optimize=medium" alt="Creación de un acuerdo de confidencialidad"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/nda" target="_self" rel="referrer" title="Creación de un acuerdo de confidencialidad">Creando un acuerdo de confidencialidad</a>
+                    </p>
+                    <p class="is-size-6">Aprende a crear un PDF de acuerdo de confidencialidad dinámico para colaborar</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/nda" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Aprende a crear archivos de PDF en los que se pueden realizar búsquedas a partir de documentos digitalizados</em>
-    <br>
-  </td>
-</tr>
-<tr>
-  <td>
-    <a href="reviews.md">
-      <img alt="Revisiones y aprobaciones" src="assets/reviews_thumb.png" />
-    </a>
-    <div>
-    <a href="reviews.md"><strong>Revisiones y aprobaciones</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Managing legal contracts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/legal" title="Gestión de contratos legales" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_175eb5e0acbeb769b4f69aa4ae5cf24ed55489d87.png?width=400&format=webply&optimize=medium" alt="Gestión de contratos legales"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/legal" target="_self" rel="referrer" title="Gestión de contratos legales">Administración de contratos legales</a>
+                    </p>
+                    <p class="is-size-6">Aprende a generar y proteger documentos legales automáticamente con la introducción de datos personalizados</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/legal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Aprende a crear un flujo de trabajo de revisión y aprobación de documentos para la colaboración entre equipos</em>
-    <br>
-  </td>
-  <td>
-    <a href="reportcreation.md">
-      <img alt="Creación y edición de informes" src="assets/report_thumb.png" />
-    </a>
-    <div>
-    <a href="reportcreation.md"><strong>Creación y edición de informes</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Job posting">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/jobposting" title="Registro de trabajos" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_1487ad3b5c3c12b24a1c44420ac612f7a5b06d16a.png?width=400&format=webply&optimize=medium" alt="Registro de trabajos"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/jobposting" target="_self" rel="referrer" title="Registro de trabajos">Registro de trabajos</a>
+                    </p>
+                    <p class="is-size-6">Aprenda a desarrollar una experiencia web fluida y coherente para los solicitantes de empleo y los empleadores</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/jobposting" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Descubre cómo generar informes de PDF en tu sitio web para los clientes</em>
-    <br>
-  </td>
-  <td>
-    <a href="jobposting.md">
-      <img alt="Registro de trabajos" src="assets/job_thumb.png" />
-    </a>
-    <div>
-    <a href="jobposting.md"><strong>Registro de trabajos</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Student-Teacher collaboration">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/educationcollab" title="Colaboración entre estudiantes y profesores" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_1746197c35f5bd2d66f8cd58e090c5e4fa7a3b5f2.png?width=400&format=webply&optimize=medium" alt="Colaboración entre estudiantes y profesores"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/educationcollab" target="_self" rel="referrer" title="Colaboración entre estudiantes y profesores">Colaboración entre estudiantes y profesores</a>
+                    </p>
+                    <p class="is-size-6">Aprende a crear una plataforma de aprendizaje online que permita a profesores y estudiantes compartir fácilmente recursos en PDF</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/educationcollab" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Aprende a desarrollar una experiencia web fluida y coherente para los solicitantes de empleo y los empleadores</em>
-    <br>
-  </td>
-  <td>
-    <a href="educationcollab.md">
-      <img alt="Colaboración entre estudiantes y profesores" src="assets/edu_thumb.png" />
-    </a>
-    <div>
-    <a href="educationcollab.md"><strong>Colaboración entre estudiantes y profesores</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Agreement workflows in Node.js">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" title="Flujos de trabajo de acuerdo en Node.js" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_1a1148ebfe4641258d91065e83c2d39be0e918c38.png?width=400&format=webply&optimize=medium" alt="Flujos de trabajo de acuerdo en Node.js"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" target="_self" rel="referrer" title="Flujos de trabajo de acuerdo en Node.js">Flujos de trabajo de acuerdo en Node.js</a>
+                    </p>
+                    <p class="is-size-6">Las API de Adobe Acrobat Services incorporan fácilmente funciones de PDF en tus aplicaciones web</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Aprende a crear una plataforma de aprendizaje en línea que permita a profesores y estudiantes compartir fácilmente recursos en PDF</em>
-    <br>
-  </td>
-</tr>
-<tr>
-  <td>
-    <a href="agreementworkflowsnodejs.md">
-      <img alt="Flujos de trabajo de acuerdo en Node.js" src="assets/AWNjs_thumb.png" />
-    </a>
-    <div>
-    <a href="agreementworkflowsnodejs.md"><strong>Flujos de trabajo de acuerdo en Node.js</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="HR document workflows in Java">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" title="Flujos de trabajo de documentos de HR en Java" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_16549bea7754eaa4cfefb538aa4589ff68530a1fd.png?width=400&format=webply&optimize=medium" alt="Flujos de trabajo de documentos de HR en Java"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" target="_self" rel="referrer" title="Flujos de trabajo de documentos de HR en Java">Flujos de trabajo de documentos de HR en Java</a>
+                    </p>
+                    <p class="is-size-6">Las API de Adobe Acrobat Services incorporan fácilmente funciones de PDF en tus aplicaciones web de RR. HH.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>[!DNL Adobe Acrobat Services] API incorporan fácilmente funciones de PDF en tus aplicaciones web</em>
-    <br>
-  </td>
-  <td>
-    <a href="hragreementworkflowsjava.md">
-      <img alt="Flujos de trabajo de documentos de HR en Java" src="assets/HRWJ_thumb.png" />
-    </a>
-    <div>
-    <a href="hragreementworkflowsjava.md"><strong>Flujos de trabajo de documentos de HR en Java</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Managing financial document workflows in Java">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" title="Administración de flujos de trabajo de documentos financieros en Java" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_14763e77cca336e72797a4b6964a94311623df148.png?width=400&format=webply&optimize=medium" alt="Administración de flujos de trabajo de documentos financieros en Java"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" target="_self" rel="referrer" title="Administración de flujos de trabajo de documentos financieros en Java">Administrar flujos de trabajo de documentos financieros en Java</a>
+                    </p>
+                    <p class="is-size-6">Adobe Acrobat Services proporciona todas las herramientas, servicios y funciones necesarios para procesar y extraer datos de los documentos financieros de los PDF</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>[!DNL Adobe Acrobat Services] API incorporan fácilmente funciones de PDF en tus aplicaciones web de HR</em>
-    <br>
-  </td>
-  <td>
-    <a href="financeworkflowsjava.md">
-      <img alt="Administración de flujos de trabajo de documentos financieros en Java" src="assets/FAWJ_thumb.png" />
-    </a>
-    <div>
-    <a href="financeworkflowsjava.md"><strong>Administrar flujos de trabajo de documentos financieros en Java</strong></a>
-    </div>
-    <em>[!DNL Adobe Acrobat Services] proporciona todas las herramientas, servicios y funciones necesarios para procesar y extraer datos de los documentos financieros de los PDF</em>
-    <br>
-  </td>
-  <td>
-    <img alt="Separador" src="../assets/GrayBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-</tr>
-</table>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
 
 ### API de generación de documentos
 
-<table style="table-layout:fixed">
-<tr>
-  <td>
-    <a href="invoices.md">
-      <img alt="Gestión de facturas" src="assets/invoices_thumb.png" />
-    </a>
-    <div>
-    <a href="invoices.md"><strong>Administración de facturas</strong></a>
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Handling invoices">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/invoices" title="Gestión de facturas" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_1ff9a75e31fa990e15e1010e05fd751371eaf0a8c.png?width=400&format=webply&optimize=medium" alt="Gestión de facturas"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/invoices" target="_self" rel="referrer" title="Gestión de facturas">Administración de facturas</a>
+                    </p>
+                    <p class="is-size-6">Aprende a generar, proteger con contraseña y entregar facturas de clientes de forma automática</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/invoices" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Descubre cómo generar, proteger con contraseña y entregar automáticamente las facturas de los clientes</em>
-    <br>
-  </td>
-  <td>
-    <img alt="Separador" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-  <td>
-    <img alt="Separador" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-  <td>
-    <img alt="Separador" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-</tr>
-</table>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 ### API de incrustación de PDF
 
-<table style="table-layout:fixed">
-<tr>
-   <td>
-    <a href="ddppdfembedapi.md">
-      <img alt="Publicación de documentos digitales" src="assets/ddp_thumb.png" />
-    </a>
-    <div>
-    <a href="ddppdfembedapi.md"><strong>Publicación de documentos digitales</strong></a>
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Digital document publishing">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" title="Publicación de documentos digitales" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_1d8ea2c326af9b7ee0af2fe969a594108bf01b97b.png?width=400&format=webply&optimize=medium" alt="Publicación de documentos digitales"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" target="_self" rel="referrer" title="Publicación de documentos digitales">Publicación de documentos digitales</a>
+                    </p>
+                    <p class="is-size-6">Aprenda a mostrar documentos de PDF incrustados en páginas web mediante la API Adobe PDF Embed</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Leer</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Obtenga información sobre cómo mostrar documentos de PDF incrustados en páginas web mediante la API Adobe PDF Embed</em>
-    <br>
-  </td>
-  <td>
-    <img alt="Separador" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-  <td>
-    <img alt="Separador" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-  <td>
-    <img alt="Separador" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-</tr>
-</table>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
