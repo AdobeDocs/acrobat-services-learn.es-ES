@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-11079
 thumbnail: KT-11079.jpg
 exl-id: 79603883-26cd-439c-9cfd-6178c4544b93
-source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
+source-git-commit: 3df27690c677d8ad51e8f26ea95b5da12694f89a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '305'
 ht-degree: 6%
 
 ---
@@ -51,7 +51,7 @@ Las API de Acrobat Sign le permiten crear aplicaciones e integrar la IU y la fun
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 
-## Guía de inicio rápido de Acrobat Sign Embed
+## Guía de inicio rápido para insertar de Acrobat Sign
 
 Obtenga información sobre cómo empezar a incrustar la versión OEM de Acrobat Sign en la aplicación. Esta guía está diseñada específicamente para los socios OEM que crean e incrustan un proceso de firma en su aplicación.
 
