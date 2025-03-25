@@ -1,6 +1,6 @@
 ---
 title: Flujos de trabajo de documentos de HR en Java
-description: "[!DNL Adobe Acrobat Services] API incorporan fácilmente funciones de PDF en tus aplicaciones web de HR"
+description: Las API de [!DNL Adobe Acrobat Services] incorporan fácilmente funciones de PDF en tus aplicaciones web de HR
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -29,7 +29,7 @@ En este tutorial práctico, aprenderá a implementar un formulario de RR. HH. ba
 
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API de Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
+* [API de Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
 * [Código del proyecto](https://github.com/dawidborycki/adobe-sign)
 
@@ -392,9 +392,9 @@ Para obtener un token de autorización, debe realizar varios pasos:
 
 Primero, registre una [cuenta de desarrollador](https://acrobat.adobe.com/es/es/sign/developer-form.html).
 
-Cree la aplicación CLIENT en el [portal de Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+Cree la aplicación CLIENT en el [portal de Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 
-Configure OAuth para la aplicación como se describe [aquí](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) y [aquí](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Anote su identificador de cliente y secreto de cliente. A continuación, puede usar `https://www.google.com` como URI de redirección y los siguientes ámbitos:
+Configure OAuth para la aplicación como se describe [aquí](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) y [aquí](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Anote su identificador de cliente y secreto de cliente. A continuación, puede usar `https://www.google.com` como URI de redirección y los siguientes ámbitos:
 
 * user_login: self
 
@@ -602,4 +602,4 @@ Como puede ver, al aprovechar los inicios rápidos, puede implementar un formula
 
 Llevando el ejemplo más allá, puedes crear formularios que los destinatarios puedan firmar de forma remota y segura. Cuando se requieren varias firmas, incluso se pueden enviar formularios automáticamente a una serie de personas de un flujo de trabajo. La incorporación de empleados se ha mejorado y el departamento de RR. HH. te va a encantar.
 
-Consulta [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) para agregar multitud de funciones de PDF a tus aplicaciones hoy mismo.
+Consulta [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) para agregar multitud de funciones de PDF a tus aplicaciones hoy mismo.

@@ -1,6 +1,6 @@
 ---
 title: Gestión de flujos de trabajo de documentos financieros en Java
-description: "[!DNL Adobe Acrobat Services] proporciona todas las herramientas, servicios y funciones necesarios para procesar y extraer datos de los documentos financieros del PDF"
+description: '[!DNL Adobe Acrobat Services] proporciona todas las herramientas, servicios y funciones necesarios para procesar y extraer datos de los documentos financieros de los PDF'
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Sin embargo, el formato PDF puede resultar complicado de procesar y automatizar,
 
 ## Lo que puedes aprender
 
-En este tutorial práctico, aprende a usar las API [!DNL Adobe Acrobat Services] para las aplicaciones [!DNL Java Spring Boot]. Se crea una aplicación de controlador de vista de modelo (MVC) que extrae contenido de los documentos del PDF, lo convierte a otros formatos de datos como Excel, combina varios PDF y protege los recursos mediante contraseña. Este tutorial explica cómo procesar documentos de PDF y mostrarlos en sus sitios web mediante la [API de incrustación de PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) de Adobe.
+En este tutorial práctico, aprende a usar las API [!DNL Adobe Acrobat Services] para las aplicaciones [!DNL Java Spring Boot]. Se crea una aplicación de controlador de vista de modelo (MVC) que extrae contenido de los documentos del PDF, lo convierte a otros formatos de datos como Excel, combina varios PDF y protege los recursos mediante contraseña. Este tutorial explica cómo procesar documentos de PDF y mostrarlos en sus sitios web mediante la [API de incrustación de PDF](https://developer.adobe.com/document-services/apis/pdf-embed) de Adobe.
 
 ## API y recursos relevantes
 
@@ -45,11 +45,11 @@ Para seguir los pasos de este tutorial, necesita dos conjuntos de claves de API:
 
 * API Adobe PDF Embed
 
-Después de crear las credenciales, copie las credenciales de la API de servicios de PDF y la clave privada en la aplicación [!DNL Spring Boot] dentro de la sección de recursos. Obtenga más información sobre las bibliotecas y dependencias [Maven y Gradle](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) en el sitio web [!DNL Adobe Acrobat Services]. Asegúrese de configurar todos los paquetes y bibliotecas necesarios antes de continuar.
+Después de crear las credenciales, copie las credenciales de la API de servicios de PDF y la clave privada en la aplicación [!DNL Spring Boot] dentro de la sección de recursos. Obtenga más información sobre las bibliotecas y dependencias [Maven y Gradle](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) en el sitio web [!DNL Adobe Acrobat Services]. Asegúrese de configurar todos los paquetes y bibliotecas necesarios antes de continuar.
 
 ![Captura de pantalla de la ubicación del directorio para las credenciales de la API de servicios de PDF](assets/FAWJ_1.png)
 
-Para configurar los servicios de registro, visite [Documentación de Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) y desplácese a la sección Registro.
+Para configurar los servicios de registro, visite [Documentación de Adobe](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) y desplácese a la sección Registro.
 
 >[!NOTE]
 >
@@ -195,8 +195,8 @@ La API de incrustación de PDF proporciona todas las herramientas necesarias par
 
 ## Pasos siguientes
 
-Este tutorial práctico exploró las API [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) y analizó cómo usar estos servicios para procesar datos de PDF y generar informes para decisiones financieras. Se demostró cómo se pueden integrar las API en los sistemas, utilizando [!DNL Java Spring Boot] como marco de trabajo de ejemplo, para mostrar lo fácil que es procesar rápidamente los documentos de PDF.
+Este tutorial práctico exploró las API [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) y analizó cómo usar estos servicios para procesar datos de PDF y generar informes para decisiones financieras. Se demostró cómo se pueden integrar las API en los sistemas, utilizando [!DNL Java Spring Boot] como marco de trabajo de ejemplo, para mostrar lo fácil que es procesar rápidamente los documentos de PDF.
 
-Explora [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) y descubre lo que los servicios de Adobe PDF pueden hacer por tu empresa. Para obtener más información sobre las funciones disponibles en el SDK, consulta el [repositorio GitHub](https://github.com/adobe/pdftools-java-sdk-samples) para obtener los ejemplos y descubre cómo [PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) puede ayudarte a mostrar rápidamente a los PDF en tus aplicaciones.
+Explora [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) y descubre lo que los servicios de Adobe PDF pueden hacer por tu empresa. Para obtener más información sobre las funciones disponibles en el SDK, consulta el [repositorio GitHub](https://github.com/adobe/pdftools-java-sdk-samples) para obtener los ejemplos y descubre cómo [PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed) puede ayudarte a mostrar rápidamente a los PDF en tus aplicaciones.
 
-Para combinar y manipular documentos fácilmente, creando informes de PDF útiles para tus clientes financieros, empieza registrándote hoy mismo en tu [cuenta de desarrollador de Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/) gratuita.
+Para combinar y manipular documentos fácilmente, creando informes de PDF útiles para tus clientes financieros, empieza registrándote hoy mismo en tu [cuenta de desarrollador de Adobe](https://developer.adobe.com/document-services/homepage/) gratuita.

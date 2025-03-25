@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Las finanzas, la educación, el marketing y otros sectores utilizan a los PDF para compartir datos con sus clientes y partes interesadas. Los PDF facilitan el uso compartido de documentos sofisticados, con tablas, gráficos y contenido interactivo, en un formato que todos puedan ver. Las API de [!DNL Adobe Acrobat Services] ayudan a estas empresas a generar informes de PDF que se pueden compartir desde Microsoft Word, Microsoft Excel, gráficos y otros formatos de documento diversos.
 
-Digamos que [diriges una empresa de seguimiento de redes sociales](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). Tus clientes inician sesión en una parte de tu sitio protegida con contraseña para ver el análisis de sus campañas. A menudo, quieren compartir estas estadísticas con sus ejecutivos, accionistas, donantes u otras partes interesadas. Los documentos descargables de PDF son una excelente forma de que tus clientes compartan números, gráficas y mucho más.
+Digamos que [diriges una empresa de seguimiento de redes sociales](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation). Tus clientes inician sesión en una parte de tu sitio protegida con contraseña para ver el análisis de sus campañas. A menudo, quieren compartir estas estadísticas con sus ejecutivos, accionistas, donantes u otras partes interesadas. Los documentos descargables de PDF son una excelente forma de que tus clientes compartan números, gráficas y mucho más.
 
-Al incorporar [API de servicios de PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) en tu sitio web, puedes generar informes de PDF sobre la marcha para cada cliente. Puedes crear PDF y luego combinarlos en un único y práctico informe para que tus clientes lo descarguen y lo envíen a sus responsables de departamento.
+Al incorporar [API de servicios de PDF](https://developer.adobe.com/document-services/apis/pdf-services) en tu sitio web, puedes generar informes de PDF sobre la marcha para cada cliente. Puedes crear PDF y luego combinarlos en un único y práctico informe para que tus clientes lo descarguen y lo envíen a sus responsables de departamento.
 
 ## Lo que puedes aprender
 
@@ -92,7 +92,7 @@ Utilice el SDK de Servicios de PDF para crear los informes de PDF a partir de lo
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-Antes de comenzar, debe tener credenciales de API, [libre de Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Usa tu cuenta de [!DNL Acrobat Services] [gratis durante seis meses y luego paga a tu ritmo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) por solo \$0,05 por transacción de documento.
+Antes de comenzar, debe tener credenciales de API, [libre de Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Usa tu cuenta de [!DNL Acrobat Services] [gratis durante seis meses y luego paga a tu ritmo](https://developer.adobe.com/document-services/pricing/main) por solo \$0,05 por transacción de documento.
 
 Descargue el archivo de almacenamiento y extraiga el archivo JSON para las credenciales y la clave privada. En el proyecto de ejemplo, coloque el archivo en el directorio src.
 
@@ -217,6 +217,6 @@ Ahora, los clientes del panel de redes sociales pueden seleccionar informes rele
 
 Este tutorial práctico le enseñó a utilizar la API de servicios de PDF para ayudar a los clientes a descargar informes relevantes como PDF fáciles de compartir. Ha creado una aplicación Node.js para mostrar la potencia de la API de servicios de PDF para los servicios de lectura y creación de informes de PDF. En la aplicación se mostraba cómo tus clientes podían descargar un único documento de informe o combinar y fusionar varios documentos en un único informe de PDF.
 
-Esta aplicación basada en Adobe ayuda a tus clientes de [social media dashboard](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) a obtener y compartir los informes que necesitan, sin preocuparse si todos los destinatarios tienen Microsoft Office u otro software instalado en su dispositivo. Puede utilizar las mismas técnicas en su propia aplicación para ayudar a los usuarios a ver, combinar y descargar documentos. O bien, consulta las muchas otras API de Adobe para añadir firmas y realizar su seguimiento, y mucho más.
+Esta aplicación basada en Adobe ayuda a tus clientes de [social media dashboard](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation) a obtener y compartir los informes que necesitan, sin preocuparse si todos los destinatarios tienen Microsoft Office u otro software instalado en su dispositivo. Puede utilizar las mismas técnicas en su propia aplicación para ayudar a los usuarios a ver, combinar y descargar documentos. O bien, consulta las muchas otras API de Adobe para añadir firmas y realizar su seguimiento, y mucho más.
 
-Para empezar, solicita tu cuenta gratuita de [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) y, a continuación, crea experiencias de creación de informes atractivas para tus empleados y clientes. Disfruta de tu cuenta gratis durante seis meses y, a continuación, [paga sobre la marcha](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a medida que se amplían tus esfuerzos de marketing, a solo \$0,05 por transacción de documento.
+Para empezar, solicita tu cuenta gratuita de [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) y, a continuación, crea experiencias de creación de informes atractivas para tus empleados y clientes. Disfruta de tu cuenta gratis durante seis meses y, a continuación, [paga sobre la marcha](https://developer.adobe.com/document-services/pricing/main) a medida que se amplían tus esfuerzos de marketing, a solo \$0,05 por transacción de documento.

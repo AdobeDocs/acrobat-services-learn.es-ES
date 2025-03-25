@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 1%
@@ -116,7 +116,7 @@ Como se describe al principio de este tutorial, cree un nuevo flujo, agregue un 
 
 Como se muestra en la captura de pantalla anterior, puede cambiar a una cuenta de trabajo o configurar una nueva cuenta de organización. Una vez que lo haya hecho, podrá añadir la acción Servicios de Adobe PDF .
 
-Para obtener una descripción más detallada de la creación de tu primer flujo de Microsoft Power Automate con [!DNL Adobe Acrobat Services], consulta [Crear tu primer flujo de trabajo en Microsoft Power Automate](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfservices/create-workflow-power-automate.html).
+Para obtener una descripción más detallada de la creación de tu primer flujo de Microsoft Power Automate con [!DNL Adobe Acrobat Services], consulta [Crear tu primer flujo de trabajo en Microsoft Power Automate](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate).
 
 ## Recursos adicionales
 

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 0%
@@ -362,7 +362,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## Enviar acuerdo para firmar
 
-[Adobe Acrobat Sign](https://www.adobe.com/es/sign.html) te permite enviar acuerdos a uno o varios destinatarios para que puedan ver y firmar documentos. Junto con una experiencia de usuario fácil de usar para enviar un documento para firmar, hay disponibles API REST que le permiten usar Word, PDF, HTML y otros formatos y enviarlos para firmar.
+[Adobe Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) te permite enviar acuerdos a uno o varios destinatarios para que puedan ver y firmar documentos. Junto con una experiencia de usuario fácil de usar para enviar un documento para firmar, hay disponibles API REST que le permiten usar Word, PDF, HTML y otros formatos y enviarlos para firmar.
 
 En el ejemplo siguiente se explica cómo utilizar la página de documentación de la API REST para realizar el documento generado anteriormente y enviarlo para su firma. En primer lugar, aprende cómo puedes hacerlo a través de la interfaz web de Acrobat Sign y, a continuación, cómo hacerlo con la API REST.
 
@@ -552,7 +552,7 @@ Ahora tiene información sobre ese acuerdo.
   }
 ```
 
-El método más eficaz para obtener notificaciones cuando se cambian las actualizaciones es a través de Webhooks, que puedes obtener más información sobre [aquí](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html?lang=es).
+El método más eficaz para obtener notificaciones cuando se cambian las actualizaciones es a través de Webhooks, que puedes obtener más información sobre [aquí](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html).
 
 ## Almacenar un documento firmado
 
