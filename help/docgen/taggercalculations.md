@@ -17,4 +17,4 @@ ht-degree: 0%
 
 Aprenda a establecer etiquetas de cálculo numérico en las plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para calcular agregaciones o aritmética de valores de datos mediante la API de generación de documentos de Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/332118?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411743?hidetitle=true&captions=spa)
