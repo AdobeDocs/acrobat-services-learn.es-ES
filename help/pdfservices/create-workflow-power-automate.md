@@ -31,7 +31,7 @@ En este tutorial práctico, aprenda a:
 ### Lo que necesitas
 
 * **Credenciales de prueba o producción para los servicios de Adobe PDF**
-Obtenga más información sobre cómo obtener y configurar credenciales en Microsoft Power Automate [aquí](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Obtenga más información sobre cómo obtener y configurar credenciales en Microsoft Power Automate [aquí](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate con conectores Premium**
 Obtenga información sobre cómo comprobar el nivel de licencias de Power Automate [aquí](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
@@ -46,7 +46,7 @@ Hay dos [archivos de muestra](assets/sample-assets.zip) que necesitas descomprim
 
 ### Obtención de credenciales
 
-Para completar este tutorial, necesita sus credenciales ya configuradas en Microsoft Power Automate para los servicios de Adobe PDF. Si no ha completado este paso, consulte las [instrucciones aquí](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Para completar este tutorial, necesita sus credenciales ya configuradas en Microsoft Power Automate para los servicios de Adobe PDF. Si no ha completado este paso, consulte las [instrucciones aquí](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
 ## Parte 1: Crear nuevo flujo y convertir Word a PDF
 
