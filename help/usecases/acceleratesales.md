@@ -189,7 +189,7 @@ Los cálculos numéricos permiten calcular sumas y otros cálculos basados en un
 1. En *[!UICONTROL Seleccionar tipo de cálculo]*, elija **[!UICONTROL Agregación]**.
 1. En *[!UICONTROL Seleccionar tipo]*, elija **[!UICONTROL Suma]**.
 1. En *[!UICONTROL Seleccionar registros]*, elija **[!UICONTROL ReferencesOrder]**.
-1. En *[!UICONTROL Seleccionar elemento para realizar la agregación]**, elija **[!UICONTROL totalPaymentsDue.price]**.
+1. En *[!UICONTROL Seleccionar elemento para realizar la agregación]&#x200B;**, elija &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
 1. Seleccione **[!UICONTROL Insertar cálculo]**.
 
 Este proceso inserta una etiqueta de cálculo que proporciona la suma de los valores. Se pueden realizar cálculos más avanzados utilizando cálculos JSONata. Por ejemplo:
