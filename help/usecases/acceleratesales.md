@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -130,7 +130,7 @@ A continuación, vaya al panel Etiquetador de generación de documentos para col
 
    ![Captura de pantalla de inserción de etiqueta](assets/accsales_5.png)
 
-   Este proceso coloca una etiqueta denominada {{company.name}} porque la etiqueta se encuentra bajo la ruta de acceso en el JSON.
+   Este proceso coloca una etiqueta denominada `{{company.name}}` porque la etiqueta se encuentra bajo la ruta de acceso en el JSON.
 
    ```
    {
@@ -189,7 +189,7 @@ Los cálculos numéricos permiten calcular sumas y otros cálculos basados en un
 1. En *[!UICONTROL Seleccionar tipo de cálculo]*, elija **[!UICONTROL Agregación]**.
 1. En *[!UICONTROL Seleccionar tipo]*, elija **[!UICONTROL Suma]**.
 1. En *[!UICONTROL Seleccionar registros]*, elija **[!UICONTROL ReferencesOrder]**.
-1. En *[!UICONTROL Seleccionar elemento para realizar la agregación]&#x200B;**, elija &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
+1. En *[!UICONTROL Seleccionar elemento para realizar la agregación]**, elija **[!UICONTROL totalPaymentsDue.price]**.
 1. Seleccione **[!UICONTROL Insertar cálculo]**.
 
 Este proceso inserta una etiqueta de cálculo que proporciona la suma de los valores. Se pueden realizar cálculos más avanzados utilizando cálculos JSONata. Por ejemplo:
@@ -272,6 +272,7 @@ Se inserta una etiqueta en el documento.
 ![Captura de pantalla de la etiqueta de firma en el documento](assets/accsales_15.png)
 
 Acrobat Sign proporciona otros tipos de campos que puede colocar, como los campos de fecha.
+
 1. En el tipo *Campo*, seleccione **[!UICONTROL Fecha]**.
 1. Mueva el cursor por encima de la ubicación Fecha en el documento.
 1. Seleccione **[!UICONTROL Insertar etiqueta de texto de Adobe Sign]**.

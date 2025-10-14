@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
@@ -136,7 +136,7 @@ const fileUpload = require( "express-fileupload" );
 app.use( fileUpload() );
 ```
 
-Ahora, agregue un extremo `/upload `y guarde el archivo cargado dentro de la carpeta de borradores con el mismo nombre de archivo. A continuación, llame a la función que escribió anteriormente para crear un archivo de PDF del mismo documento si aún no está en formato de PDF. Puede generar un nombre de archivo para el nuevo archivo de PDF basado en el nombre del documento cargado original:
+Ahora, agregue un extremo `/upload` y guarde el archivo cargado en la carpeta de borradores con el mismo nombre de archivo. A continuación, llame a la función que escribió anteriormente para crear un archivo de PDF del mismo documento si aún no está en formato de PDF. Puede generar un nombre de archivo para el nuevo archivo de PDF basado en el nombre del documento cargado original:
 
 ```
 // Create a PDF file from an uploaded file
