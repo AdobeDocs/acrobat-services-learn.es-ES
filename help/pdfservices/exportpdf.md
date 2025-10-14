@@ -101,7 +101,7 @@ A otro formato.
 
 ## Recursos y pasos siguientes
 
-* Para obtener ayuda y asistencia adicionales, visita el foro de la comunidad de [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)
+* Para obtener ayuda y asistencia adicionales, visita el foro de la comunidad de [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)
 
 * [Documentación](https://www.adobe.com/go/pdftoolsapi_doc) de la API de servicios de PDF
 

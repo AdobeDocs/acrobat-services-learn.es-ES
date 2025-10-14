@@ -26,7 +26,7 @@ para proporcionar contexto a sus aplicaciones y servicios. El responsable de mar
 
 ## Lo que puedes aprender
 
-En este tutorial práctico, aprende a mostrar documentos de PDF incrustados en páginas web con la [API Adobe PDF Embed](https://developer.adobe.com/document-services/apis/pdf-embed), que es gratuita y fácil de usar. En estos ejemplos se utilizan JavaScript, Node.js, Express.js, HTML y CSS. Puede ver el código completo del proyecto en [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1).
+En este tutorial práctico, aprende a mostrar documentos de PDF incrustados en páginas web con la [API Adobe PDF Embed](https://developer.adobe.com/document-services/apis/pdf-embed), que es gratuita y fácil de usar. En estos ejemplos se utilizan JavaScript, Node.js, Express.js, HTML y CSS. Puede ver el código completo del proyecto en [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1).
 
 ## API y recursos relevantes
 
@@ -34,7 +34,7 @@ En este tutorial práctico, aprende a mostrar documentos de PDF incrustados en p
 
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Código del proyecto](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
+* [Código del proyecto](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
 
 ## Crear una aplicación Web de nodos
 
@@ -347,7 +347,7 @@ Ahora ejecute la aplicación con el comando npm start y abra el sitio web en <ht
 
 Por último, elige un artículo técnico y haz clic en **Ver documento** para abrir una nueva página con el PDF incrustado en línea:
 
-![Captura de pantalla del informe técnico del PDF ](assets/ddp_11.png)
+![Captura de pantalla del informe técnico del PDF &#x200B;](assets/ddp_11.png)
 
 Observe cómo están presentes las opciones Descargar PDF y PDF de impresión.
 
