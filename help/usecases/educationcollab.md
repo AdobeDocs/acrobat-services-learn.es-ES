@@ -197,7 +197,7 @@ A continuación se muestra una captura de pantalla de la consola del navegador w
 
 Esta captura de pantalla muestra que el alumno abrió el archivo de asignación, leyó la primera página (no se desplazó a páginas adicionales o el documento solo tenía una página) y después descargó el archivo. Puedes recopilar estas métricas para realizar análisis y estudiar el comportamiento de tus estudiantes.
 
-Además, [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) está integrado con la API de PDF Embed, por lo que si te suscribes a la suite de Adobe Analytics, puedes publicar tus métricas en tu suscripción. Para publicar las métricas en Adobe Analytics, solo necesita pasar su ID de suite al constructor de API de incrustación de PDF. (Tenga en cuenta que debe utilizar las credenciales de la API de incrustación de PDF, no las credenciales de la API de servicios de PDF).
+Además, [Adobe Analytics](https://business.adobe.com/es/products/adobe-analytics.html) está integrado con la API de PDF Embed, por lo que si te suscribes a la suite de Adobe Analytics, puedes publicar tus métricas en tu suscripción. Para publicar las métricas en Adobe Analytics, solo necesita pasar su ID de suite al constructor de API de incrustación de PDF. (Tenga en cuenta que debe utilizar las credenciales de la API de incrustación de PDF, no las credenciales de la API de servicios de PDF).
 
 A continuación se muestra un código de ejemplo que muestra cómo pasar el ID de conjunto al constructor de la API PDF Embed:
 
