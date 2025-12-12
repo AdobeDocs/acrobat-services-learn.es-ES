@@ -79,7 +79,7 @@ Después de generar las etiquetas, puede insertarlas en el documento. Las etique
 
 ## Uso de las API
 
-Vaya a la [!DNL Acrobat Services]página principal[ de las API de ](https://developer.adobe.com/document-services/apis/doc-generation). Para empezar a usar las API de [!DNL Acrobat Services], necesita credenciales para su aplicación. Desplázate hacia abajo todo el recorrido y selecciona **Prueba gratis** para crear credenciales. Puedes usar estos servicios [gratis durante seis meses y, luego, pagar sobre la marcha](https://developer.adobe.com/document-services/pricing/main) por solo 0,05 $ por transacción de documento, de modo que solo pagas por lo que necesitas.
+Vaya a la [!DNL Acrobat Services]página principal[&#x200B; de las API de &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation). Para empezar a usar las API de [!DNL Acrobat Services], necesita credenciales para su aplicación. Desplázate hacia abajo todo el recorrido y selecciona **Prueba gratis** para crear credenciales. Puedes usar estos servicios [gratis durante seis meses y, luego, pagar sobre la marcha](https://developer.adobe.com/document-services/pricing/main) por solo 0,05 $ por transacción de documento, de modo que solo pagas por lo que necesitas.
 
 Selecciona **API de servicios de PDF** como tu servicio preferido y completa los demás detalles como se muestra a continuación.
 
