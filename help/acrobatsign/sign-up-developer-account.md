@@ -23,5 +23,5 @@ Obtenga información sobre cómo registrarse para obtener una cuenta de desarrol
 >
 >Este tutorial se ha diseñado específicamente para socios OEM que crean e incrustan un proceso de firma en su aplicación.
 
->[!VIDEO](https://video.tv.adobe.com/v/347347?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3445921?captions=spa&hidetitle=true)
 

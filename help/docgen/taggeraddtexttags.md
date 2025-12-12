@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Aprenda a agregar etiquetas de texto a plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para su uso con la API de generación de documentos de Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/332116?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3409657?captions=spa&hidetitle=true)
 
 

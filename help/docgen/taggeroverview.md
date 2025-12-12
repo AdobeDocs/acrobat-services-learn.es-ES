@@ -19,5 +19,5 @@ ht-degree: 2%
 
 Obtenga una descripción general del etiquetador de generación de documentos de Adobe diseñado para su uso con la API de generación de documentos de Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/332120?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411718?captions=spa&hidetitle=true)
 
