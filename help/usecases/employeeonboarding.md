@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%
@@ -206,6 +206,7 @@ La plantilla se puede cargar en el panel de Acrobat Sign y luego utilizarse para
 
 ## Experiméntala tú mismo
 
-Todo lo que se describe en este artículo se puede probar ahora mismo. La [prueba gratis](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) de la API [!DNL Adobe Acrobat Services] te ofrece actualmente 1000 solicitudes gratuitas durante un período de seis meses. La [prueba gratis](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) de Acrobat Sign te permite enviar acuerdos con marca de agua para probarlos.
+Todo lo que se describe en este artículo se puede probar ahora mismo. La [!DNL Adobe Acrobat Services]prueba gratis[ de la API ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) te ofrece actualmente 1000 solicitudes gratuitas durante un período de seis meses. La [prueba gratis](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) de Acrobat Sign te permite enviar acuerdos con marca de agua para probarlos.
 
 ¿Tiene alguna pregunta? El [foro de asistencia](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK) lo supervisan los desarrolladores de Adobes y los asistentes todos los días. Por último, para encontrar más inspiración, no te olvides de ver el próximo episodio de [Paper Clips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF). Se celebran periódicamente reuniones en directo con los clientes, así como demostraciones y charlas.
+

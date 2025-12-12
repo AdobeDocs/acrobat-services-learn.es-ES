@@ -7,7 +7,7 @@ level: Beginner
 type: Tutorial
 thumbnail: KT-11076.jpg
 exl-id: fddd5745-afa4-4ce8-b94d-c78254d7fb00
-source-git-commit: d5dc54a4e5414fb5f064a4ac7bd67ea92e9f7339
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
@@ -22,5 +22,6 @@ Aprenda a crear un documento transitorio que se pueda utilizar con la API de Acr
 >
 >Este tutorial se ha diseñado específicamente para socios OEM que crean e incrustan un proceso de firma en su aplicación.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444773?captions=spa&hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/347351?hidetitle=true)
+
 

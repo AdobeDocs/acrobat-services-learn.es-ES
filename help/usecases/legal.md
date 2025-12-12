@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 0%
@@ -429,3 +429,4 @@ La aplicación finalizada facilita mucho la tarea de etiquetar [plantillas de co
 Las organizaciones utilizan las API [!DNL Adobe Acrobat Services] por su integridad y facilidad de uso. Lo mejor de todo es que puedes disfrutar de una [prueba gratis de seis meses y luego pagar por uso](https://developer.adobe.com/document-services/pricing/main). Sólo pagas por lo que usas. Además, la API PDF Embed siempre es gratuita.
 
 ¿Todo listo para aumentar la productividad mejorando el flujo de documentos? [Empezar](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) hoy.
+

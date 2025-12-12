@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Imagine el siguiente escenario: tiene un sitio web que permite a los empleadores
 
 ## Lo que puedes aprender
 
-Este tutorial práctico recorre un ejemplo de Node.js que utiliza [!DNL Adobe Acrobat Services] y su [SDK de Node.js](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) para agregar estas capacidades a un sitio de publicación de trabajos. Esto crea un sitio web que es más fácil de usar y más atractivo para los empleadores y los solicitantes de empleo por igual. Aquí está el [código de proyecto](https://github.com/contentlab-io/adobe_job_posting) [&#128279;](https://github.com/contentlab-io/adobe_job_posting)completo, en caso de que quieras seguir tu lectura.
+Este tutorial práctico recorre un ejemplo de Node.js que utiliza [!DNL Adobe Acrobat Services] y su [SDK de Node.js](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) para agregar estas capacidades a un sitio de publicación de trabajos. Esto crea un sitio web que es más fácil de usar y más atractivo para los empleadores y los solicitantes de empleo por igual. Aquí está el [código de proyecto](https://github.com/contentlab-io/adobe_job_posting) [completo](https://github.com/contentlab-io/adobe_job_posting), en caso de que quieras seguir tu lectura.
 
 Para comenzar, configure una aplicación web sencilla basada en Express Node.js. [Express](https://expressjs.com/) es un marco de trabajo de aplicaciones web minimalista que ofrece características como enrutamiento y plantillas. El código de la aplicación está disponible en [GitHub](https://github.com/contentlab-io/adobe_job_posting). Además, instale la [base de datos PostgreSQL](https://www.postgresql.org/) y configúrela para almacenar el PDF.
 
@@ -283,3 +283,4 @@ Este tutorial práctico te enseñó a usar Node.js con [!DNL Acrobat Services] p
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 Para empezar a añadir funciones de manejo de documentos fáciles de usar a tu sitio web, [regístrate para obtener una prueba gratis](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). La API Adobe PDF Embed siempre es gratuita y la API Adobe PDF Services es gratuita durante seis meses. Después, cuesta solo \$0,05 por transacción de documento para que puedas [pagar sobre la marcha](https://developer.adobe.com/document-services/pricing/main) a medida que crece tu empresa.
+

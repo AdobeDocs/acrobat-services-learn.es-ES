@@ -9,7 +9,7 @@ jira: KT-6675
 thumbnail: KT-6675.jpg
 keywords: Destacados
 exl-id: 22c59c75-fd99-4467-a6f6-917fb246469a
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
@@ -84,3 +84,4 @@ La API de servicios de PDF puede ayudarte a eliminar procesos manuales automatiz
   [La nueva API de servicios de PDF ofrece aún más funciones para los flujos de trabajo de documentos](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
   [Versión de julio de [!DNL Adobe Acrobat Services]: Servicios de incrustación y PDF de PDF](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+

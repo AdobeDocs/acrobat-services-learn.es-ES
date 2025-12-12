@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -31,7 +31,7 @@ En este tutorial práctico, aprenda a:
 ### Lo que necesitas
 
 * **Credenciales de prueba o producción para los servicios de Adobe PDF**
-Obtenga más información sobre cómo obtener y configurar credenciales en Microsoft Power Automate [aquí](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Obtenga más información sobre cómo obtener y configurar credenciales en Microsoft Power Automate [aquí](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate con conectores Premium**
 Obtenga información sobre cómo comprobar el nivel de licencias de Power Automate [aquí](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
@@ -46,7 +46,7 @@ Hay dos [archivos de muestra](assets/sample-assets.zip) que necesitas descomprim
 
 ### Obtención de credenciales
 
-Para completar este tutorial, necesita sus credenciales ya configuradas en Microsoft Power Automate para los servicios de Adobe PDF. Si no ha completado este paso, consulte las [instrucciones aquí](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Para completar este tutorial, necesita sus credenciales ya configuradas en Microsoft Power Automate para los servicios de Adobe PDF. Si no ha completado este paso, consulte las [instrucciones aquí](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
 ## Parte 1: Crear nuevo flujo y convertir Word a PDF
 
@@ -315,3 +315,4 @@ En este tutorial, ha convertido un documento de Word en un PDF, ha creado un doc
 * Vea las plantillas precreadas disponibles en Microsoft Power Automate.
 * Obtén información en [artículos](https://medium.com/adobetech/tagged/microsoft-power-automate) del blog de tecnología de Adobe.
 * Consulte la [documentación](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) de la API de generación de documentos de Adobe.
+
