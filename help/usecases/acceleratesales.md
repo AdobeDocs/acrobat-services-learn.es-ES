@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -189,7 +189,7 @@ Los cálculos numéricos permiten calcular sumas y otros cálculos basados en un
 1. En *[!UICONTROL Seleccionar tipo de cálculo]*, elija **[!UICONTROL Agregación]**.
 1. En *[!UICONTROL Seleccionar tipo]*, elija **[!UICONTROL Suma]**.
 1. En *[!UICONTROL Seleccionar registros]*, elija **[!UICONTROL ReferencesOrder]**.
-1. En *[!UICONTROL Seleccionar elemento para realizar la agregación]&#x200B;**, elija &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
+1. En *[!UICONTROL Seleccionar elemento para realizar la agregación]**, elija **[!UICONTROL totalPaymentsDue.price]**.
 1. Seleccione **[!UICONTROL Insertar cálculo]**.
 
 Este proceso inserta una etiqueta de cálculo que proporciona la suma de los valores. Se pueden realizar cálculos más avanzados utilizando cálculos JSONata. Por ejemplo:
@@ -370,10 +370,11 @@ Para obtener más información sobre algunas de las otras acciones disponibles, 
 * Utilice las secuencias de comandos de ejemplo de la carpeta /src para ver cómo puede aprovechar PDF
 * Sigue el [Blog de tecnología de Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) para obtener los últimos consejos y trucos
 * Suscríbete a [Paper Clips (la transmisión en directo mensual)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) para obtener información sobre la automatización con [!DNL Adobe Acrobat Services].
+
 ======
+
 * Más información en [documentación](https://developer.adobe.com/document-services/docs/overview/)
 * Ver más tutoriales sobre Adobe Experience League
 * Utilice las secuencias de comandos de ejemplo de la carpeta /src para ver cómo puede aprovechar PDF
 * Sigue el [Blog de tecnología de Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) para obtener los últimos consejos y trucos
 * Suscríbete a [Paper Clips (la transmisión en directo mensual)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) para obtener información sobre la automatización con [!DNL Adobe Acrobat Services]
-

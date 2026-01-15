@@ -7,7 +7,7 @@ level: Beginner
 type: Tutorial
 jira: KT-15032
 exl-id: 6187a396-5039-4297-a4cc-b5d4b9545331
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
@@ -19,4 +19,3 @@ ht-degree: 0%
 Aprenda a automatizar la extracción de contenido de un documento de PDF mediante la API PDF Extract. La extracción de contenido PDF ayuda a desbloquear datos empresariales esenciales, que luego se pueden utilizar para una variedad de procesos descendentes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428294?hidetitle=true)
-

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
@@ -296,4 +296,3 @@ El ejemplo de un solo documento proporcionado anteriormente se puede usar como b
 
 [!DNL Adobe Acrobat Services] es de uso gratuito durante seis meses y, luego, [paga sobre la marcha](https://developer.adobe.com/document-services/pricing/main) a solo 0,05 $ por transacción de documento, para que puedas probarlo y escalar el flujo de trabajo de cartas de oferta a medida que crece tu empresa. Para [comenzar](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 para crear tus propias plantillas, [registra tu cuenta de desarrollador](https://developer.adobe.com/).
-

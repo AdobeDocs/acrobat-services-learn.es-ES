@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -422,7 +422,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 Tenga en cuenta los valores proporcionados para \&lt;YOUR_CODE\> y api_access_point.
 
-Para enviar una solicitud de POST HTTP que le proporcione el token de acceso, utilice los valores ID de cliente, \&lt;YOUR_CODE\> y api_access_point. Puedes usar [Postman](https://helpx.adobe.com/es/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) o cURL:
+Para enviar una solicitud de POST HTTP que le proporcione el token de acceso, utilice los valores ID de cliente, \&lt;YOUR_CODE\> y api_access_point. Puedes usar [Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) o cURL:
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
@@ -603,4 +603,3 @@ Como puede ver, al aprovechar los inicios rápidos, puede implementar un formula
 Llevando el ejemplo más allá, puedes crear formularios que los destinatarios puedan firmar de forma remota y segura. Cuando se requieren varias firmas, incluso se pueden enviar formularios automáticamente a una serie de personas de un flujo de trabajo. La incorporación de empleados se ha mejorado y el departamento de RR. HH. te va a encantar.
 
 Consulta [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) para agregar multitud de funciones de PDF a tus aplicaciones hoy mismo.
-

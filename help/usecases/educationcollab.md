@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 0%
@@ -171,7 +171,7 @@ Los estudiantes pueden usar anotaciones para hacer preguntas o compartir sus com
 
 Es importante que los profesores y los centros educativos vean cómo los estudiantes utilizan las plataformas en línea. Esto ayuda a los profesores a apoyar a sus estudiantes con recursos que les ayudan a desempeñarse mejor en sus tareas. La API PDF Embed se integra con análisis que puede utilizar para medir todos los eventos que tienen lugar, como cuando los usuarios abren, leen y cierran documentos. Con la API de servicios de PDF, los profesores también pueden desactivar la impresión, la descarga y la modificación de archivos para ayudar a mantener la integridad académica.
 
-Si tienes una licencia de [Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/), puedes usar su [integración inmediata](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics). De lo contrario, utiliza devoluciones de llamada para integrar tus servicios de PDF con otros proveedores de análisis, como [Google](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics).
+Si tienes una licencia de [Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/), puedes usar su [integración inmediata](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics). De lo contrario, utiliza devoluciones de llamada para integrar tus servicios de PDF con otros proveedores de análisis, como [Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics).
 
 Para habilitar la medición de eventos de documento, asocie los controladores de eventos mediante el método `registerCallback` con la instancia de Vista de DC de Adobe. Puede mostrar métricas básicas, como abrir un documento o leer una página, en la consola. También puede guardar las métricas en un registro o publicarlas en otras tiendas de análisis.
 
@@ -197,7 +197,7 @@ A continuación se muestra una captura de pantalla de la consola del navegador w
 
 Esta captura de pantalla muestra que el alumno abrió el archivo de asignación, leyó la primera página (no se desplazó a páginas adicionales o el documento solo tenía una página) y después descargó el archivo. Puedes recopilar estas métricas para realizar análisis y estudiar el comportamiento de tus estudiantes.
 
-Además, [Adobe Analytics](https://business.adobe.com/es/products/adobe-analytics.html) está integrado con la API de PDF Embed, por lo que si te suscribes a la suite de Adobe Analytics, puedes publicar tus métricas en tu suscripción. Para publicar las métricas en Adobe Analytics, solo necesita pasar su ID de suite al constructor de API de incrustación de PDF. (Tenga en cuenta que debe utilizar las credenciales de la API de incrustación de PDF, no las credenciales de la API de servicios de PDF).
+Además, [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) está integrado con la API de PDF Embed, por lo que si te suscribes a la suite de Adobe Analytics, puedes publicar tus métricas en tu suscripción. Para publicar las métricas en Adobe Analytics, solo necesita pasar su ID de suite al constructor de API de incrustación de PDF. (Tenga en cuenta que debe utilizar las credenciales de la API de incrustación de PDF, no las credenciales de la API de servicios de PDF).
 
 A continuación se muestra un código de ejemplo que muestra cómo pasar el ID de conjunto al constructor de la API PDF Embed:
 
@@ -216,4 +216,3 @@ En este tutorial práctico se ha examinado cómo utilizar la API de servicios de
 Ahora que ya sabe cómo anotar informes de PDF, archivar las anotaciones y realizar un seguimiento del uso de los informes de PDF, puede empezar a implementar estas soluciones en sus propios proyectos.
 
 Puedes usar las API de [!DNL Adobe Acrobat Services] para crear experiencias de PDF interactivas y fáciles de usar en tu sitio web. Disfruta de usar la API de servicios de Adobe PDF gratis durante seis meses y, luego, solo [paga por uso](https://developer.adobe.com/document-services/pricing/main) (mediante AWS o un acuerdo directo) por solo \$0,05 por transacción de documento. Usa Adobe PDF Embed gratis sin límite de tiempo. Crea una cuenta gratuita para [empezar](https://www.adobe.com/go/dcsdks_credentials) hoy mismo.
-

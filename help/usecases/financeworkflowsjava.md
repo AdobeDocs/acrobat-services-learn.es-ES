@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -200,4 +200,3 @@ Este tutorial práctico exploró las API [[!DNL Adobe Acrobat Services]](https:/
 Explora [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) y descubre lo que los servicios de Adobe PDF pueden hacer por tu empresa. Para obtener más información sobre las funciones disponibles en el SDK, consulta el [repositorio GitHub](https://github.com/adobe/pdftools-java-sdk-samples) para obtener los ejemplos y descubre cómo [PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed) puede ayudarte a mostrar rápidamente a los PDF en tus aplicaciones.
 
 Para combinar y manipular documentos fácilmente, creando informes de PDF útiles para tus clientes financieros, empieza registrándote hoy mismo en tu [cuenta de desarrollador de Adobe](https://developer.adobe.com/document-services/homepage/) gratuita.
-
