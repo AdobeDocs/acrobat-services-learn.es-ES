@@ -23,4 +23,4 @@ Aprenda a crear un vínculo incrustado para OAuth, que es el método por el que 
 >
 >Este tutorial se ha diseñado específicamente para socios OEM que crean e incrustan un proceso de firma en su aplicación.
 
->[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445411?captions=spa&hidetitle=true){transcript=true}

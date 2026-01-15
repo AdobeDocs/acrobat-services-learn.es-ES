@@ -23,4 +23,4 @@ Aprenda a generar un token de acceso que se pueda utilizar con la API de Acrobat
 >
 >Este tutorial se ha diseñado específicamente para socios OEM que crean e incrustan un proceso de firma en su aplicación.
 
->[!VIDEO](https://video.tv.adobe.com/v/347350?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444192?captions=spa&hidetitle=true)
