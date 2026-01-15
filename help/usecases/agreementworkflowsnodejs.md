@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: Destacados
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -520,5 +520,3 @@ Como puede ver en los inicios rápidos y en el código proporcionado, es fácil 
 Para descubrir los ámbitos necesarios para una llamada o ver cómo se genera, puede generar llamadas de ejemplo desde la [documentación de la API Rest](https://secure.na4.adobesign.com/public/docs/restapi/v6). El [Inicio rápido](https://github.com/adobe/pdftools-node-sdk-samples) también muestra otras funcionalidades y formatos de archivo para los procesos de las API [!DNL Adobe Acrobat Services].
 
 Puede añadir numerosas funciones de PDF a sus aplicaciones, lo que permite a los usuarios ver y firmar sus documentos y mucho más de forma rápida y sencilla. Para empezar, echa un vistazo a [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) hoy mismo.
-
-

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
@@ -441,4 +441,3 @@ La API de Acrobat Sign está disponible en varios niveles de [planes de firma el
 Consulta el [precio de pago por uso](https://developer.adobe.com/document-services/pricing/main), para ver cuándo termina tu versión de prueba de seis meses de la API de servicios de Adobe PDF, y la API incrustada de Adobe PDF gratuita.
 
 Para añadir funciones interesantes como la creación automática de documentos y la firma de documentos a tu aplicación, empieza con [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html).
-

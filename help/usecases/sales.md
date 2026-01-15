@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -146,4 +146,3 @@ Empezaste con un proceso ineficiente y tedioso que necesitaba automatización. P
 Con Microsoft Forms, obtienes datos importantes de tus clientes que encajarían en sus propuestas únicas. Ha creado una plantilla de propuesta de ventas en Microsoft Word para proporcionar el texto estático que no desea volver a crear cada vez. A continuación, ha utilizado las API de [!DNL Acrobat Services] para combinar los datos del formulario y la plantilla para crear un PDF de propuestas de ventas para sus clientes de una manera más eficaz.
 
 Este tutorial práctico es solo un vistazo de las posibilidades con estas API. Para descubrir más soluciones, visita la página de API [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). El uso de todas estas herramientas es gratis durante seis meses. Luego, paga solo 0,05 USD por transacción de documento en el plan de [pago por uso](https://developer.adobe.com/document-services/pricing/main), de modo que solo pagas a medida que tu equipo vaya añadiendo más clientes potenciales a tu canal de ventas.
-

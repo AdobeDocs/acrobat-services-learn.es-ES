@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -315,4 +315,3 @@ En este tutorial, ha convertido un documento de Word en un PDF, ha creado un doc
 * Vea las plantillas precreadas disponibles en Microsoft Power Automate.
 * Obtén información en [artículos](https://medium.com/adobetech/tagged/microsoft-power-automate) del blog de tecnología de Adobe.
 * Consulte la [documentación](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) de la API de generación de documentos de Adobe.
-

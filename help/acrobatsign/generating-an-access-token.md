@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-11075
 thumbnail: KT-11075.jpg
 exl-id: c68afd4b-4143-4ea5-ad44-de1fa46e3f30
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
@@ -24,4 +24,3 @@ Aprenda a generar un token de acceso que se pueda utilizar con la API de Acrobat
 >Este tutorial se ha diseñado específicamente para socios OEM que crean e incrustan un proceso de firma en su aplicación.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444192?captions=spa&hidetitle=true)
-
