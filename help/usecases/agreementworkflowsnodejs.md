@@ -302,7 +302,7 @@ El último bit de código que necesita es una función que muestra el documento 
 
 La [demostración de la API Adobe PDF Embed](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) le permite obtener una vista previa de las otras opciones para incrustar documentos del PDF.
 
-![Imagen de incrustando opciones de PDF ](assets/AWNjs_7.png)
+![Imagen de incrustando opciones de PDF &#x200B;](assets/AWNjs_7.png)
 
 Puede activar y desactivar varias opciones y ver inmediatamente cómo se procesan. Cuando encuentre la combinación que desee, haga clic en el botón *\&lt;/\> Generar código* para generar el código de HTML real mediante esas opciones.
 
