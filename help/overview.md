@@ -8,10 +8,10 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 91af98e26fdbc89574e4df7ecadaea9e30584aaf
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 2%
+source-wordcount: '607'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 2%
 Las dos últimas API y sus SDK se incluyen en [!DNL Adobe PDF Services API] como parte de una oferta de pago. [!DNL PDF Embed API] es una oferta gratuita. Estas API automatizan la generación, manipulación y transformación del contenido de los documentos mediante un conjunto de servicios web modernos basados en la nube. Te ayudan a ofrecer experiencias más sencillas, rápidas y de marca para que controles la interacción del usuario con tus documentos, optimices los flujos de trabajo de los PDF y fomentes el uso y la retención. Estos tutoriales te ayudan a ponerte al día ofreciendo experiencias de marca más sencillas, rápidas y con las API de [!DNL Adobe Acrobat Services].
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices
   {target = _self}

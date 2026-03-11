@@ -7,9 +7,9 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15327
 exl-id: dfd018a7-8e1f-4c00-9e1f-6b7b8435fbfa
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 0%
 Esta API basada en IA etiqueta automáticamente tablas, párrafos, listas, encabezados y mucho más para mejorar la experiencia de lectura de los PDF nativos o digitalizados con tecnologías de asistencia. También identifica el orden de lectura para garantizar el flujo lógico de información con varias columnas o elementos en las páginas. Aplique esto a los retrasos en los documentos o a los nuevos flujos de trabajo de documentos y avance hacia el cumplimiento normativo con mayor facilidad.
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfaccessibility/automatically-add-tags
   {target = _self}
