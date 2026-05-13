@@ -9,9 +9,16 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: Destacados
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/8SQivYwIRQxLqcHWCvrZ7b4t2BOqGyWKZvvNSpomrlo
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: 2187
 ht-degree: 0%
 
 ---
@@ -20,7 +27,7 @@ ht-degree: 0%
 
 ![Banner de héroe de caso de uso](assets/UseCaseAgreementHero.jpg)
 
-Muchas aplicaciones y procesos empresariales requieren documentación, como propuestas y acuerdos. Los documentos del PDF garantizan que los archivos sean más seguros y menos modificables. También ofrecen compatibilidad con firmas digitales para que los clientes puedan completar sus documentos de forma rápida y sencilla. Las API de [!DNL Adobe Acrobat Services] incorporan fácilmente funciones de PDF en tus aplicaciones web.
+Muchas aplicaciones y procesos empresariales requieren documentación, como propuestas y acuerdos. Los documentos del PDF garantizan que los archivos sean más seguros y menos modificables. También ofrecen compatibilidad con firmas digitales para que los clientes puedan completar sus documentos de forma rápida y sencilla. [!DNL Adobe Acrobat Services] Las API incorporan fácilmente funciones de PDF en tus aplicaciones web.
 
 ## Lo que puedes aprender
 
@@ -100,7 +107,7 @@ logger.level = 'info';
 logger.info('Application started')
 ```
 
-El código anterior escribe los datos registrados en un archivo en ./logs/applicationlog.txt. Si desea que escriba en la consola, puede comentar la llamada a log4js.configure.
+El código anterior escribe los datos registrados en un archivo de ./logs/applicationlog.txt. Si desea que escriba en la consola, puede comentar la llamada a log4js.configure.
 
 ## Convertir archivos de Word en PDF
 
@@ -302,7 +309,7 @@ El último bit de código que necesita es una función que muestra el documento 
 
 La [demostración de la API Adobe PDF Embed](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) le permite obtener una vista previa de las otras opciones para incrustar documentos del PDF.
 
-![Imagen de incrustando opciones de PDF &#x200B;](assets/AWNjs_7.png)
+![Imagen de incrustando opciones de PDF ](assets/AWNjs_7.png)
 
 Puede activar y desactivar varias opciones y ver inmediatamente cómo se procesan. Cuando encuentre la combinación que desee, haga clic en el botón *\&lt;/\> Generar código* para generar el código de HTML real mediante esas opciones.
 

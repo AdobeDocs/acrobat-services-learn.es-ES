@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/fsD7hB9-yEhVElQUFkM1RmUB1aVJq6C9USXa3Ru9lks
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: 1549
 ht-degree: 0%
 
 ---
@@ -26,12 +33,12 @@ ht-degree: 0%
         <img alt="Parte 1: Introducción a la API de incrustación de PDF" src="assets/ControlPDFPart1_thumb.png" />
     </a>
     <div>
-    <a href="controlpdfexperience.md#part1"><strong>Parte 1: Introducción a la API de incrustación de PDF</strong></a>
+    <a href="controlpdfexperience.md#part1"><strong>Parte 1: Introducción a la API incrustada de PDF</strong></a>
     </div>
   </td>
   <td>
     <a href="controlpdfexperience.md#part2">
-        <img alt="Parte 2: Añadir la API de incrustación de PDF a una página web" src="assets/ControlPDFPart2_thumb.png" />
+        <img alt="Parte 2: Adición de la API de incrustación de PDF a una página web" src="assets/ControlPDFPart2_thumb.png" />
     </a>
     <div>
     <a href="controlpdfexperience.md#part2"><strong>Parte 2: Agregando la API de incrustación de PDF a una página web</strong></a>
@@ -47,7 +54,7 @@ ht-degree: 0%
   </td>
   <td>
    <a href="controlpdfexperience.md#part4">
-      <img alt="Parte 4: Añadir interactividad basada en eventos" src="assets/ControlPDFPart4_thumb.png" />
+      <img alt="Parte 4: Añadir interactividad según los eventos" src="assets/ControlPDFPart4_thumb.png" />
    </a>
     <div>
     <a href="controlpdfexperience.md#part4"><strong>Parte 4: Agregar interactividad basada en eventos</strong></a>
@@ -106,7 +113,7 @@ En la parte 1, aprenda a empezar con todo lo que necesita para las partes 1-3. E
 
    ![Captura de pantalla del botón de creación de credenciales](assets/ControlPDF_4.png)
 
-## Parte 2: Añadir la API de incrustación de PDF a una página web {#part2}
+## Parte 2: Adición de la API de incrustación de PDF a una página web {#part2}
 
 En la parte 2, aprenderás a incrustar fácilmente la API de incrustación de PDF en una página web. Para ello, utilizarás la demostración online de la API de Adobe PDF Embed API para crear tu código.
 
@@ -162,7 +169,7 @@ Hemos creado código para que lo utilice. Aunque puede utilizar su propio códig
 
 1. Vaya al editor de código y abra el archivo **[!UICONTROL Web]** -> **[!UICONTROL exercise]** -> **[!UICONTROL index.html]**.
 
-1. Pegue el código de script en `<head>` del archivo en la línea 18 bajo el comentario que dice: **TODO: EJERCICIO 1: INSERTAR ETIQUETA DE SCRIPT DE API EMBED**.
+1. Pegue el código de script en `<head>` del archivo en la línea 18, bajo el comentario que dice: **TODO: EJERCICIO 1: INSERTE LA ETIQUETA DE SCRIPT DE API EMBED**.
 
    ![Captura de pantalla de dónde pegar el código de script](assets/ControlPDF_13.png)
 
@@ -176,7 +183,7 @@ Hemos creado código para que lo utilice. Aunque puede utilizar su propio códig
 
 1. Vaya al editor de código y abra de nuevo el archivo **[!UICONTROL Web]** -> **[!UICONTROL exercise]** -> **[!UICONTROL index.html]**.
 
-1. Pegue el código `<div>` en `<body>` del archivo en la línea 67 bajo el comentario que dice **TODO: EJERCICIO 1: INSERTAR CÓDIGO DE API EMBED DEL PDF**.
+1. Pegue el código `<div>` en `<body>` del archivo en la línea 67 bajo el comentario que dice **TODO: EJERCICIO 1: INSERTE EL CÓDIGO DE API INCRUSTADA POR EL PDF**.
 
    ![Captura de pantalla de dónde pegar código](assets/ControlPDF_15.png)
 
@@ -292,7 +299,7 @@ La API Adobe PDF Embed proporciona una integración inmediata con Adobe Analytic
 
    ![Captura de pantalla del código Adobe Analytics](assets/ControlPDF_25.png)
 
-## Parte 4: Añadir interactividad basada en eventos {#part4}
+## Parte 4: Añadir interactividad según los eventos {#part4}
 
 En la parte 4, verás cómo colocar en la parte superior del visor del PDF un paywall que muestra después de desplazarte más allá de la segunda página.
 

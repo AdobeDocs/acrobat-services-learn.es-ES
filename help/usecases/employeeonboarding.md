@@ -8,10 +8,16 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/cyfUGCD0CzmV6M4TiC9ZpYBrOpqHGgmwK8ByVYqSDbE
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 0%
+source-wordcount: 1564
+ht-degree: 1%
 
 ---
 
@@ -206,6 +212,6 @@ La plantilla se puede cargar en el panel de Acrobat Sign y luego utilizarse para
 
 ## Experiméntala tú mismo
 
-Todo lo que se describe en este artículo se puede probar ahora mismo. La [!DNL Adobe Acrobat Services]prueba gratis[&#x200B; de la API &#x200B;](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) te ofrece actualmente 1000 solicitudes gratuitas durante un período de seis meses. La [prueba gratis](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) de Acrobat Sign te permite enviar acuerdos con marca de agua para probarlos.
+Todo lo que se describe en este artículo se puede probar ahora mismo. La [prueba gratis](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) de la API [!DNL Adobe Acrobat Services] te ofrece actualmente 1000 solicitudes gratuitas durante un período de seis meses. La [prueba gratis](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) de Acrobat Sign te permite enviar acuerdos con marca de agua para probarlos.
 
 ¿Tiene alguna pregunta? El [foro de asistencia](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK) lo supervisan los desarrolladores de Adobes y los asistentes todos los días. Por último, para encontrar más inspiración, no te olvides de ver el próximo episodio de [Paper Clips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF). Se celebran periódicamente reuniones en directo con los clientes, así como demostraciones y charlas.

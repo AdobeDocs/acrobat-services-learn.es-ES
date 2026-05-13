@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/E6grXk4Sptkhetpgt-MoDndf-Ezm97qnutLbUqD-a20
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: 1391
 ht-degree: 0%
 
 ---
@@ -19,7 +26,7 @@ ht-degree: 0%
 
 ![Banner de héroe de caso de uso](assets/UseCaseReportHero.jpg)
 
-Las finanzas, la educación, el marketing y otros sectores utilizan a los PDF para compartir datos con sus clientes y partes interesadas. Los PDF facilitan el uso compartido de documentos sofisticados, con tablas, gráficos y contenido interactivo, en un formato que todos puedan ver. Las API de [!DNL Adobe Acrobat Services] ayudan a estas empresas a generar informes de PDF que se pueden compartir desde Microsoft Word, Microsoft Excel, gráficos y otros formatos de documento diversos.
+Las finanzas, la educación, el marketing y otros sectores utilizan a los PDF para compartir datos con sus clientes y partes interesadas. Los PDF facilitan el uso compartido de documentos sofisticados, con tablas, gráficos y contenido interactivo, en un formato que todos puedan ver. [!DNL Adobe Acrobat Services] Las API ayudan a estas empresas a generar informes de PDF que se pueden compartir desde Microsoft Word, Microsoft Excel, gráficos y otros formatos de documento diversos.
 
 Digamos que [diriges una empresa de seguimiento de redes sociales](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation). Tus clientes inician sesión en una parte de tu sitio protegida con contraseña para ver el análisis de sus campañas. A menudo, quieren compartir estas estadísticas con sus ejecutivos, accionistas, donantes u otras partes interesadas. Los documentos descargables de PDF son una excelente forma de que tus clientes compartan números, gráficas y mucho más.
 
@@ -161,7 +168,7 @@ Y aquí está el PDF de salida:
 
 ![Captura de pantalla del informe genérico](assets/report_6.png)
 
-Los clientes pueden seleccionar varios archivos para generar un informe combinado. Cuando el cliente selecciona más de un documento, se realizan dos operaciones: la primera crea un PDF parcial para cada documento y la segunda lo combina en un único informe de PDF.
+Los clientes pueden seleccionar varios archivos para generar un informe combinado. Cuando el cliente selecciona más de un documento, se realizan dos operaciones: el primero crea un PDF parcial para cada documento y el segundo los combina en un único informe de PDF.
 
 ```
 async function combinePdf(pdfs, outputPdf) {
