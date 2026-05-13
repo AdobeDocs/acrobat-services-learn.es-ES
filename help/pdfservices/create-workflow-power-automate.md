@@ -8,13 +8,21 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: 2046
 ht-degree: 1%
 
 ---
-
 
 # Crea tu primer flujo en Microsoft Power Automate
 
@@ -48,7 +56,7 @@ Hay dos [archivos de muestra](assets/sample-assets.zip) que necesitas descomprim
 
 Para completar este tutorial, necesita sus credenciales ya configuradas en Microsoft Power Automate para los servicios de Adobe PDF. Si no ha completado este paso, consulte las [instrucciones aquí](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
-## Parte 1: Crear nuevo flujo y convertir Word a PDF
+## Parte 1: Crear nuevo flujo y convertir Word en PDF
 
 ### Crear el flujo
 
@@ -112,7 +120,7 @@ Una vez que se genere el documento, vuelva a guardar el archivo en OneDrive.
 ### Probar flujo
 
 1. En la esquina superior izquierda, selecciona **[!UICONTROL Sin título]** para cambiar el nombre del flujo.
-1. Selecciona **[!UICONTROL Guardar]**.
+1. Seleccione **[!UICONTROL Guardar]**.
 1. Seleccione **[!UICONTROL Prueba]**.
 1. Seleccione **[!UICONTROL Manualmente]** y luego **[!UICONTROL Guardar y probar]**.
 1. Selecciona **[!UICONTROL Continuar]**.
@@ -122,7 +130,7 @@ En la carpeta OneDrive, debería ver el PDF convertido.
 
 ![Documento de PDF convertido seleccionado en OneDrive](assets/selectedGeneratedFileInOneDrive.png)
 
-## Parte 2: Generar un documento dinámico a partir de una plantilla
+## Parte 2: Generación de un documento dinámico a partir de una plantilla
 
 La siguiente parte se basa en la parte 1 y utiliza la plantilla *Generar documento a partir de Word* para combinar datos dinámicamente en el documento.
 
@@ -215,7 +223,7 @@ Una vez generado el documento, puede volver a guardar el archivo en OneDrive.
 
 ![Ejecutar pantalla de flujo en Microsoft Power Automate solicitando entradas](assets/runFlowParameters.png)
 
-1. Selecciona **[!UICONTROL Guardar]**.
+1. Seleccione **[!UICONTROL Guardar]**.
 1. Seleccione **[!UICONTROL Prueba]**.
 1. Seleccione **[!UICONTROL Manualmente]** y luego **[!UICONTROL Guardar y probar]**.
 1. Selecciona **[!UICONTROL Continuar]**.
@@ -225,7 +233,7 @@ Una vez generado el documento, puede volver a guardar el archivo en OneDrive.
 En la carpeta OneDrive, verá un PDF generado a partir del documento de Word. Al abrir el documento de PDF en OneDrive, verá que los datos se combinan en las ubicaciones de las etiquetas de texto.
 
 
-## Parte 3: Combina el PDF en uno
+## Parte 3: Combinar el PDF en uno
 
 Ahora que ha generado y convertido un documento de Word en un PDF, la siguiente parte es combinar varios documentos de PDF.
 
@@ -263,7 +271,7 @@ Una vez combinado el documento, puede volver a guardarlo en OneDrive.
 
 ### Probar flujo
 
-1. Selecciona **[!UICONTROL Guardar]**.
+1. Seleccione **[!UICONTROL Guardar]**.
 1. Seleccione **[!UICONTROL Prueba]**.
 1. Seleccione **[!UICONTROL Manualmente]** y luego **[!UICONTROL Guardar y probar]**.
 1. Selecciona **[!UICONTROL Continuar]**.
@@ -299,7 +307,7 @@ Una vez protegido el documento, puede volver a guardar el archivo en OneDrive. E
 
 ### Probar flujo
 
-1. Selecciona **[!UICONTROL Guardar]**.
+1. Seleccione **[!UICONTROL Guardar]**.
 1. Seleccione **[!UICONTROL Prueba]**.
 1. Seleccione **[!UICONTROL Manualmente]** y luego **[!UICONTROL Guardar y probar]**.
 1. Selecciona **[!UICONTROL Continuar]**.

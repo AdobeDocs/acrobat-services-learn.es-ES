@@ -8,9 +8,24 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/Jj-xhGUcWVWOMooS2fOPcYmELcH70cG1eRRaPPy66Yk
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: 1442
 ht-degree: 0%
 
 ---
@@ -35,7 +50,7 @@ En este tutorial práctico, aprende a implementar datos y flujos de trabajo din�
 
 * [npm](https://www.npmjs.com/get-npm)
 
-* [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/)
+* [API de [!DNL Acrobat Services]](https://developer.adobe.com/document-services/homepage/)
 
 * [API de generación de documentos de Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
@@ -79,7 +94,7 @@ Después de generar las etiquetas, puede insertarlas en el documento. Las etique
 
 ## Uso de las API
 
-Vaya a la [!DNL Acrobat Services]página principal[&#x200B; de las API de &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation). Para empezar a usar las API de [!DNL Acrobat Services], necesita credenciales para su aplicación. Desplázate hacia abajo todo el recorrido y selecciona **Prueba gratis** para crear credenciales. Puedes usar estos servicios [gratis durante seis meses y, luego, pagar sobre la marcha](https://developer.adobe.com/document-services/pricing/main) por solo 0,05 $ por transacción de documento, de modo que solo pagas por lo que necesitas.
+Vaya a la [página principal](https://developer.adobe.com/document-services/apis/doc-generation) de las API de [!DNL Acrobat Services]. Para empezar a usar las API de [!DNL Acrobat Services], necesita credenciales para su aplicación. Desplázate hacia abajo todo el recorrido y selecciona **Prueba gratis** para crear credenciales. Puedes usar estos servicios [gratis durante seis meses y, luego, pagar sobre la marcha](https://developer.adobe.com/document-services/pricing/main) por solo 0,05 $ por transacción de documento, de modo que solo pagas por lo que necesitas.
 
 Selecciona **API de servicios de PDF** como tu servicio preferido y completa los demás detalles como se muestra a continuación.
 
@@ -87,7 +102,7 @@ Selecciona **API de servicios de PDF** como tu servicio preferido y completa los
 
 Una vez creadas las credenciales, se obtienen algunos ejemplos de código. Seleccione su idioma preferido (este tutorial utiliza Node.js). Sus credenciales de API se encuentran en un archivo zip. Extraiga los archivos en PDFToolsSDK-Node.jsSamples.
 
-Para empezar, cree una carpeta vacía llamada auto-doc\*\*.\*\* En la carpeta, ejecute el siguiente comando para inicializar un proyecto Node.js: `npm init`. Asigne al proyecto el nombre &quot;auto-doc&quot;*.*
+Para comenzar, cree una carpeta vacía llamada auto-doc\*\*.\*\* En la carpeta, ejecute el siguiente comando para inicializar un proyecto Node.js: `npm init`. Asigne al proyecto el nombre &quot;auto-doc&quot;*.*
 
 En la carpeta ./PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples, hay un archivo llamado pdftools-api-credentials.json. Mueva y private.key a la carpeta auto-doc. Contiene sus credenciales de API. Además, en la carpeta de documentos automáticos, cree una subcarpeta llamada &quot;resources&quot;. Contiene los datos con formato JSON recibidos de los clientes cada vez que se genera una propuesta de ventas. En la misma carpeta, guarde la plantilla de propuesta de ventas de Microsoft Word.
 
@@ -135,7 +150,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Este código obtiene su archivo JSON del formulario de Microsoft con la ayuda de las etiquetas que creó con [!DNL Acrobat Services]. A continuación, combina los datos con la plantilla de propuesta de ventas creada en Microsoft Word para generar un nuevo PDF. El PDF se guarda en el archivo recién creado ./output.
+Este código obtiene su archivo JSON del formulario de Microsoft con la ayuda de las etiquetas que creó con [!DNL Acrobat Services]. A continuación, combina los datos con la plantilla de propuesta de ventas creada en Microsoft Word para generar un nuevo PDF. El PDF se guarda en la carpeta ./output recién creada.
 
 Además, el código utiliza la [API de Adobe Sign](https://developer.adobe.com/adobesign-api/) para que ambas empresas firmen la propuesta de ventas generada. Echa un vistazo a esta entrada de blog para obtener una explicación detallada de esta API.
 

@@ -8,9 +8,25 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/POsohxFP16AENPclwoaNwxcW0xmPP0iWmGUaKX4H0P4
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: 1543
 ht-degree: 0%
 
 ---
@@ -42,7 +58,7 @@ El portal de aprendizaje tiene las siguientes funciones:
 
 * Permite a los estudiantes dejar comentarios y descargarlos en sus equipos
 
-Descubre cómo [!DNL Adobe Acrobat Services] proporciona una experiencia sofisticada a tus estudiantes con PDF. Las API de [!DNL Acrobat Services] se integran a la perfección en tus aplicaciones existentes, de modo que los estudiantes puedan cargar, convertir y ver archivos, y luego realizar y guardar comentarios, y todo ello en tu configuración actual.
+Descubre cómo [!DNL Adobe Acrobat Services] proporciona una experiencia sofisticada a tus estudiantes con PDF. [!DNL Acrobat Services] Las API se integran a la perfección en tus aplicaciones existentes, para que los estudiantes puedan cargar, convertir y ver archivos, y luego realizar y guardar comentarios, y todo ello dentro de tu configuración actual.
 
 ## API y recursos relevantes
 
@@ -113,7 +129,7 @@ Para obtener información sobre cómo se llama a este método, vea [el código d
 
 La interfaz de usuario utiliza la API PDF Embed para procesar PDF en un navegador web. Esta API está disponible de forma gratuita.
 
-La API de incrustación de PDF usa una credencial diferente a la API de servicios de PDF, por lo que debe [crear una credencial](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+La API de incrustación de PDF usa una credencial diferente a la API de servicios de PDF, por lo que debe [&#x200B; crear una credencial](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 antes de que puedas usarlo. A continuación, puede utilizar PDF Embed de forma totalmente gratuita.
 
 Asegúrese de introducir la dirección URL del sitio web correcta en el token. De lo contrario, es posible que no pueda procesar los PDF con el distintivo.
@@ -153,7 +169,7 @@ Los estudiantes deben poder descargar el informe o trabajar en el material aquí
 
 Una plataforma de aprendizaje debe admitir anotaciones, comentarios y discusiones básicas en los PDF. La API PDF Embed proporciona todas estas funciones. Activa la compatibilidad con anotaciones mediante `showAnnotationTools`, lo que permite a profesores y estudiantes comentar sobre los documentos y archivar comentarios como parte del PDF.
 
-Para habilitar anotaciones en documentos de PDF, solo tiene que pasar el argumento `showAnnotationTools` : true al método `previewFile`. Esto muestra la herramienta de anotaciones en el previsualizador del PDF. Acceda a esta herramienta desde el menú de tres puntos situado en la esquina superior derecha de la previsualización.
+Para habilitar anotaciones en documentos de PDF, solo tiene que pasar el argumento `showAnnotationTools` : true para el método `previewFile`. Esto muestra la herramienta de anotaciones en el previsualizador del PDF. Acceda a esta herramienta desde el menú de tres puntos situado en la esquina superior derecha de la previsualización.
 
 ![Captura de pantalla de las herramientas de comentarios en PDF](assets/edu_4.png)
 

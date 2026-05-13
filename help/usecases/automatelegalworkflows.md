@@ -8,10 +8,23 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/d-865GSolCybDdJcrN-ChmedE8m2um1K6jPWFTUIZBs
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '2824'
-ht-degree: 0%
+source-wordcount: 2933
+ht-degree: 1%
 
 ---
 
@@ -271,7 +284,7 @@ A continuación, coloque un campo de datos para el firmante que se rellena autom
 1. Establezca Tipo de campo en Fecha.
 1. Seleccione **[!UICONTROL Insertar etiqueta de texto de Adobe Sign]**.
 
-La etiqueta Date que se coloca es bastante larga: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. La etiqueta de texto de Acrobat Sign debe permanecer en la misma línea, que es diferente de las etiquetas de generación de documentos. Los parámetros `:format()` y `font()` son opcionales, por lo que en este escenario podemos acortar la etiqueta a `{{Date 3_es_:signer1:date}}`.
+La etiqueta de fecha que se coloca es bastante larga: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. La etiqueta de texto de Acrobat Sign debe permanecer en la misma línea, que es diferente de las etiquetas de generación de documentos. Los parámetros `:format()` y `font()` son opcionales, por lo que en este escenario podemos acortar la etiqueta a `{{Date 3_es_:signer1:date}}`.
 
 Repita los pasos anteriores a la sección *Firma de la empresa*. Al hacerlo, debe cambiar el campo Destinatarios a **Firmante-2**; de lo contrario, todos los campos de firma se asignan a la misma persona.
 
@@ -408,7 +421,7 @@ Si no tienes una cuenta de Acrobat Sign, regístrate para obtener una cuenta de 
    ![Captura de pantalla de la firma de escritura](assets/automatelegal_34.png)
 
 1. Seleccione **[!UICONTROL Aplicar]**.
-1. Seleccione **[!UICONTROL Clic firmar]**.
+1. Seleccione **[!UICONTROL Clic para firmar]**.
 
 Se enviará un correo electrónico al siguiente firmante. Repita los pasos del 9 al 16 para ver y firmar para el segundo firmante.
 
