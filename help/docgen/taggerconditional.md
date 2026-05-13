@@ -27,4 +27,4 @@ ht-degree: 0%
 
 Aprenda a definir secciones en plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para incluir o excluir dinámicamente secciones de un documento basadas en datos mediante la API de generación de documentos de Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/332117?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411736?captions=spa&hidetitle=true)

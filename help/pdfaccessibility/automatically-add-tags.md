@@ -27,4 +27,4 @@ ht-degree: 0%
 
 Aprende a etiquetar automáticamente la accesibilidad a escala con la IA. El etiquetado automático reduce el tiempo y el coste necesarios para alcanzar el cumplimiento normativo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428310?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446262?captions=spa&hidetitle=true)

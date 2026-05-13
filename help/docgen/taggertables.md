@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Aprenda a agregar tablas y etiquetas de lista a plantillas de Microsoft Word mediante el etiquetador de generación de documentos de Adobe para agregar dinámicamente filas de tabla o de lista basadas en datos mediante la API de generación de documentos de Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/332115?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411724?captions=spa&hidetitle=true)
