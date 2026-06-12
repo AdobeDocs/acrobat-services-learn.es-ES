@@ -293,7 +293,7 @@ Como alternativa a los formularios web, puede crear acuerdos. En las siguientes 
 
 Enviar un documento a los destinatarios especificados para que lo firmen o aprueben crea un acuerdo. Puede realizar un seguimiento del estado y la finalización de un acuerdo mediante las API.
 
-Puede crear un acuerdo usando un [documento transitorio](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [documento de biblioteca](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o una URL. En este ejemplo, el acuerdo se basa en `transientDocumentId`, al igual que el formulario web creado anteriormente.
+Puede crear un acuerdo usando un [documento transitorio](https://helpx.adobe.com/es/sign/kb/how-to-send-an-agreement-through-REST-API.html), [documento de biblioteca](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o una URL. En este ejemplo, el acuerdo se basa en `transientDocumentId`, al igual que el formulario web creado anteriormente.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
