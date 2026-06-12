@@ -9,21 +9,12 @@ jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
 TQID: https://experienceleague.adobe.com/POsohxFP16AENPclwoaNwxcW0xmPP0iWmGUaKX4H0P4
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1543
@@ -129,7 +120,7 @@ Para obtener información sobre cómo se llama a este método, vea [el código d
 
 La interfaz de usuario utiliza la API PDF Embed para procesar PDF en un navegador web. Esta API está disponible de forma gratuita.
 
-La API de incrustación de PDF usa una credencial diferente a la API de servicios de PDF, por lo que debe [&#x200B; crear una credencial](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+La API de incrustación de PDF usa una credencial diferente a la API de servicios de PDF, por lo que debe [ crear una credencial](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 antes de que puedas usarlo. A continuación, puede utilizar PDF Embed de forma totalmente gratuita.
 
 Asegúrese de introducir la dirección URL del sitio web correcta en el token. De lo contrario, es posible que no pueda procesar los PDF con el distintivo.
@@ -187,7 +178,7 @@ Los estudiantes pueden usar anotaciones para hacer preguntas o compartir sus com
 
 Es importante que los profesores y los centros educativos vean cómo los estudiantes utilizan las plataformas en línea. Esto ayuda a los profesores a apoyar a sus estudiantes con recursos que les ayudan a desempeñarse mejor en sus tareas. La API PDF Embed se integra con análisis que puede utilizar para medir todos los eventos que tienen lugar, como cuando los usuarios abren, leen y cierran documentos. Con la API de servicios de PDF, los profesores también pueden desactivar la impresión, la descarga y la modificación de archivos para ayudar a mantener la integridad académica.
 
-Si tienes una licencia de [Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/), puedes usar su [integración inmediata](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics). De lo contrario, utiliza devoluciones de llamada para integrar tus servicios de PDF con otros proveedores de análisis, como [Google](https://experienceleague.adobe.com/es/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics).
+Si tienes una licencia de [Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/), puedes usar su [integración inmediata](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics). De lo contrario, utiliza devoluciones de llamada para integrar tus servicios de PDF con otros proveedores de análisis, como [Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics).
 
 Para habilitar la medición de eventos de documento, asocie los controladores de eventos mediante el método `registerCallback` con la instancia de Vista de DC de Adobe. Puede mostrar métricas básicas, como abrir un documento o leer una página, en la consola. También puede guardar las métricas en un registro o publicarlas en otras tiendas de análisis.
 
@@ -213,7 +204,7 @@ A continuación se muestra una captura de pantalla de la consola del navegador w
 
 Esta captura de pantalla muestra que el alumno abrió el archivo de asignación, leyó la primera página (no se desplazó a páginas adicionales o el documento solo tenía una página) y después descargó el archivo. Puedes recopilar estas métricas para realizar análisis y estudiar el comportamiento de tus estudiantes.
 
-Además, [Adobe Analytics](https://business.adobe.com/es/products/adobe-analytics.html) está integrado con la API de PDF Embed, por lo que si te suscribes a la suite de Adobe Analytics, puedes publicar tus métricas en tu suscripción. Para publicar las métricas en Adobe Analytics, solo necesita pasar su ID de suite al constructor de API de incrustación de PDF. (Tenga en cuenta que debe utilizar las credenciales de la API de incrustación de PDF, no las credenciales de la API de servicios de PDF).
+Además, [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) está integrado con la API de PDF Embed, por lo que si te suscribes a la suite de Adobe Analytics, puedes publicar tus métricas en tu suscripción. Para publicar las métricas en Adobe Analytics, solo necesita pasar su ID de suite al constructor de API de incrustación de PDF. (Tenga en cuenta que debe utilizar las credenciales de la API de incrustación de PDF, no las credenciales de la API de servicios de PDF).
 
 A continuación se muestra un código de ejemplo que muestra cómo pasar el ID de conjunto al constructor de la API PDF Embed:
 
