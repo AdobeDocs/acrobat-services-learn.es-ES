@@ -24,7 +24,7 @@ level_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+source-git-commit: 613f10928c919ed475347a894af97f692ed233bb
 workflow-type: tm+mt
 source-wordcount: 1851
 ht-degree: 1%
@@ -269,15 +269,15 @@ En OfferLetter-Template, haga clic en el nuevo botón **Generación de documento
 
 ![Captura de pantalla de carta y código](assets/offer_3.png)
 
-Haga clic en el botón **Generar etiquetas**. Se obtiene un menú desplegable de etiquetas para insertar en los puntos apropiados del documento. Resalta la primera X del documento y selecciona **[!UICONTROL firstname]**. Haga clic en **[!UICONTROL Insertar texto]** y &quot;Estimado/a X&quot; cambiará a &quot;Estimado/a ```{{`offer_letter`.firstname}}```&quot;. Esta etiqueta tiene el formato correcto para `documentMergeOperation`. Continúe y agregue las tres etiquetas restantes en el Xs apropiado. No olvide guardar OfferLetter-template.docx. Debería tener este aspecto:
+Haga clic en el botón **Generar etiquetas**. Se obtiene un menú desplegable de etiquetas para insertar en los puntos apropiados del documento. Resalta la primera X del documento y selecciona **[!UICONTROL firstname]**. Haga clic en **[!UICONTROL Insertar texto]** y &quot;Estimado/a X&quot; cambiará a &quot;Estimado/a ``{{`offer_letter`.firstname}}``&quot;. Esta etiqueta tiene el formato correcto para `documentMergeOperation`. Continúe y agregue las tres etiquetas restantes en el Xs apropiado. No olvide guardar OfferLetter-template.docx. Debería tener este aspecto:
 
-Estimado/a ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```:
+Estimado/a ``{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}``:
 
-Estamos encantados de ofrecerle un puesto por $ ```{{`offer_letter`.salary}}``` al año. La fecha de inicio será ```{{`offer_letter`.startdate}}```.
+Estamos encantados de ofrecerle un puesto por $ ``{{`offer_letter`.salary}}`` al año. La fecha de inicio será ``{{`offer_letter`.startdate}}``.
 
 Bienvenida
 
-Ahora la plantilla de Word tiene un marcado que coincide con el formato JSON. Por ejemplo, ```{{`offer_letter`.`firstname`}}``` al principio del documento de Word se reemplaza por el valor de la sección &quot;firstname&quot; de los datos JSON.
+Ahora la plantilla de Word tiene un marcado que coincide con el formato JSON. Por ejemplo, ``{{`offer_letter`.`firstname`}}`` al principio del documento de Word se reemplaza por el valor de la sección &quot;firstname&quot; de los datos JSON.
 
 Vuelva a la función `generateLetter`. Para proteger la llamada REST, cree un nuevo archivo llamado pdftools-api-credentials.json en la raíz del proyecto. Pegue los siguientes datos JSON y ajústelos con los detalles de la sección Cuenta de servicio (JWT) de su [Consola de desarrollador](https://developer.adobe.com/console/).
 
