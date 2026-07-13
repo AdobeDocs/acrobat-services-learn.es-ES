@@ -1,7 +1,7 @@
 ---
 source-git-commit: 345d62fbdbe12f2c369ea073ce8e6e942bdad9c9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -9,11 +9,17 @@ ht-degree: 0%
 
 ## Nuestro compromiso
 
-En aras de fomentar un entorno abierto y acogedor, como colaboradores y mantenedores nos comprometemos a hacer de la participación en nuestro proyecto y en nuestra comunidad una experiencia libre de acoso para todos, independientemente de la edad, el tamaño del cuerpo, la discapacidad, el origen étnico, la identidad y expresión de género, el nivel de experiencia, la nacionalidad, la apariencia personal, la raza, la religión o la identidad y orientación sexual.
+Con el fin de fomentar un entorno abierto y acogedor,
+los colaboradores y mantenedores se comprometen a participar en nuestro proyecto y
+nuestra comunidad es una experiencia libre de acoso para todos, independientemente de la edad, el cuerpo
+tamaño, discapacidad, etnia, identidad y expresión de género, nivel de experiencia,
+nacionalidad, apariencia personal, raza, religión o identidad sexual y
+orientación.
 
 ## Nuestros estándares
 
-Algunos ejemplos de comportamiento que contribuye a crear un entorno positivo son:
+Ejemplos de comportamiento que contribuye a crear un entorno positivo
+incluyen:
 
 * Uso de un lenguaje acogedor e inclusivo
 * Respetar los diferentes puntos de vista y experiencias
@@ -23,29 +29,49 @@ Algunos ejemplos de comportamiento que contribuye a crear un entorno positivo so
 
 Algunos ejemplos de comportamiento inaceptable de los participantes son:
 
-* El uso de lenguaje o imágenes sexualizadas y la atención sexual no deseada o avances
+* El uso de lenguaje o imágenes sexualizadas y la atención sexual no deseada o
+avances
 * Troleo, insultos/comentarios despectivos y ataques personales o políticos
 * Acoso público o privado
-* Publicar información privada de otros, como una dirección física o electrónica, sin permiso explícito
-* Otras conductas que puedan razonablemente considerarse inapropiadas en un entorno profesional
+* Publicar la información privada de otros, como una
+sin permiso explícito
+* Otras conductas que puedan razonablemente considerarse inapropiadas en un
+entorno profesional
 
 ## Nuestras responsabilidades
 
-Los responsables del mantenimiento del proyecto son responsables de aclarar las normas de comportamiento aceptable y se espera que adopten medidas correctivas adecuadas y justas en respuesta a cualquier caso de comportamiento inaceptable.
+Los responsables del mantenimiento del proyecto son responsables de aclarar las normas de
+y se espera que adopten medidas correctoras adecuadas y justas en
+respuesta a cualquier caso de comportamiento inaceptable.
 
-Los responsables del mantenimiento del proyecto tienen el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, confirmaciones, código, ediciones de wiki, problemas y otras contribuciones que no estén alineados con este Código de conducta, o de prohibir temporal o permanentemente a cualquier colaborador por otros comportamientos que consideren inapropiados, amenazantes, ofensivos o perjudiciales.
+Los responsables del mantenimiento del proyecto tienen el derecho y la responsabilidad de eliminar, editar o
+rechazar comentarios, confirmaciones, código, ediciones de wiki, problemas y otras contribuciones
+que no se ajusten al presente Código de Conducta, o que prohíban temporalmente o
+de forma permanente a cualquier colaborador por otros comportamientos que consideren inapropiados,
+amenazante, ofensivo o dañino.
 
 ## Ámbito
 
-Este Código de conducta se aplica tanto en los espacios del proyecto como en los espacios públicos cuando una persona representa al proyecto o a su comunidad. Algunos ejemplos de representación de un proyecto o comunidad incluyen el uso de una dirección de correo electrónico oficial del proyecto, la publicación a través de una cuenta oficial de redes sociales o la actuación como representante designado en un evento en línea o fuera de línea. Los responsables del proyecto pueden definir y aclarar mejor la representación de un proyecto.
+El presente Código de conducta se aplica tanto en los espacios del proyecto como en los espacios públicos
+cuando una persona representa al proyecto o a su comunidad. Ejemplos de
+representar a un proyecto o comunidad incluye el uso de un correo electrónico oficial del proyecto
+dirección, publicar a través de una cuenta oficial de redes sociales o actuar como
+representante en un evento en línea o fuera de línea. La representación de un proyecto puede
+definido y aclarado por los responsables del proyecto.
 
 ## Aplicación
 
-Para informar de casos de comportamiento abusivo, acosador o inaceptable de cualquier otro modo, póngase en contacto con el equipo del proyecto en Grp-opensourceoffice@adobe.com. Todas las denuncias serán examinadas e investigadas y darán lugar a una respuesta que se considere necesaria y adecuada a las circunstancias. El equipo del proyecto está obligado a mantener la confidencialidad con respecto al informador de un incidente.
-Pueden publicarse por separado más detalles sobre políticas de aplicación específicas.
+Los casos de comportamiento abusivo, acosador o de otro modo inaceptable pueden ser
+para ello, póngase en contacto con el equipo del proyecto en Grp-opensourceoffice@adobe.com. Todos
+las denuncias se revisarán e investigarán y darán lugar a una respuesta
+se considera necesario y adecuado a las circunstancias. El equipo del proyecto es
+obligación de mantener la confidencialidad con respecto al informador de un incidente.Pueden publicarse por separado más detalles sobre políticas de aplicación específicas.
 
-Los responsables del mantenimiento del proyecto que no sigan o apliquen el Código de conducta de buena fe pueden enfrentarse a repercusiones temporales o permanentes determinadas por otros miembros de la dirección del proyecto.
+Responsables del mantenimiento del proyecto que no siguen o aplican correctamente el Código de conducta
+la fe puede enfrentarse a repercusiones temporales o permanentes determinadas por otros
+miembros de la dirección del proyecto.
 
 ## Atribución
 
-El presente Código de Conducta se adapta de la [Pacto de Colaboradores](https://contributor-covenant.org), versión 1.4, disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Este Código de conducta se ha adaptado de la versión 1.4 del [Pacto de los Colaboradores](https://contributor-covenant.org),
+disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
