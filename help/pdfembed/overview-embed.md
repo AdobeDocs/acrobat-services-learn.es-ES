@@ -57,7 +57,7 @@ La API PDF Embed es una API de JavaScript gratuita para incorporar PDF de alta f
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/es/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" title="Lucha contra los PDF en la web como un profesional" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/337602/?quality=12&hidetitle=true&format=jpeg&nocache=1736799089651" alt="Lucha contra los PDF en la web como un profesional"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3456144/?captions=spa&quality=12&hidetitle=true&format=jpeg&nocache=1736799089651" alt="Lucha contra los PDF en la web como un profesional"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
