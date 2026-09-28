@@ -7,20 +7,27 @@ level: Beginner
 type: Tutorial
 jira: KT-15033
 exl-id: 178cd894-cdb1-4595-a68f-20d9a14199b8
-TQID: https://experienceleague.adobe.com/n7n6uNzJHO5g2P5SQNRvyU0Kw7Y043Sh2wxPH-XxrUI
+TQID: 'https://experienceleague.adobe.com/n7n6uNzJHO5g2P5SQNRvyU0Kw7Y043Sh2wxPH-XxrUI'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: e9471a2b-a51d-459f-8642-038a8fd76a8b
+    internal-label: PDF Electronic Seal API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 106
+source-wordcount: '106'
 ht-degree: 0%
-
 ---
-
 # Aplicar automáticamente un sello electrónico
 
 Aprende a aplicar un sello electrónico de garantía a los PDF a escala con un certificado digital de terceros basado en la nube. Un sello electrónico es como el sello de goma de una organización en un papel, pero es más seguro. Los sellos electrónicos ayudan a verificar la identidad y la integridad de los documentos oficiales, como facturas y estados financieros, lo que reduce el riesgo en su organización al demostrar que los documentos no se han manipulado. También ayudan a garantizar que los documentos cumplen con la legislación para diversos flujos de trabajo normativos y legales.
