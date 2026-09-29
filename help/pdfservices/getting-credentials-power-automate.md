@@ -8,20 +8,27 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-TQID: https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8
+TQID: 'https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+    internal-label: PDF Services API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 930
+source-wordcount: '930'
 ht-degree: 2%
-
 ---
-
 # Obtener credenciales para Microsoft Power Automate
 
 [Microsoft Power Automate](https://powerautomate.microsoft.com/es-es/) proporciona una poderosa manera para que los desarrolladores y desarrolladores ciudadanos creen procesos automatizados para mejorar sus negocios sin escribir código. El conector [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/), como parte de [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services), permite a los usuarios realizar cualquiera de las acciones disponibles en la API de Adobe PDF Services en Microsoft Power Automate.
@@ -55,7 +62,7 @@ Estas credenciales cubren cinco valores diferentes:
 
 ![Nuevas credenciales](assets/credentials_3.png)
 
-También se descarga automáticamente en el sistema un archivo JSON que contiene todos estos valores. Este archivo se denomina `pdfservices-api-pa-credentials.json` y tiene el siguiente aspecto:
+También se descarga automáticamente en el sistema un Archivo JSON que contiene todos estos valores. Este archivo se denomina `pdfservices-api-pa-credentials.json` y tiene el siguiente aspecto:
 
 ```json
 {
@@ -105,7 +112,7 @@ Desafortunadamente, no puede descargar la clave privada anterior, pero puede uti
 
 ## Uso de las credenciales existentes de Adobe PDF Services
 
-Si tiene credenciales de API de servicios de Adobe PDF existentes generadas desde el sitio web de [!DNL Adobe Acrobat Services], puede utilizarlas con Microsoft Power Automate. Si descargaste un SDK al registrarte, tus credenciales existentes vendrían en forma de un archivo JSON con el nombre `pdfservices-api-credentials.json`. Ese archivo JSON contiene las cinco claves necesarias para crear las credenciales de conexión. Copie cada valor del archivo JSON en el campo de conexión correspondiente.
+Si tiene credenciales de API de servicios de Adobe PDF existentes generadas desde el sitio web de [!DNL Adobe Acrobat Services], puede utilizarlas con Microsoft Power Automate. Si descargaste un SDK al registrarte, tus credenciales existentes se obtuvieron en forma de un Archivo JSON que probablemente se llame `pdfservices-api-credentials.json`. Ese Archivo JSON contiene las cinco claves necesarias para crear las credenciales de conexión. Copie cada valor del Archivo JSON en el campo de conexión correspondiente.
 
 El valor de clave privada procede de un segundo archivo denominado `private.key`.
 
