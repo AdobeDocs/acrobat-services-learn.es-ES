@@ -47,7 +47,7 @@ Para comenzar, configure una aplicación web sencilla basada en Express Node.js.
 
 ## API [!DNL Acrobat Services] relevantes
 
-* [API de incrustación de PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API de incrustación de PDF](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
@@ -294,7 +294,7 @@ Este tutorial práctico te enseñó a usar Node.js con [!DNL Acrobat Services] p
 
 [!DNL Acrobat Services] te ayuda a añadir funciones clave de control de documentos a tu sitio web o aplicación. Si desea profundizar en lo que estas API pueden hacer, consulte la siguiente documentación de inicio rápido:
 
-* [API de incrustación de PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API de incrustación de PDF](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 

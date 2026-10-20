@@ -49,7 +49,7 @@ En este tutorial práctico, aprenderá a utilizar el SDK de Servicios de PDF en 
 
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API de incrustación de PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API de incrustación de PDF](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 ## Panel de informes de campañas para clientes
 

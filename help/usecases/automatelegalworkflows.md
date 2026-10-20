@@ -375,7 +375,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## Enviar acuerdo para firmar
 
-[Adobe Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) te permite enviar acuerdos a uno o varios destinatarios para que puedan ver y firmar documentos. Junto con una experiencia de usuario fácil de usar para enviar un documento para firmar, hay disponibles API REST que le permiten usar Word, PDF, HTML y otros formatos y enviarlos para firmar.
+[Adobe Acrobat Sign](https://www.adobe.com/es/acrobat/business/sign.html) te permite enviar acuerdos a uno o varios destinatarios para que puedan ver y firmar documentos. Junto con una experiencia de usuario fácil de usar para enviar un documento para firmar, hay disponibles API REST que le permiten usar Word, PDF, HTML y otros formatos y enviarlos para firmar.
 
 En el ejemplo siguiente se explica cómo utilizar la página de documentación de la API REST para realizar el documento generado anteriormente y enviarlo para su firma. En primer lugar, aprende cómo puedes hacerlo a través de la interfaz web de Acrobat Sign y, a continuación, cómo hacerlo con la API REST.
 

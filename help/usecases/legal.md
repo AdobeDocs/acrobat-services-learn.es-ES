@@ -50,7 +50,7 @@ Este tutorial incluye un poco de programación a la hora de explorar la conversi
 
 * [API de generación de documentos de Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [API de incrustación de PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API de incrustación de PDF](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [API de Adobe Sign](https://developer.adobe.com/adobesign-api/)
 

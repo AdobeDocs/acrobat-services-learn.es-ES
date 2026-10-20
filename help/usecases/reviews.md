@@ -61,7 +61,7 @@ La aplicación tiene las siguientes funciones:
 
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API de incrustación de PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API de incrustación de PDF](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Código del proyecto](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
@@ -399,7 +399,7 @@ Registre una devolución de llamada de vista del PDF para SAVE_API que cargue el
   );
 ```
 
-Los comentarios y anotaciones en los borradores de documentos ahora se guardan en el servidor. Puedes [leer más sobre cómo las devoluciones de llamada](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) encajan en tu flujo de trabajo. Por ejemplo, las [devoluciones de llamada de estado](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) ayudan a controlar los conflictos de archivos si varias personas desean revisar y comentar el mismo documento simultáneamente.
+Los comentarios y anotaciones en los borradores de documentos ahora se guardan en el servidor. Puedes [leer más sobre cómo las devoluciones de llamada](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) encajan en tu flujo de trabajo. Por ejemplo, las [devoluciones de llamada de estado](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) ayudan a controlar los conflictos de archivos si varias personas desean revisar y comentar el mismo documento simultáneamente.
 
 En el paso final, combine todos los documentos editados en un archivo de PDF mediante la API de servicios de PDF.
 

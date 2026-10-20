@@ -292,7 +292,7 @@ Si desea añadir la asistencia de Adobe Analytics a su visor, puede seguir las i
 >
 >Su página web ya debe tener Adobe Analytics cargado en la página del encabezado.
 
-Accede a la [documentación de Adobe Analytics](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) y revísala si ya tienes Adobe Analytics habilitado en tu página web. Siga las instrucciones para configurar una ReportSuite.
+Accede a la [documentación de Adobe Analytics](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) y revísala si ya tienes Adobe Analytics habilitado en tu página web. Siga las instrucciones para configurar una ReportSuite.
 
 ### Google Analytics
 
