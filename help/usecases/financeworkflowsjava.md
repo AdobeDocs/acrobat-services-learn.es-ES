@@ -47,7 +47,7 @@ En este tutorial práctico, aprende a usar las API [!DNL Adobe Acrobat Services]
 
 * [API de servicios de PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API de incrustación de PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API de incrustación de PDF](https://www.adobe.com/es/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Ejemplos de proyecto](https://github.com/adobe/pdftools-java-sdk-samples)
 
