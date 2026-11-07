@@ -32,4 +32,4 @@ ht-degree: 0%
 
 Aprende a aplicar un sello electrónico de garantía a los PDF a escala con un certificado digital de terceros basado en la nube. Un sello electrónico es como el sello de goma de una organización en un papel, pero es más seguro. Los sellos electrónicos ayudan a verificar la identidad y la integridad de los documentos oficiales, como facturas y estados financieros, lo que reduce el riesgo en su organización al demostrar que los documentos no se han manipulado. También ayudan a garantizar que los documentos cumplen con la legislación para diversos flujos de trabajo normativos y legales.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428346?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3506390?captions=spa&hidetitle=true)
